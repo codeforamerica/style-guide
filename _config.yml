@@ -1,0 +1,20 @@
+# Site settings
+title: DFD Component Library
+email: norris@codeforamerica.org
+description: >
+  A Component Library for City Websites
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "/" # the base hostname & protocol for your site
+permalink: /:categories/:title/
+city: "Digital Front Door"
+
+# Build settings
+markdown: kramdown
+
+collections:
+  components:
+    output: true
+    permalink: /:path/
+  templates:
+    output: true
+    permalink: /:path/

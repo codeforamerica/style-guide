@@ -1,0 +1,73 @@
+.template-home {
+
+	.section-slab-hero {
+		text-align: left;
+		background-color: $color-grey-100;
+		border-bottom: 1px solid $color-grey-300;
+		background: url('../media/images/hero_image.png');
+		background-position: center center;
+		background-size: cover;
+		height: 250px;
+		margin-bottom: -6em;
+
+		@include media($tablet-up) {
+			height: 350px;
+		}
+	}
+
+	.city-services {
+		.site-search {
+			margin-bottom: 2em;
+		}
+		.hero-credits {
+			font-size: $small-font-size;
+			color: $color-grey-600;
+			margin-bottom: 2em;
+
+		}
+	}
+
+	.announcement {
+		@include panel();
+		text-decoration: none;
+		color: inherit;
+		background-color: #fff;
+		height: 16em;
+		&:hover {
+			text-decoration: none;
+			color: inherit;
+			background-color: $color-grey-50;
+		}
+
+		header {
+			@include clearfix();
+			img {
+				float: right;
+				max-width: 30%;
+				max-height: 100%;
+				margin-left: 1em;
+			}
+		}
+
+		h3 {
+			text-decoration: underline;
+			margin: 0;
+			clear: none;
+		}
+
+		p {
+			max-height: 6*$heading-line-height;
+			overflow: hidden;
+		}
+
+		.date {
+			@include detail-text();
+			margin: 0;
+			color: $color-grey-600;
+		}
+	}
+}
+
+.homepage {
+	background-color: $color-grey-100;
+}

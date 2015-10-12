@@ -1,0 +1,161 @@
+---
+---
+
+@import 'bourbon/bourbon';
+@import 'core/defaults';
+@import 'core/utilities';
+
+.template-styleguide {
+
+	> .global-header {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 2;
+		h1 {
+			font-size: $h4-font-size;
+			font-family: $font-sans;
+			position: relative;
+			.subtitle {
+				font-weight: 400;
+				display: block;
+				@include media($tablet-up) {
+					display: inline;
+					border-left: 1px solid $color-grey-800;
+					margin-left: .5em;
+					padding-left: .5em;
+				}
+			}
+		}
+	}
+
+	code {
+		font-family: "Source Code Pro", "Courier New", mono;
+		font-weight: 400;
+	}
+
+	.styleguide-sidebar {
+		@include transition(margin-left .2s ease-out);
+		background-color: #fff;
+		position: fixed;
+		padding: 6em 1em 2em 1.5em;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		width: 250px;
+		border-right: 1px solid $color-grey-200;
+		margin-left: -250px;
+
+		.sidebar-open & {
+			margin-left: 0;
+		}
+		@include media($tablet-up) {
+			position: static;
+			padding: 0;
+			border-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	.button-toggle-sidebar {
+		background-color: transparent;
+		border: 0;
+		color: #000;
+		width: 1.5em;
+		font-family: 'FontAwesome';
+		text-decoration: none;
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -$heading-line-height/2;
+
+		&:before {
+			content: '\f0c9';
+		}
+		.sidebar-open & {
+			&:before {
+				content: '\f00d';
+			}
+		}
+
+		@include media($tablet-up) {
+			display: none;
+		}
+	}
+
+	.main-content {
+		padding: 6em $site-margins;
+	}
+
+	//Pattern Preview Boxes
+	.preview {
+		@include clearfix();
+		background-color: #fff;
+		margin: 2em 0;
+		padding: 1em $site-margins;
+		border: 1px solid $color-grey-200;
+		.is-peripheral {
+			opacity: .2;
+		}
+	}
+
+	//Code Sample Boxes
+	.code-sample {
+		@include clearfix();
+		border: 1px solid $color-grey-200;
+		background-color: $color-grey-50;
+		margin: 2em 0;
+
+		&.is-open {
+			.button-toggle:before {
+				content: 'Hide code';
+			}
+			pre {
+				padding-top: 0;
+				display: block;
+				line-height: 1em;
+				font-size: $small-font-size;
+			}
+		}
+		.button-toggle {
+			font-size: $small-font-size;
+			display: block;
+			padding: .5em $site-margins;
+			text-decoration: underline;
+			&:before {
+				content: 'Show code';
+			}
+		}
+		pre {
+			display: none;
+			background-color: transparent;
+			overflow-y: hidden;
+			code {
+				background-color: transparent;
+			}			
+		}
+	}
+
+	.preview + .code-sample {
+		margin-top: -2em;
+		border-top: 0px;
+	}
+
+	// Custom Styles to illustrate invisible patterns for style guide
+	
+	.grid-box-example {
+		.grid-item {
+			padding: 1em;
+			background: $color-grey-200;
+			margin: {
+				top: .5em;
+				bottom: .5em;
+			};
+		}
+	}
+	.section-slab-example {
+		background-color: $color-grey-100;
+	}
+}

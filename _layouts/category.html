@@ -1,0 +1,61 @@
+---
+"layout": |-
+  base
+---
+
+{% comment %} columns classes, assigned depending on which and how many columns {% endcomment %}
+{% if page.columns.size > 2 %}
+    {% assign column_count = 3 %}
+    {% assign column_classes = "grid-item width-one-sixth,grid-item width-one-third,grid-item width-one-half end-row" | split: "," %}
+{% else %}
+    {% assign column_count = 2 %}
+    {% assign column_classes = "grid-item width-one-third,grid-item width-two-thirds end-row" | split: "," %}
+{% endif %}
+
+{% comment %} nav and link classes, assigned depending on which column {% endcomment %}
+{% assign nav_classes = "nav-categories,nav-subcategories,nav-article-list" | split: "," %}
+{% assign link_classes = ",nav-subcategory-link,article-link" | split: "," %}
+
+<div class="{% if column_count == 2 %}template-category{% else %}template-subcategory{% endif %}">
+
+    <header class="secondary-header">
+        <nav class="nav-breadcrumbs">
+            <span class="nav-breadcrumbs-item"><a href="{{ site.url }}">{{ site.city }}</a></span>
+            {% for crumb in page.breadcrumbs %}
+             <span class="nav-breadcrumbs-item">{% if forloop.rindex0 > 0 %}<a href="{{ crumb['link_path'] }}">{% endif %}{{ crumb['title'] }}{% if forloop.rindex0 > 0 %}</a>{% endif %}</span>
+            {% endfor %}
+        </nav>
+    </header>
+    <div class="grid-box">
+        <div class="sidebar grid-item width-one-fourth">
+            <ul class="sidebar-menu">
+                {% for topic in page.columns[0]['pages'] %}
+                <li class="{% if topic.selected %}is-selected{% endif %}">
+                    <a href="{{ topic.link_path }}">{{ topic.title }}</a>
+                    {% if topic.selected %}
+                    <ul class="sidebar-menu-sublist">
+                        {% for subtopic in page.columns[1]['pages'] %}
+                        <li class="{% if subtopic.selected %}is-selected{% endif %}"><a href="{{ subtopic.link_path }}">{{ subtopic.title }}</a></li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="grid-item width-seven-twelfths shift-one-twelfth">
+            <header class="content-header">
+                {% assign current_column = page.columns|last %}
+                <h1>{{ current_column.title }}</h1>
+            </header>
+            <div class="menu-large">
+                {% for page in current_column['pages'] %}
+                <a class="menu-item" href="{{ page.link_path }}" >
+                    <p class="large-text">{{ page.title }}</p>
+                    <p class="detail-text">{{ page.description }}</p>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
