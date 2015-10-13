@@ -1,9 +1,10 @@
 ---
 layout: styleguide
 title: City Alerts
+order: 6
 ---
 
-City alerts can be used to provide sitewide notifications.
+<p class="lead-in">City alerts can be used to provide sitewide notifications for important messages.</p>
 
 <div class="preview">
 	<div class="danger-alert">

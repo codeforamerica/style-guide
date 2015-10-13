@@ -1,5 +1,6 @@
 ---
 title: Homepage
+order: 0
 ---
 <head>
   <title>Chime Starter</title>

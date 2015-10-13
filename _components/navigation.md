@@ -1,9 +1,10 @@
 ---
 layout: styleguide
 title: Site Navigation
+order: 4
 ---
 
-These patterns are reusable blocks of code meant for developers and designers to build site templates.
+<p class="lead-in">These are major building blocks that should occur on almost every page of the site.</p>
 
 ### Global Header
 

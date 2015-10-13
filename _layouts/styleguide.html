@@ -15,7 +15,8 @@
                 <li class="is-selected">
                   <a href="#">Components</a>
                   <ul class="sidebar-menu-sublist">
-                    {% for component in site.components %}
+                    {% assign ordered_components = site.components | sort: "order" %}
+                    {% for component in ordered_components %}
                     <li class="{% if page.url == component.url %}is-selected{% endif %}"><a href="{{ component.url }}">{{ component.title }}</a></li>
                     {% endfor %}
                   </ul>
@@ -23,13 +24,20 @@
                 <li class="is-selected">
                   <a href="#">Page Templates</a>
                   <ul class="sidebar-menu-sublist">
-                    {% for template in site.templates %}
+                    {% assign ordered_templates = site.templates | sort: "order" %}
+                    {% for template in ordered_templates %}
                     <li class="{% if page.url == template.url %}is-selected{% endif %}"><a href="{{ template.url }}">{{ template.title }}</a></li>
                     {% endfor %}
                   </ul>
                 </li>
                 <li class="is-selected">
                   <a href="#">Developers</a>
+                  <ul class="sidebar-menu-sublist">
+                    {% assign ordered_developers = site.developers | sort: "order" %}
+                    {% for template in ordered_developers %}
+                    <li class="{% if page.url == template.url %}is-selected{% endif %}"><a href="{{ template.url }}">{{ template.title }}</a></li>
+                    {% endfor %}
+                  </ul>
                 </li>
               </ul>
             </div>

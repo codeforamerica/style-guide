@@ -1,6 +1,7 @@
 ---
 layout: styleguide
 title: Media
+order: 4
 ---
 
 ## Figures

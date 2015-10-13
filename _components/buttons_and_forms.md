@@ -1,7 +1,10 @@
 ---
 layout: styleguide
 title: Buttons and Forms
+order: 2
 ---
+
+<p class="lead-in">Buttons and forms are the building blocks of transactional interactions with your residents.</p>
 
 # Buttons
 

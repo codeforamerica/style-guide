@@ -18,3 +18,6 @@ collections:
   templates:
     output: true
     permalink: /:path/
+  developers:
+    output: true
+    permalink: /:path/
