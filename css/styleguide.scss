@@ -1,7 +1,7 @@
 ---
 ---
 
-@import 'bourbon/bourbon';
+@import 'vendor/bourbon/bourbon';
 @import 'core/defaults';
 @import 'core/utilities';
 
@@ -33,6 +33,8 @@
 	code {
 		font-family: "Source Code Pro", "Courier New", mono;
 		font-weight: 400;
+		font-size: $small-font-size;
+		background-color: $color-grey-200;
 	}
 
 	.styleguide-sidebar {
@@ -48,6 +50,7 @@
 		border-right: 1px solid $color-grey-200;
 		margin-left: -250px;
 		overflow: auto;
+		-webkit-overflow-scrolling: touch;
 
 		.sidebar-open & {
 			margin-left: 0;
@@ -71,7 +74,7 @@
 		position: absolute;
 		right: 0;
 		top: 50%;
-		margin-top: -$heading-line-height/2;
+		margin-top: -$tight-line-height/2;
 
 		&:before {
 			content: '\f0c9';
@@ -160,7 +163,7 @@
 			};
 		}
 	}
-	.section-slab-example {
+	.slab-example {
 		background-color: $color-grey-100;
 	}
 }

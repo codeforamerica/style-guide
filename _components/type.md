@@ -18,10 +18,9 @@ order: 1
 
 ## Text Styles
 
-Any large portions of text should be set at the regular text size (19px) in order to increase readability. Detail text size are great for interface elements or content that is secondary to the main content.
-
 <div class="preview">
-	<p>This is what regular paragraph text looks like.</p>
+	<p class="lead-in">This is a lead-in sentence. Use it at the beginning of a page to provide context.</p>
+	<p>This is what regular paragraph text looks like. Any large portions of text should be set at the regular text size (19px) in order to increase readability.</p>
 	<p class="detail-text">Detail text can be used for secondary ui elements.</p>
 	<p class="large-text">Larger text is helpful for primary menu items.</p>
 </div>
