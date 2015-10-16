@@ -14,24 +14,18 @@ Colored buttons should be used to hint at the purpose button.
 - The danger button should be used to denote an important or potentially dangerous action. (e.g., Delete)
 - The outline button should be used to deemphasize less important actions.
 
+## Button Types
 <div class="preview">
-	<label for="button-type-button">Buttons</label>
-	<button type="button">Button</button>
-	<button type="reset">Reset</button>
-	<button type="submit">Submit</button>
-
-	<label for="button-type-submit">Input Buttons</label>
-	<input type="button" name="input-type-button" value="Button">
-	<input type="reset" name="input-type-reset">
-	<input type="submit" name="input-type-submit">
-	<input type="submit" name="input-type-submit" disabled="">
-
-	<label for="button-type-color">Colored Buttons</label>
+	<button class="button">Regular Button</button>
 	<button class="button button-primary">Primary Button</button>
+	<button class="button button-primary button-linkout">Linkout Button</button>
+	<button class="button button-primary button-download">Download Button</button>
 	<button class="button button-danger">Danger Button</button>
 	<button class="button button-outline">Outline Button</button>
+</div>
 
-	<label for="button-type-color">Button Sizes</label>
+## Button Sizes
+<div class="preview">
 	<button class="button">Regular Button</button>
 	<button class="button button-large">Large Button</button>
 </div>
