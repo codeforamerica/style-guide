@@ -1,24 +1,86 @@
-# Digital Front Door Component Library
+# Code for America Pattern Library
+======
 
-The Digital Front Door Component Library is a companion toolkit to the [Chime Starter Site](https://github.com/chimecms/chime-starter). It details the components used to the build the site as well as provide a few suggested page templates. This pattern library is built as a jekyll site.
+* **Current stable version:** 2 ([release-2](https://github.com/codeforamerica/pattern-library/releases/tag/release-2.1) tag / linkable [url](https://style.codeforamerica.org/2/))
+* **Current development version:** 3 ([master](https://github.com/codeforamerica/pattern-library/tree/master) branch / linkable [url](https://style.codeforamerica.org/3/))
 
-This guide helps to:
+The pattern library serves as the base CSS and organizing styles for [codeforamerica.org](http://codeforamerica.org). The pattern library is also a living style guide that explains how to use our CSS to build websites. It contains:
 
-- Helps you to undersstand the different building blocks of the Chime Starter and how to use them
-- Provides HTML/CSS examples of components if you want to build addition page templates
-- Provides a framework for documentating additional components/templates you wish to develop for the site
+- A Jekyll site that serves as a living style guide and pattern library
+- A foundational CSS structure built with Sass
+- A grid-based layout system using Bourbon and Neat
+- Basic web typography
+- Code for America specific page templates
+- Polyfills that help older versions of IE support HTML5 elements, pseudoclasses, media queries, and rem units.
+
+## Background
+
+Code for America's communications and tech teams worked with Brighton web design firm [Clearleft](http://clearleft.com/) and Colorado branding firm [Dojo4](http://dojo4.com/) to create a new visual design and front-end for the Code for America website. This pattern library is used as the base for the following:
+
+* CfA main site: [github](https://github.com/codeforamerica/codeforamerica.org) / [website](https://www.codeforamerica.org)
+* CfA blog: [github](https://github.com/codeforamerica/cfawp2012) / [website](https://www.codeforamerica.org/blog/)
+* CfA brigade site: [github](https://github.com/codeforamerica/brigade-alpha) / [website](https://www.codeforamerica.org/brigade)
+
+Read more about pattern libraries here:
+
+* http://clearleft.com/thinks/patternsharing/
+* http://alistapart.com/blog/post/getting-started-with-pattern-libraries
+
+## How to use it to build websites
+
+1. **[Read the docs.](http://style.codeforamerica.org)** Complete documentation of the pattern library with copy-and-pastable code snippets is available at [http://style.codeforamerica.org](http://style.codeforamerica.org).
+2. **Pick your version.** The current stable version is 2. The current development version is 3.
+3. **Add links to your document head.** For example, like this:
+
+```
+<head>
+  ...
+  <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
+  <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
+  <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+  ...
+</head>
+```
+Note that you should include your chosen version number (i.e. **/2/**) in the url path.
+
+## Versioning
+
+Note: we are still updating our versioning process. Your feedback is welcome in the [issues](https://github.com/codeforamerica/pattern-library/issues).
+
+Releases are currently seperated between major (full number releases, i.e. 0, 1, 2) and minor (dot releases, i.e. 2.1). Minor changes are essentially bug fixes and are intended to be fully backwards compatible. Minor changes don't trigger a new URL to a new stylesheet (i.e. release 2.1 is still available from http://style.codeforamerica.org/2/style/css/). If you link directly to our stylesheets, you will automatically get minor releases.
+
+Major releases will attempt to preserve backwards compatability, but may introduce some quirks or require markup changes after upgrade. Please [watch the repo](https://github.com/codeforamerica/pattern-library/subscription) to get updates on when major releases are available. The current stable major release is 2. The current development major release is 3.
 
 ## Prerequisites
 
 This starter requires Jekyll to be installed in order to build and preview. To install Jekyll, run:
 
-> `gem install jekyll`
-
+> `bundle install`
 
 ## Running Locally
 
 To preview the site locally, use the Jekyll command:
 
-> `jekyll serve`
+> `bundle exec jekyll serve`
 
-The site should be viewable at localhost:4000..
+The site should be viewable at localhost:4000. The styleguide is located at 'localhost:4000/styleguide'.
+
+## Contributing
+
+We welcome bugs, questions and suggestions in the form of issues, or features and code fixes in the form of a pull request.
+
+### Submitting a Pull Request
+
+1. Fork the project.
+2. Create a topic branch (name it something verb-y, like `fix-layout-padding`).
+3. Make your changes, and commit with descriptive commit messages.
+4. Push your changes.
+5. Submit a pull request.
+
+### <a name="issues"></a>Submitting an Issue
+
+We use the [GitHub issue tracker](https://github.com/codeforamerica/codeforamerica.org/issues) to track bugs and features. Before submitting a bug report or feature request, check to make sure it hasn't already been submitted. When submitting a bug report, please include a screenshot and any additioanl details that can help us debug, such as your operating system and browser version.
+
+## License
+
+Copyright (c) 2009-2015 Code for America. See the [LICENSE](https://github.com/codeforamerica/pattern-library/blob/master/LICENSE) for details.

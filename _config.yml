@@ -1,12 +1,11 @@
 # Site settings
-title: DFD Component Library
-email: norris@codeforamerica.org
-description: >
-  A Component Library for City Websites
+title: Code for America Style Guide
+email: info@codeforamerica.org
+description: |
+  Code for America's style guide and front-end pattern library.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "/" # the base hostname & protocol for your site
+url: "" # the base hostname & protocol for your site
 permalink: /:categories/:title/
-city: "Digital Front Door"
 
 # Build settings
 markdown: kramdown

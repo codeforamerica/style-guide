@@ -14,7 +14,7 @@ This is the header that appears at the top of every page.
 	<header class="global-header">
 		<div class="grid-box">
 			<div class="align-left">
-			    <h1 class="global-header-title"><img class="header-icon" src="/media/images/springfield_logo.png"/><a href="/">City of {{ site.city }}</a></h1>
+			    <h1 class="global-header-title"><img class="header-icon" src="/media/images/springfield_logo.png"/><a href="/">City of {{ site.title }}</a></h1>
 			</div>
 			<div class="bar-menu global-header-menu align-right">
 				<a href="#" class="menu-item">Services</a>
@@ -44,13 +44,13 @@ This is the footer that appears at the bottom of every page.
 	<footer class="global-footer">
 	    <div class="grid-box">
 	        <div class="grid-item width-one-fourth">
-	         	<h1 class="global-footer-title h3"><img class="header-icon-large" src="/media/images/springfield_logo.png"/>City of {{site.city}}</h1>
+	         	<h1 class="global-footer-title h3"><img class="header-icon-large" src="/media/images/springfield_logo.png"/>City of {{site.title}}</h1>
 	            <div class="address">
 	                <p>155 9th St.</p>
 	                <p>San Francisco, CA 94103</p>
 	                <p>(415)625-9633</p>
 	            </div>
-	            <p>© 2015 City of {{site.city}}</p>
+	            <p>© 2015 City of {{site.title}}</p>
 	        </div>
 	        <div class="grid-item width-one-third shift-one-twelfth">
 	        	<div class="global-footer-social bar-menu">
