@@ -1,15 +1,15 @@
 .slab {
 
-	margin: {
-		left: -$site-margins;
-		right: -$site-margins;
-	}
-	h1, h2, h3, h4, h5, h6, .grid-box {
-		max-width: $site-max-width;
-		margin: {
-			left: auto;
-			right: auto;
-		}
-	}
-	padding: 1em $site-margins;
+  margin: {
+    left: -$site-margins;
+    right: -$site-margins;
+  }
+  h1, h2, h3, h4, h5, h6, .grid-box {
+    max-width: $site-max-width;
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+  padding: 1em $site-margins;
 }

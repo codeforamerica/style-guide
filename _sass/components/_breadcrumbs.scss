@@ -19,10 +19,10 @@
         }
     }
     &:not(:last-of-type) {
-    	&:after {
+      &:after {
             @include icon();
-        	margin-left: .5em;
-        	content: '\f178';
+          margin-left: .5em;
+          content: '\f178';
             color: $color-grey-300;
         }
     }    

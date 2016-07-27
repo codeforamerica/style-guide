@@ -1,56 +1,56 @@
 // Make lists unstyled by default
 ul, ol, .unstyled-list {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 @mixin bulleted-list() {
-	list-style-type: disc;
-	padding-left: 2em;
-	margin: {
-		top: 1em;
-		bottom: 1em;
-	}
-	li {
-		line-height: $base-line-height;
-		margin: {
-			top: .5em;
-			bottom: .5em;
-		}
-	}
+  list-style-type: disc;
+  padding-left: 2em;
+  margin: {
+    top: 1em;
+    bottom: 1em;
+  }
+  li {
+    line-height: $base-line-height;
+    margin: {
+      top: .5em;
+      bottom: .5em;
+    }
+  }
 }
 
 .bulleted-list {
-	@include bulleted-list();
+  @include bulleted-list();
 }
 
 @mixin decimal-list() {
-	list-style-type: decimal;
-	padding-left: 2em;
-	margin: {
-		top: 1em;
-		bottom: 1em;
-	}
-	li {
-		line-height: $base-line-height;
-		margin: {
-			top: .5em;
-			bottom: .5em;
-		}
-	}
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin: {
+    top: 1em;
+    bottom: 1em;
+  }
+  li {
+    line-height: $base-line-height;
+    margin: {
+      top: .5em;
+      bottom: .5em;
+    }
+  }
 }
 
 .decimal-list {
-	@include decimal-list();
+  @include decimal-list();
 }
 
 
 article {
-	ul {
-		@include bulleted-list();
-	}
-	ol {
-		@include decimal-list();
-	}
+  ul {
+    @include bulleted-list();
+  }
+  ol {
+    @include decimal-list();
+  }
 }

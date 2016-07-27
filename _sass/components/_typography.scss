@@ -1,159 +1,159 @@
 html {
-	font-family: $font-sans;
-	font-size: $em-base;
+  font-family: $font-sans;
+  font-size: $em-base;
 
 }
 
 body {
-	font-size: $base-font-size;
-	-webkit-font-smoothing: antialiased;
-	font-weight: 400;
-	color: $color-grey-800;
+  font-size: $base-font-size;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  color: $color-grey-800;
 }
 
 p {
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-	margin: {
-		bottom: 1em;
-	}
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: {
+    bottom: 1em;
+  }
 }
 
 
 a {
-	color: inherit;
-	&:hover, &:active, &:visited {
-		color: inherit;
-	}
+  color: inherit;
+  &:hover, &:active, &:visited {
+    color: inherit;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
-	margin: {
-		top: 2em;
-		bottom: 1em;
-	}
-	line-height: $tight-line-height;
-	&:first-child {
-		margin-top: 0;
-	}
-	color: #000;
+  clear: both;
+  margin: {
+    top: 2em;
+    bottom: 1em;
+  }
+  line-height: $tight-line-height;
+  &:first-child {
+    margin-top: 0;
+  }
+  color: #000;
 }
 
 // Create heading mixins 
 
 @mixin title {
-	font-family: $font-serif;
-	font-size: $title-font-size;
-	font-weight: 600;
+  font-family: $font-serif;
+  font-size: $title-font-size;
+  font-weight: 600;
 }
 
 @mixin h1 {
-	font-family: $font-serif;
-	font-size: $h1-font-size;
-	font-weight: 600;
+  font-family: $font-serif;
+  font-size: $h1-font-size;
+  font-weight: 600;
 }
 
 @mixin h2 {
-	font-family: $font-serif;
-	font-size: $h2-font-size;
-	font-weight: 600;
+  font-family: $font-serif;
+  font-size: $h2-font-size;
+  font-weight: 600;
 }
 
 @mixin h3 {
-	font-family: $font-serif;
-	font-size: $h3-font-size;
-	font-weight: 600;
+  font-family: $font-serif;
+  font-size: $h3-font-size;
+  font-weight: 600;
 }
 
 @mixin h4 {
-	font-family: $font-serif;
-	font-size: $h4-font-size;
-	font-weight: 600;
+  font-family: $font-serif;
+  font-size: $h4-font-size;
+  font-weight: 600;
 }
 
 @mixin h5 {
-	font-family: $font-serif;
-	font-size: $h5-font-size;
-	font-weight: 600;
+  font-family: $font-serif;
+  font-size: $h5-font-size;
+  font-weight: 600;
 }
 
 @mixin h6 {
-	font-family: $font-serif;
-	font-size: $h6-font-size;
-	font-weight: 600;
+  font-family: $font-serif;
+  font-size: $h6-font-size;
+  font-weight: 600;
 }
 
 @mixin large-text {
-	font-family: $font-sans;
-	font-size: $h3-font-size;
-	line-height: $tight-line-height;
+  font-family: $font-sans;
+  font-size: $h3-font-size;
+  line-height: $tight-line-height;
 }
 
 @mixin detail-text {
-	font-family: $font-sans;
-	font-size: $small-font-size;
-	line-height: $tight-line-height;
+  font-family: $font-sans;
+  font-size: $small-font-size;
+  line-height: $tight-line-height;
 }
 
 h1, .h1 {
-	@include h1();
+  @include h1();
 }
 
 h2, .h2 {
-	@include h2();
+  @include h2();
 }
 
 h3, .h3 {
-	@include h3();
+  @include h3();
 }
 
 h4, .h4 {
-	@include h4();
+  @include h4();
 }
 
 h5, .h5 {
-	@include h5();
+  @include h5();
 }
 
 h6, .h6 {
-	@include h6();
+  @include h6();
 }
 
 .detail-text {
-	@include detail-text();
+  @include detail-text();
 }
 
 .large-text {
-	@include large-text();
+  @include large-text();
 }
 
 .header-icon {
-	display: inline-block;
-	margin-right: .5em;
-	height: 1.2em;
-	width: auto;
-	position: relative;
-	top: .2em;
+  display: inline-block;
+  margin-right: .5em;
+  height: 1.2em;
+  width: auto;
+  position: relative;
+  top: .2em;
 }
 
 .header-icon-large {
-	@extend .header-icon;
-	height: 1.4em;
-	top: .3em;
+  @extend .header-icon;
+  height: 1.4em;
+  top: .3em;
 }
 
 .lead-in {
-	font-size: $h2-font-size;
-	font-family: $font-serif;
-	color: $color-grey-800;
-	margin-bottom: 2em;
+  font-size: $h2-font-size;
+  font-family: $font-serif;
+  color: $color-grey-800;
+  margin-bottom: 2em;
 }
 
 .address {
-	margin-bottom: 1em;
-	p {
-		margin: 0;
-		line-height: $tight-line-height;
-	}
+  margin-bottom: 1em;
+  p {
+    margin: 0;
+    line-height: $tight-line-height;
+  }
 }
