@@ -12,7 +12,9 @@
   border-bottom: 1px solid $color-grey-200;
   margin-bottom: 2em;
   h1 {
-    font-size: $title-font-size;
+    font-size: map-get($title-styles, font-size);
+    line-height: map-get($title-styles, line-height);
+
   }
 }
 

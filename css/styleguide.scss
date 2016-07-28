@@ -14,7 +14,7 @@
     right: 0;
     z-index: 2;
     h1 {
-      font-size: $h4-font-size;
+      font-size: map-get($h4-styles, font-size);
       font-family: $font-sans;
       position: relative;
       .subtitle {
@@ -142,7 +142,7 @@
       overflow-y: hidden;
       code {
         background-color: transparent;
-      }     
+      }
     }
   }
 
@@ -152,7 +152,7 @@
   }
 
   // Custom Styles to illustrate invisible patterns for style guide
-  
+
   .grid-box-example {
     .grid-item {
       padding: 1em;

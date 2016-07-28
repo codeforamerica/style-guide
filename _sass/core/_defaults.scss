@@ -7,12 +7,12 @@ $em-base:       10px; // default is already defined in bourbon
 $base-font-size:    rem(19px) !default;
 $small-font-size:   rem(16px) !default;
 $title-font-size:   rem(48px) !default;
-$h1-font-size:      rem(36px) !default;
-$h2-font-size:      rem(28px) !default;
-$h3-font-size:      rem(24px) !default;
-$h4-font-size:      rem(18px) !default;
-$h5-font-size:      rem(16px) !default;
-$h6-font-size:      rem(14px) !default;
+$h1-styles:         ( font-size: rem(56px), line-height: rem(60px) );
+$h2-styles:         ( font-size: rem(32px), line-height: rem(36px) );
+$h3-styles:         ( font-size: rem(26px), line-height: rem(30px) );
+$h4-styles:         ( font-size: rem(16px), line-height: rem(26px) );
+$h5-styles:         ( font-size: rem(14px), line-height: rem(24px) );
+$h6-styles:         ( font-size: rem(12px), line-height: rem(18px) );
 $base-line-height:    1.5em !default;
 $tight-line-height: 1.3em !default;
 

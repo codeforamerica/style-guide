@@ -17,7 +17,7 @@
   .global-footer-social {
     margin-bottom: .5em;
     a {
-      font-size: $h2-font-size;
+      font-size: map-get($h2-styles, font-size);
       text-decoration: none;
       color: $color-grey-700;
       margin-right: .5em;
@@ -27,7 +27,7 @@
   .global-footer-nav {
     margin-bottom: 1em;
   }
-  
+
   .global-footer-mayor-image {
     width: 6em;
     margin-bottom: 1.5em;

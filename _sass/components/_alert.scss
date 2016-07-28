@@ -15,7 +15,7 @@
 .alert-content {
   max-width: $site-max-width;
   margin: auto;
-  font-size: $h3-font-size;
+  font-size: map-get($h3-styles, font-size);
 }
 
 .alert-title {

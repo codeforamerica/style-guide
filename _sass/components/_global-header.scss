@@ -14,7 +14,7 @@
 
 .global-header-title {
   margin: 0;
-  font-size: $h2-font-size;
+  font-size: map-get($h2-styles, font-size)
 
   a {
     color: inherit;
@@ -38,7 +38,7 @@
     margin: 0 auto;
   }
   .searchbar-input, .searchbar-button {
-    font-size: $h2-font-size;
+    font-size: map-get($h2-styles, font-size);
     background-color: transparent;
     padding: 0;
   }
