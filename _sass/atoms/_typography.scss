@@ -149,20 +149,7 @@ h6, .h6 {
   @include large-text();
 }
 
-.header-icon {
-  display: inline-block;
-  margin-right: .5em;
-  height: 1.2em;
-  width: auto;
-  position: relative;
-  top: .2em;
-}
 
-.header-icon-large {
-  @extend .header-icon;
-  height: 1.4em;
-  top: .3em;
-}
 
 
 

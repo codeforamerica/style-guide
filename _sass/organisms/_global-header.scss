@@ -1,6 +1,6 @@
 .global-header {
   @include clearfix();
-  background-color: $color-grey-200;
+
   border-bottom: 1px solid $color-grey-300;
   color: #000;
   padding: 1em $site-margins;
@@ -8,6 +8,26 @@
     display: none;
     @include media($tablet-up) {
       display: block;
+    }
+  }
+}
+
+.logo img {
+
+}
+
+.global-header-logo {
+  // display: inline-block;
+  // margin-right: .5em;
+  // height: 1.2em;
+  // width: auto;
+  // position: relative;
+  // top: .2em;
+
+  img {
+    max-width: 125px;
+    @include media($tablet-up) {
+      max-width: 150px;
     }
   }
 }

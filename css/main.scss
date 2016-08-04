@@ -14,30 +14,29 @@
 @import 'core/base';
 @import 'core/grid';
 
+// Atoms (basic element styling)
+@import 'atoms/typography';
+@import 'atoms/list';
+@import 'atoms/table';
+@import 'atoms/aside';
+@import 'atoms/blockquote';
+@import 'atoms/figure';
+@import 'atoms/input';
+@import 'atoms/button';
 
-// Simple Components
-@import 'components/typography';
-@import 'components/list';
-@import 'components/table';
-@import 'components/aside';
-@import 'components/blockquote';
-@import 'components/figure';
-@import 'components/input';
-@import 'components/button';
+// Molecules (simple components)
+@import 'molecules/sidebar';
+@import 'molecules/disclaimer';
+@import 'molecules/alert';
+@import 'molecules/menu';
+@import 'molecules/panel';
+@import 'molecules/breadcrumbs';
+@import 'molecules/slab';
+@import 'molecules/searchbar';
 
-
-// Complex Components
-@import 'components/sidebar';
-@import 'components/disclaimer';
-@import 'components/alert';
-@import 'components/menu';
-@import 'components/panel';
-@import 'components/breadcrumbs';
-@import 'components/slab';
-@import 'components/searchbar';
-@import 'components/global-header';
-@import 'components/global-footer';
-
+// Organisms (complex components)
+@import 'organisms/global-header';
+@import 'organisms/global-footer';
 
 // Page Templates
 @import 'templates/home';
