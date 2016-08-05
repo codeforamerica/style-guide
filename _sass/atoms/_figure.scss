@@ -7,6 +7,10 @@ figure {
   }
   width: 100%;
 
+  img {
+    border: 1px solid $color-light-gray;
+  }
+
   figcaption {
     margin-top: $base-spacing;
     font-size: $small-font-size;
