@@ -11,7 +11,9 @@ button[type="reset"] {
   font-weight: bold;
   background-color: $color-grey-300;
   border: 1px solid $color-grey-300;
+  border-radius: 2px;
   font-size: $base-font-size;
+  line-height: 1.5rem;
   text-align: center;
   margin: {
     top: .5em;
@@ -19,7 +21,7 @@ button[type="reset"] {
     right: .5em;
   }
   outline: none;
-  padding: .3em .5em;
+  padding: .625rem .875rem;
   text-decoration: none;
   &:hover {
     background-color: $color-grey-500;
@@ -48,13 +50,19 @@ input[type="submit"]:disabled, button[type="submit"]:disabled {
   }
 }
 
+button.button-small, .button.button-small {
+  font-size: 0.875rem;
+  line-height: 1rem;
+  padding: 0.5rem 0.75rem;
+}
+
 button.button-primary, .button.button-primary {
   color: #fff;
-  background-color: $color-primary;
-  border-color: $color-primary;
+  background-color: $color-red;
+  border-color: $color-red;
   &:hover {
-    background-color: shade($color-primary, 20%);
-    border-color: shade($color-primary, 20%);
+    background-color: $color-dark-red;
+    border-color: $color-dark-red;
   }
 }
 

@@ -1,15 +1,22 @@
 .global-header {
   @include clearfix();
 
-  border-bottom: 1px solid $color-grey-300;
-  color: #000;
   padding: 1em $site-margins;
-  .menu-item:not(.js-search-button) {
-    display: none;
-    @include media($tablet-up) {
-      display: block;
-    }
+  @include media($tablet-up) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
+  // .menu-item:not(.js-menu-button) {
+  //   display: none;
+  //   @include media($tablet-up) {
+  //     display: block;
+  //   }
+  // }
+  // .js-menu-button {
+  //   @include media($tablet-up) {
+  //     display: none;
+  //   }
+  // }
 }
 
 .logo img {
@@ -25,22 +32,32 @@
   // top: .2em;
 
   img {
-    max-width: 125px;
+    max-width: 100px;
     @include media($tablet-up) {
       max-width: 150px;
     }
   }
 }
 
-.global-header-title {
-  margin: 0;
-  font-size: map-get($h2-styles, font-size)
-
-  a {
-    color: inherit;
-    text-decoration: none;
+.global-header-buttons {
+  position: relative;
+  top: -.3rem;
+  @include media($tablet-up) {
+    top: .3rem;
+    .js-menu-button {
+      display: none;
+    }
   }
 }
+
+.global-header-navigation {
+  display: none;
+  @include media($tablet-up) {
+    display: block;
+    padding-top: $large-spacing;
+  }
+}
+
 .global-header-menu {
   position: relative;
   top: .3em;

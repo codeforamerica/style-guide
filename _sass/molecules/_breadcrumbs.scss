@@ -1,7 +1,7 @@
 .breadcrumbs {
   @include h6();
   margin: {
-    top: $base-spacing;
+    top: $small-spacing;
     bottom: $small-spacing;
   }
 }

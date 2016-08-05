@@ -5,11 +5,8 @@
 .menu-item, a.menu-item {
   @include transition(background-color .2s ease-out);
   display: block;
-  font-size: $small-font-size;
-  padding: .3em .8em;
+  font-size: $base-font-size;
   text-decoration: none;
-  margin-left: -.8em;
-  background-color: rgba(#000, .0);
 
   h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -20,9 +17,8 @@
     margin: 0;
     line-height: $tight-line-height;
   }
-
   &:hover {
-    background-color: rgba(#000, .05);
+    text-decoration: underline;
   }
 }
 
@@ -53,5 +49,15 @@
     padding: 1em;
     margin-left: -1em;
     margin-bottom: 1em;
+  }
+}
+
+.button-menu {
+  @extend .menu;
+  display: block;
+  .menu-item {
+    float: left;
+    margin-left: 1em;
+    display: inline-block;
   }
 }
