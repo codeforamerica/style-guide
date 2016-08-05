@@ -31,6 +31,9 @@
 .template-content {
   .page-header {
     // margin-bottom: $base-spacing;
+    @include media($tablet-up) {
+      margin-bottom: 1rem;
+    }
   }
 }
 
