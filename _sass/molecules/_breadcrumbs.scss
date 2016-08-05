@@ -10,9 +10,9 @@
   display: inline-block;
   margin-right: .375rem; //6px
   margin-bottom: .375rem; //6px
-  color: $color-black;
+  color: $color-gray;
   a {
-    text-decoration: none;
+    text-decoration: underline;
     color: $color-gray;
     &:hover {
       text-decoration: underline;

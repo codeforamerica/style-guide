@@ -32,6 +32,10 @@
       margin-right: 0;
     }
   }
+  .active-menu-item {
+    color: $color-red;
+    font-weight: 600;
+  }
 }
 
 .medium-menu {
