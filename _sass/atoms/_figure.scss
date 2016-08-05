@@ -1,18 +1,15 @@
 figure {
   margin: {
-    top: 2em;
-    bottom: 2em;
+    top: $large-spacing;
+    bottom: $large-spacing;
     left: 0;
     right: 0;
   }
   width: 100%;
 
   figcaption {
-    margin-top: 1em;
+    margin-top: $base-spacing;
     font-size: $small-font-size;
-    color: $color-grey-700;
+    color: $color-dark-gray;
   }
-
-
 }
-

@@ -37,7 +37,8 @@ $h3-styles:         ( font-size: rem(26px), line-height: rem(32px), font-weight:
 $h4-styles:         ( font-size: rem(20px), line-height: rem(26px), font-weight: 600, color: $color-black  );
 $h5-styles:         ( font-size: rem(16px), line-height: rem(24px), font-weight: 600, color: $color-black   );
 $h6-styles:         ( font-size: rem(12px), line-height: rem(18px), font-weight: 600, color: $color-gray  );
-$small-font-size:   map-get($h6-styles, font-size);
+// $small-font-size:   map-get($h6-styles, font-size);
+$small-font-size:     rem(14px);
 $base-line-height:    1.5rem;
 $tight-line-height:   1.3rem;  // Useful for headings, or narrow columns of text
 
