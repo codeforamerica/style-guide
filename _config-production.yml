@@ -1,0 +1,3 @@
+# Pass this configuration during production builds/deployment to minify SASS.
+sass:
+  style: compressed

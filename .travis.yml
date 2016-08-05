@@ -1,0 +1,9 @@
+language: ruby
+rvm:
+  - 2.2.0
+script: bundle exec jekyll build --config "_config.yml,_config-production.yml"
+install: bundle install
+after_success: bundle exec s3_website push
+branches:
+  only:
+    - master
