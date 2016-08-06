@@ -39,6 +39,29 @@
   }
 }
 
+.global-header-title {
+  margin: {
+    top: 0;
+    right: 0;
+    left: 2rem;
+    bottom: 0;
+
+  }
+  font-size: $small-font-size;
+  line-height: $small-font-size * 1.5;
+  display: block;
+  .subtitle {
+    display: block;
+    clear: left;
+    color: $color-gray;
+  }
+  @include media($tablet-up) {
+    font-size: $base-font-size;
+    margin-top: .5rem;
+    .subtitle { font-size: $small-font-size }
+  }
+}
+
 .global-header-buttons {
   position: relative;
   top: -.3rem;

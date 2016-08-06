@@ -3,16 +3,11 @@
 
 @import 'vendor/bourbon/bourbon';
 @import 'core/defaults';
+@import 'core/variables';
 @import 'core/utilities';
 
 .template-styleguide {
-
   > .global-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2;
     h1 {
       font-size: map-get($h4-styles, font-size);
       font-family: $font-sans;
@@ -37,6 +32,13 @@
     background-color: $color-grey-200;
   }
 
+  .styleguide-heading {
+    margin-top: 2em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
   .styleguide-sidebar {
     @include transition(margin-left .2s ease-out);
     background-color: #fff;
@@ -51,7 +53,10 @@
     margin-left: -250px;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+    .sidebar-menu > * + li {
+      margin-top: 2rem;
 
+    }
     .sidebar-open & {
       margin-left: 0;
     }
@@ -91,7 +96,7 @@
   }
 
   .main-content {
-    padding: 6em $site-margins;
+    padding: 0 20px 5em;
   }
 
   //Pattern Preview Boxes

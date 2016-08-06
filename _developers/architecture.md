@@ -11,6 +11,7 @@ order: 0
 1. Spacing units are as much as possible defined as `rem` or `em` units so they scale appropriately with text size.
 
 ## Naming Convention
+{: .styleguide-heading }
 The naming convention used in this library is based off of BEM methodologies (block, element, modifier) but uses a more casual and human readable syntax. All words are separated by a single dash and modifiers come directly before the object they are modifying. The purpose of this is to have a more friendly language for those not familiar with BEM but still imposes a logical convention for structure. For example:
 
 <div class="grid-box">
@@ -25,11 +26,12 @@ The naming convention used in this library is based off of BEM methodologies (bl
     <li><code>.alert-title</code></li>
     <li><code>.danger-alert-title</code></li>
   </ul>
-  
+
 </div>
 
 
 ## Browser Support
+{: .styleguide-heading }
 Browser compatility is tested against IE8 and up, and latest versions of Chrome, Firefox, and Safari. Partial support for HTML5 and CSS3 in IE8 and IE9 are supplied by polyfills:
 
 1. **html5shiv:** adds support for HTML5 elements.

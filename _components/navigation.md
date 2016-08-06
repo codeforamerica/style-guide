@@ -1,12 +1,12 @@
 ---
 layout: styleguide
 title: Site Navigation
+description: These are major building blocks that should occur on almost every page of the site.
 order: 4
 ---
 
-<p class="lead-in">These are major building blocks that should occur on almost every page of the site.</p>
-
 ### Global Header
+{: .styleguide-heading }
 
 This is the header that appears at the top of every page.
 
@@ -31,12 +31,13 @@ This is the header that appears at the top of every page.
       <input class="searchbar-button" type="submit" value="&#xf002">
     </form>
   </div>
-  
+
 </div>
 
 
 
 ### Global Footer
+{: .styleguide-heading }
 
 This is the footer that appears at the bottom of every page.
 
@@ -86,6 +87,7 @@ This is the footer that appears at the bottom of every page.
 </div>
 
 ### Breadcrumbs
+{: .styleguide-heading }
 
 Breadcrumbs offer a contextual cue to where the user is in the site hierarchy. They are especially useful when users arrive at a page from a different website (e.g, Google) and provide a sense of context to where they are and allows them to quickly navigate to a different context if necessary.
 
@@ -99,6 +101,7 @@ Breadcrumbs offer a contextual cue to where the user is in the site hierarchy. T
 </div>
 
 ### Sidebar
+{: .styleguide-heading }
 
 <div class="preview">
   <div class="sidebar">
@@ -119,6 +122,7 @@ Breadcrumbs offer a contextual cue to where the user is in the site hierarchy. T
 </div>
 
 ### Searchbar
+{: .styleguide-heading }
 
 A default combinaton of a seach type input and a custom submit button used to globally search the site.
 

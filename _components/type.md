@@ -1,12 +1,12 @@
 ---
 layout: styleguide
 title: Typography
+description: Typographical styles that help you to structure your content.
 order: 1
 ---
 
-<p class="lead-in">Typographical styles that help you to structure your content.</p>
-
 ## Headings
+{: .styleguide-heading }
 <div class="preview">
   <h1>Heading Level 1</h1>
   <h2>Heading Level 2</h2>
@@ -17,15 +17,17 @@ order: 1
 </div>
 
 ## Text Styles
+{: .styleguide-heading }
 
 <div class="preview">
-  <p class="lead-in">This is a lead-in sentence. Use it at the beginning of a page to provide context.</p>
+  <p class="lead-in-text">This is a lead-in-text sentence. Use it at the beginning of a page to provide context.</p>
   <p>This is what regular paragraph text looks like. Any large portions of text should be set at the regular text size (19px) in order to increase readability.</p>
   <p class="detail-text">Detail text can be used for secondary ui elements.</p>
   <p class="large-text">Larger text is helpful for primary menu items.</p>
 </div>
 
 ## Inline Styles
+{: .styleguide-heading }
 
 As a best practice, you should use emphasis and strong text over italic and bold text.
 
@@ -38,6 +40,7 @@ As a best practice, you should use emphasis and strong text over italic and bold
 </div>
 
 ## Blockquotes
+{: .styleguide-heading }
 
 <div class="preview">
   <blockquote>The blockquote element represents a section that is quoted from another source. Blockquotes are also sometimes referred to in publishing as 'pullquotes'.</blockquote>  
@@ -47,6 +50,7 @@ As a best practice, you should use emphasis and strong text over italic and bold
 
 
 ## Lists
+{: .styleguide-heading }
 
 Outside of `<article>` elements, lists are unstyled by default. To use styled lists outside of `<article>` elements, use the following classes:
 
@@ -70,6 +74,7 @@ Outside of `<article>` elements, lists are unstyled by default. To use styled li
 </div>
 
 ## Asides
+{: .styleguide-heading }
 
 <div class="preview">
   <aside>
@@ -88,6 +93,7 @@ Outside of `<article>` elements, lists are unstyled by default. To use styled li
 
 
 ## Tables
+{: .styleguide-heading }
 
 <div class="preview">
   <table>

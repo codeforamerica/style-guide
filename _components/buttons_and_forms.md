@@ -1,20 +1,21 @@
 ---
 layout: styleguide
 title: Buttons and Forms
+description: Buttons and forms are the building blocks of transactional interactions with your residents.
 order: 2
 ---
 
-<p class="lead-in">Buttons and forms are the building blocks of transactional interactions with your residents.</p>
+## Buttons
+{: .styleguide-heading }
 
-# Buttons
-
-Colored buttons should be used to hint at the purpose button. 
+Colored buttons should be used to hint at the purpose button.
 
 - The primary button should only be used once per form and denotes the next logical step in the process (e.g., Continue, Submit)
 - The danger button should be used to denote an important or potentially dangerous action. (e.g., Delete)
 - The outline button should be used to deemphasize less important actions.
 
-## Button Types
+### Button Types
+{: .styleguide-heading }
 <div class="preview">
   <button class="button">Regular Button</button>
   <button class="button button-primary">Primary Button</button>
@@ -24,14 +25,16 @@ Colored buttons should be used to hint at the purpose button.
   <button class="button button-outline">Outline Button</button>
 </div>
 
-## Button Sizes
+### Button Sizes
+{: .styleguide-heading }
 <div class="preview">
   <button class="button">Regular Button</button>
   <button class="button button-large">Large Button</button>
 </div>
 
 
-# Input Validation
+## Input Validation
+{: .styleguide-heading }
 <div class="preview">
   <label for="">Input Success</label>
   <input type="text" name="input-validation-success" class="input-success">
@@ -39,7 +42,8 @@ Colored buttons should be used to hint at the purpose button.
   <input type="text" name="input-validation-error" class="input-error">
 </div>
 
-# Text Input Fields
+## Text Input Fields
+{: .styleguide-heading }
 <div class="preview">
   <label for="">Input Type Text</label>
   <input type="text" name="input-type-text">
@@ -63,7 +67,8 @@ Colored buttons should be used to hint at the purpose button.
   <input type="search" name="input-type-search">
 </div>
 
-# Checkboxes and Radio Buttons
+## Checkboxes and Radio Buttons
+{: .styleguide-heading }
 
 <div class="preview">
   <label for="">Input Type Checkbox</label>
@@ -77,7 +82,8 @@ Colored buttons should be used to hint at the purpose button.
   <input type="radio" name="input-type-radio"> Value 3<br>
 </div>
 
-# Selection Input Types
+## Selection Input Types
+{: .styleguide-heading }
 
 <div class="preview">
   <label for="">Selection Dropdown</label>

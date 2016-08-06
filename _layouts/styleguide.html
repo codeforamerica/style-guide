@@ -10,11 +10,11 @@
       <div class="main-content">
         <div class="grid-box">
             <div class="styleguide-sidebar sidebar grid-item width-one-fourth">
-              <ul class="sidebar-menu">
+              <ul class="sidebar-menu unstyled-list">
                 <li class="is-selected"><a href="/">Introduction</a></li>
                 <li class="is-selected">
                   <a href="#">Components</a>
-                  <ul class="sidebar-menu-sublist">
+                  <ul class="sidebar-menu-sublist unstyled-list">
                     {% assign ordered_components = site.components | sort: "order" %}
                     {% for component in ordered_components %}
                     <li class="{% if page.url == component.url %}is-selected{% endif %}"><a href="{{ component.url }}">{{ component.title }}</a></li>
@@ -23,7 +23,7 @@
                 </li>
                 <li class="is-selected">
                   <a href="#">Page Templates</a>
-                  <ul class="sidebar-menu-sublist">
+                  <ul class="sidebar-menu-sublist unstyled-list">
                     {% assign ordered_templates = site.templates | sort: "order" %}
                     {% for template in ordered_templates %}
                     <li class="{% if page.url == template.url %}is-selected{% endif %}"><a href="{{ template.url }}">{{ template.title }}</a></li>
@@ -32,7 +32,7 @@
                 </li>
                 <li class="is-selected">
                   <a href="#">Developers</a>
-                  <ul class="sidebar-menu-sublist">
+                  <ul class="sidebar-menu-sublist unstyled-list">
                     {% assign ordered_developers = site.developers | sort: "order" %}
                     {% for template in ordered_developers %}
                     <li class="{% if page.url == template.url %}is-selected{% endif %}"><a href="{{ template.url }}">{{ template.title }}</a></li>
@@ -42,8 +42,9 @@
               </ul>
             </div>
             <article class="styleguide-content grid-item width-two-thirds shift-one-twelfth">
-              <header class="content-header">
-                <h1>{{ page.title }}</h1>
+              <header class="page-header">
+                <h1 class="style-guide-heading">{{ page.title }}</h1>
+                {% if page.description %}<p class="lead-in-text">{{ page.description }}</p>{% endif %}
               </header>
               {{ content }}
             </article>
