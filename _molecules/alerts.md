@@ -2,7 +2,7 @@
 layout: styleguide
 title: Alerts
 description: Alerts can be used to provide site-wide notifications for important messages.
-order: 3
+order: 2
 ---
 
 <div class="preview">

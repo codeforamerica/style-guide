@@ -2,7 +2,7 @@
 layout: styleguide
 title: Menus
 description: Menus provide ways for your residents to navigate a list of links on a page.
-order: 5
+order: 0
 ---
 
 Menus and menu bars provide a way to display a list of block level links. Technically, anything can go inside `.menu-item` divs including headings, text, and images. They can also be combined with the grid layout to provide multiple column menus.
