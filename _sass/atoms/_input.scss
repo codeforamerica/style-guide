@@ -44,17 +44,17 @@ input:focus {
 
 input.input-success, input.input-success:focus {
   border: 1px solid $color-success;
-  box-shadow: 0 0 0 1px $color-success; 
+  box-shadow: 0 0 0 1px $color-success;
 }
 
 input.input-error, input.input-error:focus {
   border: 1px solid $color-danger;
-  box-shadow: 0 0 0 1px $color-danger;  
+  box-shadow: 0 0 0 1px $color-danger;
 }
 
 label {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
   margin: {
     top: .5em;
     bottom: .5em;

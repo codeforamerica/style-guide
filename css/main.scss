@@ -22,6 +22,7 @@
 @import 'atoms/figure';
 @import 'atoms/input';
 @import 'atoms/button';
+@import 'atoms/tag';
 
 // Molecules (simple components)
 @import 'molecules/sidebar';
@@ -33,6 +34,7 @@
 @import 'molecules/slab';
 @import 'molecules/searchbar';
 @import 'molecules/page-header';
+@import 'molecules/metadata';
 
 // Organisms (complex components)
 @import 'organisms/global-header';

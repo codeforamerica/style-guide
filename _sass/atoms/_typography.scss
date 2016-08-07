@@ -20,9 +20,9 @@ p {
 }
 
 a {
-  color: inherit;
+  color: $color-blue;
   &:hover, &:active, &:visited {
-    color: inherit;
+    color: $color-dark-blue;
   }
 }
 
