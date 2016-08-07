@@ -1,8 +1,8 @@
 ---
 layout: styleguide
-title: Site Navigation
+title: Navigation structures
 description: These are major building blocks that should occur on almost every page of the site.
-order: 4
+order: 0
 ---
 
 ### Global Header

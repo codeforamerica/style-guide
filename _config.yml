@@ -13,10 +13,19 @@ markdown: kramdown
 collections:
   components:
     output: true
-    permalink: /:path/
+    permalink: /patterns/components/:path/
+  atoms:
+    output: true
+    permalink: /patterns/atoms/:path/
+  molecules:
+    output: true
+    permalink: /patterns/molecules/:path/
+  organisms:
+    output: true
+    permalink: /patterns/organisms/:path/
   templates:
     output: true
-    permalink: /:path/
+    permalink: /patterns/templates/:path/
   developers:
     output: true
-    permalink: /:path/
+    permalink: /patterns/developers/:path/

@@ -2,7 +2,7 @@
 layout: styleguide
 title: Slabs
 description: Slabs are used to separate logical chunks of content within a page.
-order: 7
+order: 1
 ---
 
 They are a foundational building block of content meant to be customized for specific usages. Each instance of a slab section should have a second class of `slab-[instance]` where custom styles can be applied.

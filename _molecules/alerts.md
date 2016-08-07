@@ -1,8 +1,8 @@
 ---
 layout: styleguide
-title: City Alerts
-description: City alerts can be used to provide site-wide notifications for important messages.
-order: 6
+title: Alerts
+description: Alerts can be used to provide site-wide notifications for important messages.
+order: 3
 ---
 
 <div class="preview">
