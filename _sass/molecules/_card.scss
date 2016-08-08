@@ -1,0 +1,23 @@
+.card {
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+  }
+  padding: 1rem;
+}
+
+.card-icon {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+a.link-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  .card-button {
+    display: inline-block;
+    margin: .5rem 0 0;
+  }
+}

@@ -1,5 +1,6 @@
 .slab {
-
+  @include clearfix;
+  display: block;
   margin: {
     left: -$site-margins;
     right: -$site-margins;
@@ -11,5 +12,45 @@
       right: auto;
     }
   }
-  padding: 1em $site-margins;
+  padding: 2rem $site-margins;
+  @include media($tablet-up) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+// Styled slabs
+.center-align-slab {
+  text-align: center;
+}
+
+.border-top-slab {
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 1px;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: $site-max-width;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: $color-light-gray;
+  }
+  // border-top: 1px solid $color-light-gray;
+}
+
+// Slabs with background colors
+%reverse-slab {
+  h1,h2,h3,h4,h5,h6,p {
+    color: white;
+    font-weight: 600;
+  }
+}
+.blue-bg-slab {
+  @extend %reverse-slab;
+  background-color: $color-dark-blue;
 }

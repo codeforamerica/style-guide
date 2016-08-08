@@ -7,6 +7,7 @@ input[type="image"],
 button[type="button"],
 button[type="submit"],
 button[type="reset"] {
+  display: inline-block;
   -webkit-appearance: none;
   font-weight: 600;
   background-color: $color-grey-300;
@@ -73,6 +74,17 @@ button.button-secondary, .button.button-secondary, input[type="submit"].button-s
   &:hover {
     background-color: $color-dark-blue;
     border-color: $color-dark-blue;
+  }
+}
+
+button.button-reverse, .button.button-reverse, input[type="submit"].button-reverse {
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+  &:hover {
+    background-color: transparent;
+    border-color: #fff;
+    box-shadow: 0 0 8px 2px rgba(255,255,255,0.8);
   }
 }
 
