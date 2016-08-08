@@ -41,6 +41,44 @@
       @include span-columns(11);
     }
 
+    // Different notation
+    .span-one {
+      @include span-columns(1);
+    }
+    .span-two {
+      @include span-columns(2);
+    }
+    .span-three {
+      @include span-columns(3);
+    }
+    .span-four {
+      @include span-columns(4);
+    }
+    .span-five {
+      @include span-columns(5);
+    }
+    .span-six {
+      @include span-columns(6);
+    }
+    .span-seven {
+      @include span-columns(7);
+    }
+    .span-eight {
+      @include span-columns(8);
+    }
+    .span-nine {
+      @include span-columns(9);
+    }
+    .span-ten {
+      @include span-columns(10);
+    }
+    .span-elevent {
+      @include span-columns(11);
+    }
+    .span-twelve {
+      @include span-columns(12);
+    }
+
     // Shift Classes (adds white space to the left of grid item)
     .shift-one-half {
       @include shift(6);

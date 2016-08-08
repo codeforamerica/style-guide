@@ -26,6 +26,10 @@ a {
   }
 }
 
+strong {
+  font-weight: 600;
+}
+
 h1, h2 {
   clear: both;
   margin: {
@@ -149,9 +153,9 @@ h6, .h6 {
   @include large-text();
 }
 
-
-
-
+.align-center-text {
+  text-align: center;
+}
 
 .address {
   margin-bottom: 1em;

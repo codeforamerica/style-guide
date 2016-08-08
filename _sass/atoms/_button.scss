@@ -50,19 +50,29 @@ input[type="submit"]:disabled, button[type="submit"]:disabled {
   }
 }
 
-button.button-small, .button.button-small {
+button.button-small, .button.button-small, input[type="submit"].button-small {
   font-size: 0.875rem;
   line-height: 1rem;
   padding: 0.5rem 0.75rem;
 }
 
-button.button-primary, .button.button-primary {
+button.button-primary, .button.button-primary, input[type="submit"].button-primary {
   color: #fff;
   background-color: $color-red;
   border-color: $color-red;
   &:hover {
     background-color: $color-dark-red;
     border-color: $color-dark-red;
+  }
+}
+
+button.button-secondary, .button.button-secondary, input[type="submit"].button-secondary {
+  color: #fff;
+  background-color: $color-blue;
+  border-color: $color-blue;
+  &:hover {
+    background-color: $color-dark-blue;
+    border-color: $color-dark-blue;
   }
 }
 
