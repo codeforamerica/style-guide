@@ -2,227 +2,215 @@
 title: Homepage
 order: 0
 ---
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Chime Starter</title>
+  <title>Template: {{ page.title }} | {{ site.title }}</title>
+  <!-- Document Rendering Metadata -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A starter kit for government sites built with the Chime CMS
-  ">
-  <link rel="stylesheet" href="/css/main.css">
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic,600italic' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="canonical" href="//">
+  <!-- Desriptive Metadata -->
+  <meta name="description" content="A starter kit for government sites built with the Chime CMS">
+  <link rel="canonical" href="//articles/public-safety/emergency-services/example-article/">
   <link rel="alternate" type="application/rss+xml" title="Chime Starter" href="//feed.xml" />
+  <!-- Pattern Library Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <!-- Font Vendor Stylesheets -->
+  <script src="https://use.typekit.net/lkd6vsz.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Shims For Old Browsers -->
   <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script src="//s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
     <script src="/js/selectivizr-min-1.0.2.js"></script>
     <![endif]-->
-  </head>
-  <body class="homepage">
-    <div class="disclaimer">
-      <p><b>This site is a working beta</b>. Information found here may be incomplete and inaccurate. <a href="">Learn more</a></p>
-    </div>
-    <header class="global-header" role="banner">
+</head>
+<body class="template-home">
+  <section class="home-hero" style="background-image:url('/media/images/home-bg-placeholder1.png')">
+    <!-- Reverse global header -->
+    <header class="global-header reverse-global-header home-hero-header" role="banner">
       <div class="grid-box">
-        <div class="align-left">
-          <h1 class="global-header-title"><img class="header-icon" src="/media/images/springfield_logo.png" alt="City Logo"/><a href="/">City of Springfield</a></h1>
+        <div class="width-one-whole">
+          <div class="align-left">
+            <div class="global-header-logo">
+              <a href="/"><img class="header-icon" src="/media/images/cfa-logo-color.png" alt="Code for America Logo" /></a>
+            </div>
+          </div>
+          <div class="button-menu global-header-buttons align-right" role="navigation">
+            <a class="menu-item button button-small button-primary" href="#" title="Donate">Donate</a>
+            <a class="menu-item button button-small js-menu-button" href="{{ siteUrl }}donate" title="Open menu"><span class="fa fa-bars"></span> Menu</a>
+          </div>
         </div>
-        <div class="bar-menu global-header-menu align-right" role="navigation">
-          <a href="#" class="menu-item">Services</a>
-          <a href="#" class="menu-item">Announcements</a>
-          <a href="#" class="menu-item">Events</a>
-          <a href="#" class="menu-item">More</a>
-          <a href="#" class="menu-item js-search-button" title="Open search"><span class="fa fa-search"></span></a>
+        <div class="width-one-whole global-header-navigation">
+          <div class="bar-menu global-header-menu align-left" role="navigation">
+            <a href="#" class="menu-item">Who we are</a>
+            <a href="#" class="menu-item">What we do</a>
+            <a href="#" class="menu-item">Why we do it</a>
+            <a href="#" class="menu-item">Join us</a>
+          </div>
+          <div class="bar-menu global-header-menu align-right" role="navigation">
+            <a href="#" class="menu-item">Blog</a>
+            <a href="#" class="menu-item">2016 Summit</a>
+          </div>
         </div>
       </div>
     </header>
-    <div class="global-header-search">
-      <form action="" class="searchbar" role="search">
-        <input class="searchbar-input" type="search" placeholder="How can we help you?">
-        <button class="searchbar-button" type="submit"></button>
-      </form>
-    </div>
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="template-home" role="main">
-          <section class="slab slab-hero">
-          </section>
-          <section class="slab city-services">
-            <div class="grid-box">
-              <div class="width-one-whole panel">
-                <div class="grid-box">
-                  <form class="searchbar width-two-thirds" role="search">
-                    <input class="searchbar-input" type="search" placeholder="How can we help you?">
-                    <button class="searchbar-button" type="submit"></button>
-                  </form>
-                  <div class="hero-credits width-one-third">illustration by J.B. Ingwersen, 1960-1965</div>
-                </div>
-                <div class="grid-box">
-                  <ul class="medium-menu grid-item width-one-third">
-                    <a href="/articles/health-and-social-services/" class="menu-item">
-                      <h3>Health & Social Services</h3>
-                      <p class="detail-text">Including public hospitals, welfare initiatives, and homelessness services</p>
-                    </a>
-                    <a href="/articles/licensing-permits/" class="menu-item">
-                      <h3>Licensing & Permits</h3>
-                      <p class="detail-text">including building, land use, commercial and residential zones, and life events.</p>
-                    </a>
-                    <a href="/articles/parks-recreation/" class="menu-item">
-                      <h3>Parks & Recreation</h3>
-                      <p class="detail-text">including parks, playgrounds, theatres, libraries, and community centers</p>
-                    </a>
-                  </ul>
-                  <ul class="medium-menu grid-item width-one-third">
-                    <a href="/articles/education/" class="menu-item">
-                      <h3>Education</h3>
-                      <p class="detail-text">including preschool, K-12, college, and continuing education</p>
-                    </a>
-                    <a href="/articles/utilities-streets/" class="menu-item">
-                      <h3>Utilities & Environment</h3>
-                      <p class="detail-text">including garbage, recycling, sewage and drains, water treatment, and animal control</p>
-                    </a>
-                    <a href="/articles/policy-and-public-feedback/" class="menu-item">
-                      <h3>Policy &amp; Public Feedback</h3>
-                      <p class="detail-text">Including city council meetings and public record requests</p>
-                    </a>
-                  </ul>
-                  <ul class="medium-menu grid-item width-one-third">
-                    <a href="/articles/public-safety/" class="menu-item">
-                      <h3>Public Safety</h3>
-                      <p class="detail-text">including corrections, crime, fire, emergencies, and community safety</p>
-                    </a>
-                    <a href="/articles/transport/" class="menu-item">
-                      <h3>Driving, Transport, & Streets</h3>
-                      <p class="detail-text">including public transportation, parking, sidewalks, driveways, and roads</p>
-                    </a>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="slab announcements">
-            <h2>Announcements</h2>
-            <div class="grid-box">
-              <a href="/announcements/06-25-2015-zero-waste-services.html" class="announcement grid-item width-one-third">
-                <header>
-                  <img src="/media/images/zero_waste.png" alt="Zero Waste">
-                  <h3>New Zero Waste Services Started July 1</h3>
-                  <p class="date">June 25th, 2015</p>
-                </header>
-                <p class="detail-text">Oakland’s new trash, compost and recycling services started July 1. We’re excited the day is finally here! All apartment and condo residents now have green compost carts.</p>
-              </a>
-              <a href="#" class="announcement grid-item width-one-third">
-                <header>
-                  <h3>Support Youth through Classrooms2Careers</h3>
-                  <p class="date">June 17th, 2015</p>
-                </header>
-                <p class="detail-text">We need your help! This summer marks the beginning of a new era for youth in Oakland with the launch of Classrooms2Careers, a fresh approach to youth employment and enrichment based on the Earn and Learn model.å</p>
-              </a>
-              <a href="#" class="announcement grid-item width-one-third">
-                <header>
-                  <h3>Introducing SpeakUp Oakland</h3>
-                  <p class="date">June 3th, 2015</p>
-                </header>
-                <p class="detail-text">This new public engagement portal enables residents to provide feedback on a variety of topics and legislative items coming before City Council. It increases the public’s comment ability beyond the usual two-minute time limit for…</p>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="slab">
-          <h2>City Government</h2>
-          <div class="grid-box panel">
-            <div class="medium-menu grid-item width-one-third">
-              <a href="#" class="menu-item">
-                <p>Police Department</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>Fire Department</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>Parks &amp; Recreation</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>Public Works</p>
-              </a>
-            </div>
-            <div class="medium-menu grid-item width-one-third">
-              <a href="#" class="menu-item">
-                <p>Public Library</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>Economic Development</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>Planning &amp; Building</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>Animal Services</p>
-              </a>
-            </div>
-            <div class="medium-menu grid-item width-one-third">
-              <a href="#" class="menu-item">
-                <p>Boards &amp; Commmission</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>City Council</p>
-              </a>
-              <a href="#" class="menu-item">
-                <p>Office of the Mayor</p>
-              </a>
-            </div>
-          </div>
-        </section>
+    <!-- Hero content -->
+    <div class="home-hero-content">
+      <div class="grid-box">
+        <div class="width-two-thirds">
+          <h1 class="home-hero-title">What if government services were this good?</h1>
+          <p class="home-hero-lead-in">The two biggest levers for improving people’s lives at scale are technology and government. We put them together.</p>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
+  <!-- Main page content -->
+  <div class="page-content">
+    <main role="main">
+      <!-- Organism: Page Header -->
+      <div class="page-header">
+        <div class="grid-box">
+          <div class="width-one-whole">
+            <!-- Molecule: Breadcrumbs -->
+            <nav class="breadcrumbs" role="navigation">
+              <span class="breadcrumbs-item"><a href="#">Code for America</a></span>
+              <span class="breadcrumbs-item"><a href="#">What We Do</a></span>
+              <span class="breadcrumbs-item"><a href="#">Products and Projects</a></span>
+              <span class="breadcrumbs-item">ClearMyRecord</span>
+            </nav>
+            <h1 class="title-text">ClearMyRecord</h1>
+          </div>
+          <div class="width-seven-twelfths">
+            <p class="lead-in-text">A criminal record makes it difficult to get jobs, housing, and education. ClearMyRecord makes it easier to reclassify low-level offenses, giving people a second chance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="grid-box">
+        <article class="content-body-text width-seven-twelfths grid-item">
+          <h4>Who we're helping</h4>
+          <ul>
+            <li>Hundreds of thousands of Bay Area residents are eligible for Prop 47 reclassification and other dismissal remedies to clear up old convictions on their criminal records.</li>
+            <li>Legal Aid providers and county public defenders are the first points of contact when people need help accessing and changing their criminal records and they are significantly under-resourced.</li>
+          </ul>
+          <figure>
+            <img src="http://placehold.it/800x600/eeeeee/333333" alt="Placeholder Image" />
+            <figcaption>This is an image figure with a caption</figcaption>
+          </figure>
+          <h4>Our goals</h4>
+          <ul>
+            <li>Redesign criminal background check process, in partnership with California Department of Justice and state Judicial Council, making it possible for hundreds of thousands of people to know if they qualify for Prop 47 reclassification and other dismissal remedies.</li>
+            <li>Build pre-screening and intake tools that enable legal service providers to double the number of clients they can see in a day.</li>
+          </ul>
+          <h4>The Problem</h4>
+          <p>When people are trying to access these basic services, they don’t have weeks to waste trying to navigate an incomprehensible system. Prop 47 provides the legal framework for qualifying individuals to reduce previous low level, non-violent charges from a felony to a misdemeanor. However, the process of actually changing your record is extremely difficult. Here is why:</p>
+          <ul>
+            <li>It is hard to know if you qualify for Prop 47 and many people may be better served by other existing record clearing mechanisms.</li>
+            <li>In order to know what you qualify for, you need access to your criminal record (known as a RAP sheet), which typically requires a person to get fingerprinted at approved locations. This process costs $50, and it can take up to two months to receive the fingerprint card. RAP sheets also commonly contain inaccuracies or are missing key information. All of these challenges — limited access, readability, and accuracy — cause delays and bottlenecks in the record clearing process. Separately, they also cause qualified people with criminal histories to needlessly miss out on job opportunities.</li>
+            <li>Once you’ve obtained your record, it’s really hard to understand your RAP sheet without a lawyer's help.</li>
+            <li>If you have overcome all of these obstacles, which most people don’t, you have to request and pay for another RAP sheet to verify that your change was processed.</li>
+            <li>The processes vary from county to county.</li>
+          </ul>
+          <p>Code for America’s research has shown that when someone is trying to change their criminal record it is often because they have been denied a job or access to public housing. They need to be able to clear their record quickly, as the law intends. Addressing these process improvements can make a lasting impact in peoples' lives.</p>
+          <h4>Our approach</h4>
+          <p>For the past three months, Code for America has conducted extensive user research, working with legal aid offices, public defenders, district attorneys, county court officials, and citizens trying to change their records. Through this research, we mapped out the entire process and have identified the points within the system where technology interventions can improve the process.</p>
+          <p>We believe that we can have the greatest impact on this issue by focusing on two key challenges:</p>
+          <ul>
+            <li><strong>Improving the state’s criminal background check process,</strong> in partnership with the California Department of Justice and the California Judicial Council. Our goal for this partnership is to reduce the amount of time it takes for someone to access their state RAP sheet, as well as to improve the quality of the RAP sheet, so it is both easier to understand and contains accurate information.</li>
+            <li><strong>Making it easier for legal aid providers to efficiently process more applications.</strong> We are partnering with the San Francisco Public Defender’s office and anticipate launching partnerships in two additional Bay Area counties in 2016 to build a pre-screening tool that will help clients understand if they are eligible for Prop 47, another expungement mechanism, or neither. Doing this screening in advance means that legal aid offices are only seeing qualified clients and that applicants don’t have to unnecessarily spend their time waiting for an appointment if they ultimately won’t qualify.</li>
+          </ul>
+        </article>
+
+        <div class="content-metadata width-one-fourth shift-one-twelfth grid-item end-row">
+          <h6>Posted in</h6>
+          <div class="tag-list">
+            <a href="#" class="tag">Products and projects</a>
+          </div>
+          <h6>Related topics</h6>
+          <div class="tag-list">
+            <a href="#" class="tag">Our focus: Safety and justice</a>
+            <a href="#" class="tag">Practice: User-centered design</a>
+          </div>
+          <h6>Related posts</h6>
+          <ul class="unstyled-list">
+            <li><a href="#">Long Beach uses AddressIQ to focus emergency medical resources</a></li>
+            <li><a href="#">San Francisco promotes its restaurant inspection data on Yelp to improve food safety</a></li>
+          </ul>
+        </div>
+      </div><!-- end .grid-box -->
+    </div><!-- end .template-content -->
+  </div><!-- end .page-content -->
   <footer class="global-footer" role="contentinfo">
-    <div class="grid-box">
-      <div class="grid-item width-one-fourth">
-        <h1 class="global-footer-title h3"><img class="header-icon-large" src="/media/images/springfield_logo.png" alt="City Logo"/>City of Springfield</h1>
-        <div class="address">
-          <p>155 9th St.</p>
-          <p>San Francisco, CA 94103</p>
-          <p>(415)625-9633</p>
-        </div>
-        <p>© 2015 City of Springfield</p>
-      </div>
-      <div class="grid-item width-one-third shift-one-twelfth">
-        <div class="global-footer-social bar-menu">
-          <a class="menu-item" href="#"><span class="fa fa-facebook-official"></span></a>
-          <a class="menu-item" href="#"><span class="fa fa-twitter"></span></a>
-          <a class="menu-item" href="#"><span class="fa fa-envelope"></span></a>
-        </div>
-        <div class="global-footer-nav grid-box">
-          <div class="menu grid-item width-one-half">
-            <a href="" class="menu-item">Services</a>
-            <a href="" class="menu-item">Initiatives</a>
-            <a href="" class="menu-item">Announcements</a>
-            <a href="" class="menu-item">Departments</a>
+      <div class="grid-box">
+        <div class="grid-item span-nine">
+          <div class="global-footer-nav grid-box">
+            <div class="menu grid-item span-two">
+              <a href="#" class="menu-item"><strong>Who we are</strong></a>
+              <a href="#" class="menu-item">Our team</a>
+              <a href="#" class="menu-item">Our fellows</a>
+              <a href="#" class="menu-item">Brigade captains</a>
+              <a href="#" class="menu-item">Government partners</a>
+            </div>
+            <div class="menu grid-item span-two">
+              <a href="#" class="menu-item"><strong>What we do</strong></a>
+              <a href="#" class="menu-item">Products and projects</a>
+              <a href="#" class="menu-item">Focus areas</a>
+              <a href="#" class="menu-item">Featured stories</a>
+              <a href="#" class="menu-item">How-tos</a>
+            </div>
+            <div class="menu grid-item span-two">
+              <a href="#" class="menu-item"><strong>Why we do it</strong></a>
+              <a href="#" class="menu-item">Principles</a>
+              <a href="#" class="menu-item">Practices</a>
+            </div>
+            <div class="menu grid-item span-two">
+              <a href="#" class="menu-item"><strong>Join us</strong></a>
+              <a href="#" class="menu-item">Join our team</a>
+              <a href="#" class="menu-item">Partner with us</a>
+              <a href="#" class="menu-item">Volunteer with us</a>
+              <a href="#" class="menu-item">Join the network</a>
+              <a href="#" class="menu-item">Work in government</a>
+              <a href="#" class="menu-item">Learn at the Summit</a>
+            </div>
+            <div class="menu grid-item span-two">
+              <a href="#" class="menu-item"><strong>About us</strong></a>
+              <a href="#" class="menu-item">News</a>
+              <a href="#" class="menu-item">Jobs</a>
+              <a href="#" class="menu-item">Contact us</a>
+              <a href="#" class="menu-item">Media inquiries</a>
+            </div>
+            <div class="menu grid-item span-two">
+              <a href="#" class="menu-item"><strong>Our supporters</strong></a>
+              <a href="#" class="menu-item">Financials</a>
+              <a href="#" class="menu-item">Donate</a>
+            </div>
           </div>
-          <div class="menu grid-item width-one-half">
-            <a href="" class="menu-item">Jobs</a>
-            <a href="" class="menu-item">Events</a>
-            <a href="" class="menu-item">Records</a>
-            <a href="" class="menu-item">Give Feedback</a>
-          </div>
         </div>
-      </div>
-      <div class="global-footer-mayor width-one-fourth shift-one-twelfth">
-        <a href="#" class="menu-item">
-          <img class="global-footer-mayor-image" src="/media/images/mayor.png" alt="Portrait of the mayor">
-          <p><b>Our Mayor: Jen Pahlka</b></p>
-          <p>Vist the mayor's page</p>
-        </a>
-      </div>
-    </div>
-  </footer>
-    <!--[if lt IE 9]>
-      <script src="/js/rem.min.js"></script>
-      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
-      <![endif]-->
-      <script src="/js/jquery-1.11.2.min.js"></script>
-      <script src="/js/site.js"></script>
-    </body>
+        <div class="span-three grid-item end-row">
+          <form action="" class="global-footer-form">
+            <label for="email-signup">Change your city. Join our email list.</label>
+            <input type="text" name="email-signup" placeholder="Enter your email address" />
+            <input type="submit" class="button-small button-secondary" value="Sign up" />
+          </form>
+          <form action="" class="global-footer-form">
+            <label for="search">Looking for something?</label>
+            <input type="text" name="search" placeholder="Search now" />
+            <input type="submit" class="button-small button-secondary" value="Search" />
+          </form>
+        </div>
+        <div class="span-twelve grid-item end-row">
+          <p class="align-center-text">Code for America Labs, Inc. is a non-partisan, non-political 501(c)(3) charitable organization. EIN number 27-1067272.  Provide website feedback to marketing@codeforamerica.org.</p>
+        </div>
+      </div><!-- end .grid-box -->
+    </footer>
+
+  <!--[if lt IE 9]>
+    <script src="/js/rem.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.1.0/respond.min.js"></script>
+    <![endif]-->
+    <script src="/js/jquery-1.11.2.min.js"></script>
+    <script src="/js/site.js"></script>
+</body>
+</html>

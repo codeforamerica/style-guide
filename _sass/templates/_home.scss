@@ -1,73 +1,36 @@
 .template-home {
+  .home-hero {
+    @include clearfix;
+    background-color: $color-black;
+    color: white;
 
-  .slab-hero {
-    text-align: left;
-    background-color: $color-grey-100;
-    border-bottom: 1px solid $color-grey-300;
-    background: url('../media/images/hero_image.png');
-    background-position: center center;
     background-size: cover;
-    height: 250px;
-    margin-bottom: -6em;
-
     @include media($tablet-up) {
-      height: 350px;
+      min-height: 32rem;
     }
   }
 
-  .city-services {
-    .searchbar {
-      margin-bottom: 2em;
-    }
-    .hero-credits {
-      font-size: $small-font-size;
-      color: $color-grey-600;
-      margin-bottom: 2em;
+  .home-hero-header {
 
-    }
   }
 
-  .announcement {
-    @include panel();
-    text-decoration: none;
-    color: inherit;
-    background-color: #fff;
-    height: 16em;
-    &:hover {
-      text-decoration: none;
-      color: inherit;
-      background-color: $color-grey-50;
+  .home-hero-content {
+    padding: 1em $site-margins;
+  }
+  .home-hero-title {
+    @include h2;
+    font-weight: 600;
+    @include media($tablet-up) {
+      @include title;
     }
-
-    header {
-      @include clearfix();
-      img {
-        float: right;
-        max-width: 30%;
-        max-height: 100%;
-        margin-left: 1em;
-      }
-    }
-
-    h3 {
-      text-decoration: underline;
-      margin: 0;
-      clear: none;
-    }
-
-    p {
-      max-height: 6*$tight-line-height;
-      overflow: hidden;
-    }
-
-    .date {
-      @include detail-text();
-      margin: 0;
-      color: $color-grey-600;
+    color: white;
+  }
+  .home-hero-lead-in {
+    font-weight: 600;
+    color: white;
+    @include media($tablet-up) {
+      @include h4;
+      color: white;
     }
   }
-}
-
-.homepage {
-  background-color: $color-grey-100;
 }
