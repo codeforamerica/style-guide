@@ -19,6 +19,12 @@
   }
 }
 
+.slab-title {
+  @include h3;
+  color: $color-black;
+  font-weight: 600;
+}
+
 // Styled slabs
 .center-align-slab {
   text-align: center;
@@ -49,8 +55,20 @@
     color: white;
     font-weight: 600;
   }
+  .slab-title {
+    @include h3;
+    font-weight: 600;
+    color: white;
+  }
 }
 .blue-bg-slab {
   @extend %reverse-slab;
   background-color: $color-dark-blue;
+}
+.green-bg-slab {
+  @extend %reverse-slab;
+  background-color: $color-green;
+}
+.gray-bg-slab {
+  background-color: $color-shade-gray;
 }
