@@ -2,38 +2,70 @@
   .home-hero {
     @include clearfix;
     background-color: $color-black;
-    color: white;
 
     background-size: cover;
-    @include media($tablet-up) {
-      min-height: 32rem;
-    }
+    background-position: bottom;
+    overflow: hidden;
   }
 
   .home-hero-header {
-
+    @include media($tablet-up) {
+      padding-bottom: 0;
+    }
   }
 
   .home-hero-content {
-    padding: 1em $site-margins;
+    padding: 1rem $site-margins;
+    position: relative;
+  }
+  .home-hero-content .grid-box {
+    @include media($tablet-up) {
+      min-height: 20rem;
+      display: flex;
+      align-items: center;
+    }
   }
   .home-hero-title {
-    @include h2;
-    font-weight: 600;
+    text-align: center;
+      @include h3;
+      color: black;
+      font-weight: 400;
     @include media($tablet-up) {
-      @include title;
+      @include h2;
+      font-weight: 400;
     }
-    color: white;
+    @include media($widescreen-up) {
+      @include title;
+      font-weight: 400;
+    }
   }
   .home-hero-lead-in {
-    font-weight: 600;
-    color: white;
+    text-align: center;
+    font-weight: 400;
     @include media($tablet-up) {
       @include h4;
-      color: white;
+      font-weight: 400;
     }
   }
+
+  .home-hero-image {
+    margin-bottom: -2rem;
+    @include media($tablet-up) {
+      position: absolute;
+      bottom: -1rem;
+      margin-bottom: 0;
+    }
+    @include media($midscreen-up) {
+      position: relative;
+      bottom: 0;
+      margin-bottom: -2rem;
+    }
+  }
+
   .slab > h3 {
     color: $color-black;
+  }
+  main > .slab:last-child {
+    margin-bottom: -4rem;
   }
 }

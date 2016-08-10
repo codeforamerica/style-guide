@@ -19,6 +19,14 @@
   }
 }
 
+// If a slab is the last item in main, pull the footer up to meet it
+main > .slab:last-child {
+  margin-bottom: -2rem;
+  @include media($tablet-up) {
+    margin-bottom: -4rem;
+  }
+}
+
 .slab-title {
   @include h3;
   color: $color-black;
