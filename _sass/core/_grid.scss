@@ -114,6 +114,44 @@
       @include shift(11);
     }
 
+    // Different notation
+    .shift-one {
+      @include shift(1);
+    }
+    .shift-two {
+      @include shift(2);
+    }
+    .shift-three {
+      @include shift(3);
+    }
+    .shift-four {
+      @include shift(4);
+    }
+    .shift-five {
+      @include shift(5);
+    }
+    .shift-six {
+      @include shift(6);
+    }
+    .shift-seven {
+      @include shift(7);
+    }
+    .shift-eight {
+      @include shift(8);
+    }
+    .shift-nine {
+      @include shift(9);
+    }
+    .shift-ten {
+      @include shift(10);
+    }
+    .shift-elevent {
+      @include shift(11);
+    }
+    .shift-twelve {
+      @include shift(12);
+    }
+
     // Specificies end of a row.
     // Required if grid-box contains multiple rows.
     // Required if browser does not support :last-child
