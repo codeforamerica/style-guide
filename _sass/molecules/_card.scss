@@ -4,6 +4,42 @@
     bottom: 1rem;
   }
   padding: 1rem;
+  text-align: left;
+}
+
+// Shared styles for link/action cards
+a.action-card, a.link-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+// Link card
+a.link-card {
+  background-color: $color-shade-gray;
+  overflow: hidden;
+  .card-image {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-bottom: -.5rem;
+    width: calc(100% + 2rem);
+    max-width: calc(100% + 2rem);
+  }
+}
+
+// Action card
+a.action-card {
+  text-align: center;
+}
+
+// Subcomponents for all cards
+.card-button {
+  display: inline-block;
+  margin: .5rem 0 0;
+}
+
+.card-link {
+  @extend a;
 }
 
 .card-icon {
@@ -12,17 +48,6 @@
   max-width: 125px;
 }
 
-a.link-card {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+.card-image {
 
-  .card-button {
-    display: inline-block;
-    margin: .5rem 0 0;
-  }
-
-  .card-link {
-    @extend a;
-  }
 }
