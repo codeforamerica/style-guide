@@ -1,21 +1,26 @@
 .logos {
   margin: {
     top: 1rem;
-  }
-}
-.logo-item {
-  margin: {
-    top: 1rem;
     bottom: 1rem;
   }
-  // Respond down to make them half-size
-  @media screen and (max-width: $tablet-up) {
-    float: left;
-    width: 50%;
-    margin: {
-      left: 0;
-      right: 0;
-    }
+}
+.logo-item, a.logo-item {
+  display: inline-block;
+  margin: .25rem 0;
+  width: 30%;
+  padding: 5px;
+  @include media($tablet-up) {
+    width: 15%;
     padding: 20px;
   }
+  // Respond down to make them half-size
+  // @media screen and (max-width: $tablet-up) {
+  //   float: left;
+  //   width: 50%;
+  //   margin: {
+  //     left: 0;
+  //     right: 0;
+  //   }
+  //   padding: 20px;
+  // }
 }
