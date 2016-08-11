@@ -1,0 +1,14 @@
+.hero {
+  background-color: $color-blue;
+}
+
+.hero-content {
+  h1,h2,h3,h4,h5,h6,p {
+    color: white;
+    font-weight: 600;
+  }
+  padding-bottom: 2rem;
+  @include media($tablet-up) {
+    padding-bottom: 3rem;
+  }
+}
