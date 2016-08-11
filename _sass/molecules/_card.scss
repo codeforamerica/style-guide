@@ -9,6 +9,7 @@
 .card-icon {
   margin-top: .5rem;
   margin-bottom: .5rem;
+  max-width: 125px;
 }
 
 a.link-card {
@@ -19,5 +20,9 @@ a.link-card {
   .card-button {
     display: inline-block;
     margin: .5rem 0 0;
+  }
+
+  .card-link {
+    @extend a;
   }
 }
