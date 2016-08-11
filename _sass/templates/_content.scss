@@ -41,4 +41,10 @@
   p, li {
     font-family: $font-serif;
   }
+  h3 {
+    margin: {
+      top: $large-spacing;
+      bottom: $base-spacing;
+    }
+  }
 }
