@@ -46,5 +46,8 @@
       top: $large-spacing;
       bottom: $base-spacing;
     }
+    &:first-child {
+      margin-top: 0;
+    }
   }
 }
