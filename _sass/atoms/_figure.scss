@@ -17,7 +17,7 @@ figure {
     color: $color-dark-gray;
     > p {
       @include detail-text;
-      font-family: $font-sans !important;
+      font-family: $font-sans;
       margin: 0;
     }
   }
