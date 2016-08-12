@@ -49,5 +49,9 @@
     &:first-child {
       margin-top: 0;
     }
+    @include media($tablet-up) {
+      margin-top: $large-spacing * 2;
+      &:first-child { margin-top: 0; }
+    }
   }
 }
