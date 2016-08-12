@@ -12,8 +12,13 @@ figure {
   }
 
   figcaption {
-    margin-top: $base-spacing;
+    margin-top: $small-spacing;
     font-size: $small-font-size;
     color: $color-dark-gray;
+    > p {
+      @include detail-text;
+      font-family: $font-sans !important;
+      margin: 0;
+    }
   }
 }
