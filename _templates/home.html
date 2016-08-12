@@ -39,12 +39,15 @@ order: 0
           </div>
           <div class="button-menu global-header-buttons align-right" role="navigation">
             <a class="menu-item button button-small button-primary" href="#" title="Donate">Donate</a>
-            <a class="menu-item button button-small js-menu-button" href="{{ siteUrl }}donate" title="Open menu"><span class="fa fa-bars"></span> Menu</a>
+            <a class="menu-item button button-small js-menu-button js-toggle-mobile-navigation" href="{{ siteUrl }}donate" title="Open menu"><span class="fa fa-bars"></span> Menu</a>
           </div>
         </div>
-        <div class="width-one-whole global-header-navigation">
+        <div class="width-one-whole global-header-navigation mobile-navigation">
+          <div class="mobile-navigation-button">
+            <a class="button button-small button-reverse js-toggle-mobile-navigation" href="#"><span class="fa fa-times"></span> Close Menu</a>
+          </div>
           <div class="bar-menu global-header-menu align-left" role="navigation">
-            <a href="#" class="menu-item">Who we are</a>
+            <a href="/foo" class="menu-item">Who we are</a>
             <a href="#" class="menu-item">What we do</a>
             <a href="#" class="menu-item">Why we do it</a>
             <a href="#" class="menu-item">Join us</a>
