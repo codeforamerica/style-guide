@@ -55,4 +55,10 @@
       &:first-child { margin-top: 0; }
     }
   }
+  figure {
+    @include media($tablet-up) {
+      margin-top: $large-spacing * 2;
+      margin-bottom: $large-spacing * 2;
+    }
+  }
 }
