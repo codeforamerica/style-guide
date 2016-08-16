@@ -65,4 +65,11 @@
   .slab > h3 {
     color: $color-black;
   }
+  .alert a {
+    border-bottom: 0;
+    text-align: center;
+    @include media($tablet-up) {
+      text-align: inherit;
+    }
+  }
 }

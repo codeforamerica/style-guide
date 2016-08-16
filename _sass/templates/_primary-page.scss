@@ -6,4 +6,9 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+  .alert a {
+    background-color: $color-dark-blue;
+    color: white;
+    border-bottom: 0;
+  }
 }
