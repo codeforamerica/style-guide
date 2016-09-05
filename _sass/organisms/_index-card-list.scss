@@ -2,13 +2,22 @@
   .index-cards {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+
+    &:after {
+      content: "";
+      flex: auto;
+    }
   }
 
   .index-cards .index-cards-item {
     width: 32%;
     margin: 0;
+    margin-right: 2%;
     display: flex;
+
+    &:nth-child(3n+3) {
+      margin-right: 0;
+    }
   }
 
   .index-cards .index-cards-item .index-card {
