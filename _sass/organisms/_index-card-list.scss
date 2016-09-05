@@ -17,6 +17,12 @@
     justify-content: center;
   }
 
+  .index-cards {
+    .card-image + .card-content {
+      flex-grow: 1;
+    }
+  }
+
   .index-cards .index-cards-item .card-image {
   }
 
