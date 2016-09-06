@@ -53,6 +53,23 @@ a.index-card {
   }
 }
 
+// Index card
+a.supporter-card {
+  border: 1px solid $color-light-gray;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  .card-image {
+    width: 80%;
+    max-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &:hover {
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
+  }
+}
+
 // Subcomponents for all cards
 .card-button {
   display: inline-block;
