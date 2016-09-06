@@ -108,6 +108,12 @@ h3, h4, h5, h6 {
   line-height: map-get($h3-styles, line-height);
 }
 
+@mixin medium-text {
+  font-family: $font-sans;
+  font-size: map-get($h4-styles, font-size);
+  line-height: map-get($h4-styles, line-height);
+}
+
 @mixin detail-text {
   font-family: $font-sans;
   font-size: $small-font-size;
