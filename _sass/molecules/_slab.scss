@@ -57,6 +57,13 @@ main > .slab:last-child {
   // border-top: 1px solid $color-light-gray;
 }
 
+.tight-slab {
+  padding: 2rem $site-margins;
+  @include media($tablet-up) {
+    padding: 2rem $site-margins;
+  }
+}
+
 // Slabs with background colors
 %reverse-slab {
   h1,h2,h3,h4,h5,h6,p {
