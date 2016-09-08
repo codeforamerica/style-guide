@@ -1,10 +1,10 @@
-# Code for America Pattern Library
+# Code for America's Style Guide
 ======
 
-* **Current stable version:** 2 ([release-2](https://github.com/codeforamerica/pattern-library/releases/tag/release-2.1) tag / linkable [url](https://style.codeforamerica.org/2/))
-* **Current development version:** 3 ([master](https://github.com/codeforamerica/pattern-library/tree/master) branch / linkable [url](https://style.codeforamerica.org/3/))
+* **Current stable version:** 4 ([release-2](https://github.com/codeforamerica/style-guide/tree/master) tag / linkable [url](https://v4.style.codeforamerica.org/))
+* **Previous release (unsupported):** 3 ([master](https://github.com/codeforamerica/pattern-library/tree/master) branch / linkable [url](https://style.codeforamerica.org/3/))
 
-The pattern library serves as the base CSS and organizing styles for [codeforamerica.org](http://codeforamerica.org). The pattern library is also a living style guide that explains how to use our CSS to build websites. It contains:
+The style guide serves as the base CSS and organizing styles for [www.codeforamerica.org](http://www.codeforamerica.org). The style guide is primarily a living pattern library that explains how to use our CSS to build websites. It contains:
 
 - A Jekyll site that serves as a living style guide and pattern library
 - A foundational CSS structure built with Sass
@@ -12,56 +12,74 @@ The pattern library serves as the base CSS and organizing styles for [codeforame
 - Basic web typography
 - Code for America specific page templates
 - Polyfills that help older versions of IE support HTML5 elements, pseudoclasses, media queries, and rem units.
+- Additional vendor JavaScript to help with interactions
 
-## Background
+## History and past versions
 
-Code for America's communications and tech teams worked with Brighton web design firm [Clearleft](http://clearleft.com/) and Colorado branding firm [Dojo4](http://dojo4.com/) to create a new visual design and front-end for the Code for America website. This pattern library is used as the base for the following:
-
-* CfA main site: [github](https://github.com/codeforamerica/codeforamerica.org) / [website](https://www.codeforamerica.org)
-* CfA blog: [github](https://github.com/codeforamerica/cfawp2012) / [website](https://www.codeforamerica.org/blog/)
-* CfA brigade site: [github](https://github.com/codeforamerica/brigade-alpha) / [website](https://www.codeforamerica.org/brigade)
-
-Read more about pattern libraries here:
-
-* http://clearleft.com/thinks/patternsharing/
-* http://alistapart.com/blog/post/getting-started-with-pattern-libraries
+Code for America's communications and tech teams originally worked with Brighton web design firm [Clearleft](http://clearleft.com/) and Colorado branding firm [Dojo4](http://dojo4.com/) to create a new visual design and front-end for the Code for America website. This original pattern library existed through three major releases before being retired in favor of the current trimmed-down style guide in this repo that is solely focused on providing patterns for building www.codeforamerica.org. [See the original pattern library repository](https://github.com/codeforamerica/pattern-library).
 
 ## How to use it to build websites
 
-1. **[Read the docs.](http://style.codeforamerica.org)** Complete documentation of the pattern library with copy-and-pastable code snippets is available at [http://style.codeforamerica.org](http://style.codeforamerica.org).
-2. **Pick your version.** The current stable version is 2. The current development version is 3.
-3. **Add links to your document head.** For example, like this:
+1. **[Read the docs.](https://v4.style.codeforamerica.org)** Complete documentation of the pattern library with copy-and-pastable code snippets is available at [https://v4.style.codeforamerica.org](https://v4.style.codeforamerica.org).
+2. **Add links to your document.** For example, add these links to your `<head>` tag:
 
 ```
 <head>
   ...
-  <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/main.css">
-  <link rel="stylesheet" href="//style.codeforamerica.org/2/style/css/layout.css" media="all and (min-width: 40em)">
-  <link href="//style.codeforamerica.org/2/style/css/prism.css" rel="stylesheet" />
+  <!-- Pattern Library Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="https://v4.style.codeforamerica.org/css/main.css">
+  <!-- Font Vendor Stylesheets -->
+  <script src="https://use.typekit.net/lkd6vsz.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <!-- Shims For Old Browsers -->
+  <!--[if lt IE 9]>
+    <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://s3.amazonaws.com/nwapi/nwmatcher/nwmatcher-1.2.5-min.js"></script>
+    <script src="/js/selectivizr-min-1.0.2.js"></script>
+    <![endif]-->
   ...
 </head>
 ```
-Note that you should include your chosen version number (i.e. **/2/**) in the url path.
 
-## Versioning
+And add the following after all the content in your `<body>` tag:
 
-Note: we are still updating our versioning process. Your feedback is welcome in the [issues](https://github.com/codeforamerica/pattern-library/issues).
+```
+<body>
+  ...other content...
+  <!-- SCRIPTS -->
+  <script src="https://v4.style.codeforamerica.org/js/jquery-1.11.2.min.js"></script>
+  <script src="https://v4.style.codeforamerica.org/js/site.js"></script>
+</body>
+```
 
-Releases are currently seperated between major (full number releases, i.e. 0, 1, 2) and minor (dot releases, i.e. 2.1). Minor changes are essentially bug fixes and are intended to be fully backwards compatible. Minor changes don't trigger a new URL to a new stylesheet (i.e. release 2.1 is still available from http://style.codeforamerica.org/2/style/css/). If you link directly to our stylesheets, you will automatically get minor releases.
+## Develop locally
 
-Major releases will attempt to preserve backwards compatability, but may introduce some quirks or require markup changes after upgrade. Please [watch the repo](https://github.com/codeforamerica/pattern-library/subscription) to get updates on when major releases are available. The current stable major release is 2. The current development major release is 3.
+#### Prerequisites
 
-## Prerequisites
+Jekyll is a static site generator built with Ruby that needs the following to run:
 
-This starter requires Jekyll to be installed in order to build and preview. To install Jekyll, run:
+* Ruby ([here's a quick install guide](https://github.com/codeforamerica/style-guide.git))
+* Bundler ([see the project website](http://bundler.io/))
+* Node, for SCSS compilation ([see our install guide](https://github.com/codeforamerica/howto/blob/master/Node.js.md))
 
-> `bundle install`
+#### Basic steps to get up and running
 
-## Running Locally
+First, you need the prerequisites listed above. This starter requires Jekyll to be installed in order to build and preview. To install Jekyll, clone the repo, cd into the folder, and run `bundle install`:
+
+```
+$ git clone https://github.com/codeforamerica/style-guide.git
+$ cd style-guide
+$ bundle install
+```
+
+#### Running Locally
 
 To preview the site locally, use the Jekyll command:
 
-> `bundle exec jekyll serve`
+```
+$ bundle exec jekyll serve
+```
 
 The site should be viewable at localhost:4000. The styleguide is located at 'localhost:4000/styleguide'.
 
@@ -79,7 +97,7 @@ We welcome bugs, questions and suggestions in the form of issues, or features an
 
 ### <a name="issues"></a>Submitting an Issue
 
-We use the [GitHub issue tracker](https://github.com/codeforamerica/codeforamerica.org/issues) to track bugs and features. Before submitting a bug report or feature request, check to make sure it hasn't already been submitted. When submitting a bug report, please include a screenshot and any additioanl details that can help us debug, such as your operating system and browser version.
+We use the GitHub issue tracker to track bugs and features. Before submitting a bug report or feature request, check to make sure it hasn't already been submitted. When submitting a bug report, please include a screenshot and any additional details that can help us debug, such as your operating system and browser version.
 
 ## License
 
