@@ -5,13 +5,14 @@
     -moz-border-radius: 10px;
     border-radius: 2px;
     color: #000;
-    background-color: transparent;
+    background-color: #ffffff;
     border: 1px solid #9e9e9e;
 }
 
 .donately-preset-fields .donately-preset-amounts label:hover {
     border-color: #000;
-    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
+    background: #ffffff;
+    box-shadow: none;
 }
 
 .donately-secure-fields {
@@ -21,7 +22,7 @@
 }
 
 .donately-secure-header {
-    background-color: #e8ebed;
+    background-color: #ffffff;
     border-bottom: 1px solid #9e9e9e;
     color: #83939b;
     padding: 1em 1.5em;
