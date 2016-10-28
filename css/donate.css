@@ -43,13 +43,13 @@ input.donately-text-input {
 }
 
 .donately-city-group select, .donately-state-group select {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #9e9e9e;
     font-size: 16px;
     color: #4f4f4f;
 }
 
 .donately-country-group select {
-    border: 1px solid #e1e1e1;
+    border: 1px solid #9e9e9e;
     font-size: 16px;
     color: #4f4f4f;
 }
