@@ -7,13 +7,26 @@
     color: #000;
     background-color: transparent;
     border: 1px solid #9e9e9e;
-    padding: .625rem .875rem;
+}
+
+.donately-preset-fields .donately-preset-amounts label:hover {
+    border-color: #000;
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
 }
 
 .donately-secure-fields {
     border: 1px solid #9e9e9e;
     background-color: #ffffff;
     border-radius: 2px;
+}
+
+.donately-secure-header {
+    background-color: #e8ebed;
+    border-bottom: 1px solid #9e9e9e;
+    color: #83939b;
+    padding: 1em 1.5em;
+    margin-bottom: 1em;
+    box-shadow: none;
 }
 
 input#donately-card-number {
@@ -60,4 +73,9 @@ input.donately-text-input {
     border-color: #CD1F42;
     outline: none;
     padding: 10px 14px;
+}
+
+.donately-btn:hover {
+    background-color: #BD1B3C;
+    border-color: #BD1B3C;
 }
