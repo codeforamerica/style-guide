@@ -22,3 +22,34 @@
     margin-bottom: -4.5rem;
   }
 }
+
+.billboard-bleed {
+	padding: 0;
+	.grid-box {
+		@include media($tablet-up) {
+			width: 33%; 
+			float: left; 
+			margin: auto auto;
+		}
+		.left-bleed {
+			width: 70%;
+			margin: 0 auto;
+			text-align: center;
+			padding: 15px 0;
+			@include media($tablet-up) {
+				width: 70%; 
+				margin: 40% auto 0 auto;				
+			}		
+		}
+	}
+	.right-bleed {
+		img {
+			display: block;
+		}
+		@include media($tablet-up) {
+			float: right;
+			width: 66%;	
+		}				
+	}
+	@include clearfix;
+}
