@@ -40,8 +40,9 @@ a.index-card {
     margin-top: -1rem;
     margin-left: -1rem;
     margin-bottom: -.5rem;
-    width: calc(100% + 2rem);
-    max-width: calc(100% + 2rem);
+		width: 70%;
+		display: block;
+		margin: 0 auto;
   }
   .card-icon {
     max-width: 75px;
