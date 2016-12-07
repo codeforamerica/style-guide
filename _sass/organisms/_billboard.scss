@@ -31,8 +31,10 @@
     max-width: none;
     
     p {
-      font-size: map-get($h4-styles, font-size);
-      line-height: map-get($h4-styles, line-height);      
+      @include media($tablet-up) {  
+        font-size: map-get($h4-styles, font-size);
+        line-height: map-get($h4-styles, line-height);
+      }      
     }
     
 		.left-bleed {
