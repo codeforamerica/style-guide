@@ -30,6 +30,7 @@
   .index-cards {
     .card-image + .card-content {
       flex-grow: 1;
+      padding: 1rem;
     }
   }
 
