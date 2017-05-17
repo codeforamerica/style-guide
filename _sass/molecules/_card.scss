@@ -7,6 +7,15 @@
   text-align: left;
 }
 
+.logo-card {
+  margin: {
+    top: 1rem;
+    bottom: 1rem;
+  }
+  padding: 1rem;
+  text-align: left;
+}
+
 // Shared styles for link/action cards
 a.action-card, a.link-card, a.index-card {
   display: block;
@@ -44,6 +53,14 @@ a.index-card {
 		display: block;
 		margin: 0 auto;
   }
+  .card-logo {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-bottom: -.5rem;
+		width: 70%;
+		display: block;
+		margin: 0 auto;
+  }  
   .card-icon {
     max-width: 75px;
     margin-left: auto;

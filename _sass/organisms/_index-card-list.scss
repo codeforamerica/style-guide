@@ -32,6 +32,9 @@
       flex-grow: 1;
       padding: 1rem;
     }
+    .card-logo + .card-content {
+      flex-grow: 1;
+    }    
   }
 
   .index-cards .index-cards-item .card-image {
