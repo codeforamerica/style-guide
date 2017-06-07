@@ -1,3 +1,9 @@
+.index-cards {
+  .card-image + .card-content {
+    padding: 0 1rem;
+  }   
+}
+
 @include media($tablet-up) {
   .index-cards {
     display: flex;
@@ -30,7 +36,7 @@
   .index-cards {
     .card-image + .card-content {
       flex-grow: 1;
-      padding: 1rem;
+      padding: 0 1rem;
     }
     .card-logo + .card-content {
       flex-grow: 1;
