@@ -117,3 +117,49 @@
     }
   }
 }
+
+.template-content {
+  .block.block--header {
+    ul, li {
+      display: inline-block;
+      // margin-top: 0;
+      // margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    li {
+      margin-right: 1rem;
+    }
+
+    a {
+      color: #CB5156;
+      font-weight: 600;
+      text-decoration: none;
+      letter-spacing: -0.03rem;
+      font-family: $font-sans;
+      font-size: 1.1rem;
+    }
+  }
+
+  .block-header-navigation {
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+
+    @include media($tablet-up) {
+      margin-top: -3rem;
+    }
+  }
+
+  .block-header-logo {
+    figure img {
+      border: none;
+    }
+
+    @include media($tablet-up) {
+      width: 500px;
+    }
+  }
+}

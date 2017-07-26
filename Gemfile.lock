@@ -48,7 +48,7 @@ DEPENDENCIES
   s3_website (~> 2.14)
 
 RUBY VERSION
-   ruby 2.3.3p222
+   ruby 2.2.0p0
 
 BUNDLED WITH
-   1.14.2
+   1.15.3
