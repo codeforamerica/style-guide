@@ -153,6 +153,30 @@
     }
   }
 
+  .slab-eventsMap {
+    background: #f5f5f5;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 3rem;
+
+    .detail-text {
+      margin-top: -15px;
+    }
+
+    form {
+      margin-bottom: 2rem;
+    }
+
+    .event-form {
+      margin-top: -10px;
+      margin-bottom: 25px; 
+    }
+
+    & .event-search {
+      margin-bottom: 25px;
+    }
+  }
+
   .block-header-logo {
     figure img {
       border: none;
