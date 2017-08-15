@@ -176,6 +176,12 @@
     & .event-search {
       margin-bottom: 25px;
     }
+
+    & .event-list {
+      p {
+        cursor: pointer;
+      }
+    }
   }
 
   .block-header-logo {
