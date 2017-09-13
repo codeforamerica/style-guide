@@ -158,7 +158,15 @@
     margin-top: 2rem;
     margin-right: 0;
     margin-left: 0;
-    padding: 3rem;
+    padding: 1rem 20px;
+
+    @include media($tablet-up) {
+      padding: 3rem;
+    }
+
+    .button.button-small {
+      margin-bottom: 30px;
+    }
 
     .detail-text {
       margin-top: -15px;
