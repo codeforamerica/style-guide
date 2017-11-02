@@ -90,24 +90,24 @@
   top: .3em;
 }
 
-.global-header-search {
-  padding: 1em $site-margins;
-  background-color: $color-grey-50;
-  border-bottom: 1px solid $color-grey-300;
-  display: none;
+// .global-header-search {
+//   padding: 1em $site-margins;
+//   background-color: $color-grey-50;
+//   border-bottom: 1px solid $color-grey-300;
+//   display: none;
 
-  .searchbar {
-    border: 0;
-    max-width: $site-max-width;
-    margin: 0 auto;
-  }
-  .searchbar-input, .searchbar-button {
-    font-size: map-get($h2-styles, font-size);
-    background-color: transparent;
-    padding: 0;
-  }
+//   .searchbar {
+//     border: 0;
+//     max-width: $site-max-width;
+//     margin: 0 auto;
+//   }
+//   .searchbar-input, .searchbar-button {
+//     font-size: map-get($h2-styles, font-size);
+//     background-color: transparent;
+//     padding: 0;
+//   }
 
-}
+// }
 
 // For use on reverse backgrounds
 .reverse-global-header {
