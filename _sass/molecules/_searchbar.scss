@@ -1,6 +1,7 @@
 .searchbar {
   @include clearfix();
-  border: 1px solid $color-grey-500;
+  border: 1px solid $color-grey-400;
+  background-color: #fff;
 
   .searchbar-input, .searchbar-button {
     margin: 0;
@@ -24,7 +25,7 @@
     font-family: "FontAwesome";
     font-weight: 400;
     border: 0;
-    background-color: transparent;
+    background-color: $color-grey-200;
 
     &:before {
       content: "\f002";
