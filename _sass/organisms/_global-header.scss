@@ -109,8 +109,11 @@
 
 // }
 
-.global-header-search {
+.global-header-buttons .global-header-search {
   margin-top: 0.45em;
+  // Hide header-search on narrow screens
+  display: none;
+  @include media($tablet-up) { display: block; }
 }
 
 // For use on reverse backgrounds
