@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: Menus
 description: Menus provide ways for your residents to navigate a list of links on a page.
 order: 0

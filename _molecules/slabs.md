@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: Slabs
 description: Slabs are used to separate logical chunks of content within a page.
 order: 1

@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: CSS Architecture
 order: 0
 ---
