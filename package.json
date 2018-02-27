@@ -1,0 +1,30 @@
+{
+  "name": "@codeforamerica/style",
+  "version": "4.0.0",
+  "description": "Code for America's Styleguide. http://v4.style.codeforamerica.org",
+  "main": "_site/js/site.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeforamerica/style-guide.git"
+  },
+  "keywords": [
+    "code for america",
+    "style",
+    "style guide"
+  ],
+  "author": "Code for America Engineering Team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeforamerica/style-guide/issues"
+  },
+  "homepage": "https://github.com/codeforamerica/style-guide#readme",
+  "files": [
+    "_sass",
+    "css",
+    "js",
+    "media"
+  ]
+}
