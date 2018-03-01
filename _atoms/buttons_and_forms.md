@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: Buttons and Forms
 description: Buttons and forms are the building blocks of transactional interactions with your residents.
 order: 2

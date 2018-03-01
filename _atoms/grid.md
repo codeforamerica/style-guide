@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: Grid System
 description: Use the grid system to build the layout of custom page templates.
 order: 0

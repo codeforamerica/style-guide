@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: Contributing
 order: 2
 ---

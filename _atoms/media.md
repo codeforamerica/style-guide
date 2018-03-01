@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: Media
 order: 3
 ---

@@ -1,5 +1,4 @@
 ---
-layout: styleguide
 title: Typography
 description: Typographical styles that help you to structure your content.
 order: 1
