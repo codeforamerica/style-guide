@@ -1,5 +1,6 @@
 .alert {
   color: white;
+
   a {
     display: block;
     width: 100%;
@@ -11,6 +12,7 @@
     text-decoration: none;
     // text-align: center;
   }
+
   .alert-text {
     display: block;
     max-width: $site-max-width;
@@ -19,33 +21,30 @@
     margin-left: auto;
     margin-right: auto;
     font-size: .8rem;
+
     @include media($tablet-up) {
       font-size: inherit;
     }
   }
+
   .alert-link {
     text-decoration: underline;
     display: block;
     clear: left;
     margin-top: -.3rem;
+
     @include media($tablet-up) {
       display: inline;
       clear: none;
       margin-top: 0;
     }
   }
-  // padding: 1.5em $site-margins;
-  // border-bottom: 6px solid $color-grey-400;
-  // width: auto;
-  // margin: {
-  //   left: -$site-margins;
-  //   right: -$site-margins;
-  // }
-  // a {
-  //   color: $color-primary;
-  // }
 }
 
-// .blue-bg-alert a {
-//   background-color: $color-light-gray;
-// }
+.info-alert {
+  @extend .alert;
+
+  a {
+    border-bottom: 0;
+  }
+}
