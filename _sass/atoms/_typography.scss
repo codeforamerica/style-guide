@@ -63,42 +63,36 @@ h3, h4, h5, h6 {
   font-size: map-get($h1-styles, font-size);
   line-height: map-get($h1-styles, line-height);
   font-weight: map-get($h1-styles, font-weight);
-  color: map-get($h1-styles, color);
 }
 
 @mixin h2 {
   font-size: map-get($h2-styles, font-size);
   line-height: map-get($h2-styles, line-height);
   font-weight: map-get($h2-styles, font-weight);
-  color: map-get($h2-styles, color);
 }
 
 @mixin h3 {
   font-size: map-get($h3-styles, font-size);
   line-height: map-get($h3-styles, line-height);
   font-weight: map-get($h3-styles, font-weight);
-  color: map-get($h3-styles, color);
 }
 
 @mixin h4 {
   font-size: map-get($h4-styles, font-size);
   line-height: map-get($h4-styles, line-height);
   font-weight: map-get($h4-styles, font-weight);
-  color: map-get($h4-styles, color);
 }
 
 @mixin h5 {
   font-size: map-get($h5-styles, font-size);
   line-height: map-get($h5-styles, line-height);
   font-weight: map-get($h5-styles, font-weight);
-  color: map-get($h5-styles, color);
 }
 
 @mixin h6 {
   font-size: map-get($h6-styles, font-size);
   line-height: map-get($h6-styles, line-height);
   font-weight: map-get($h6-styles, font-weight);
-  color: map-get($h6-styles, color);
   text-transform: uppercase;
 }
 
