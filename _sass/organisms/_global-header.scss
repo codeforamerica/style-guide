@@ -118,9 +118,12 @@
 
 // For use on reverse backgrounds
 .reverse-global-header {
+  color: white;
+
   .global-header-menu .menu-item {
     color: white;
   }
+  
   .global-header-menu .active-menu-item {
     color: white;
     font-weight: 600;
