@@ -1,50 +1,53 @@
 .alert {
-  color: white;
+  color: $color-grey-600;
+  background-color: $color-grey-200;
 
-  a {
+  .alert-title,
+  .alert-message {
+    display: block;
+    padding: 0.1rem 0.25rem;
+    @include media($tablet-up) {
+      display: inline-block;
+      padding: 0.5rem;
+    }
+  }
+
+  .alert-title {
+    font-weight: 800;
+  }
+
+  .alert-action {
     display: block;
     width: 100%;
-    padding: .5rem $site-margins;
+    padding: 0.5rem;
     background-color: $color-shade-gray;
-    border-bottom: 1px solid $color-light-gray;
-    color: $color-red;
+    top: 1px solid rgba( $color-shade-gray, 0.3);
+    color: $color-grey-800;
     font-weight: 600;
     text-decoration: none;
-    // text-align: center;
-  }
-
-  .alert-text {
-    display: block;
-    max-width: $site-max-width;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: .8rem;
-
-    @include media($tablet-up) {
-      font-size: inherit;
-    }
-  }
-
-  .alert-link {
-    text-decoration: underline;
-    display: block;
-    clear: left;
-    margin-top: -.3rem;
-
-    @include media($tablet-up) {
-      display: inline;
-      clear: none;
-      margin-top: 0;
-    }
   }
 }
 
 .info-alert {
   @extend .alert;
+}
 
-  a {
-    border-bottom: 0;
+.caution-alert {
+  @extend .alert;
+  color: $color-grey-50;
+  background-color: $color-caution;
+  .alert-action {
+    background-color: lighten($color-caution, 30%);
+    top: 1px solid rgba( $color-caution, 0.3);
+  }
+}
+
+.danger-alert {
+  @extend .alert;
+  color: $color-grey-50;
+  background-color: $color-danger;
+  .alert-action {
+    background-color: lighten($color-danger, 30%);
+    top: 1px solid rgba( $color-danger, 0.3);
   }
 }
