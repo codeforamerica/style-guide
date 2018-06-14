@@ -8,4 +8,4 @@ after_success:
   - make dist
 branches:
   only:
-    - master
+    - cfa-dot-org
