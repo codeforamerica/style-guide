@@ -87,5 +87,6 @@ main > .slab:last-child {
   background-color: $color-shade-gray;
 }
 .red-bg-slab {
+  @extend %reverse-slab;
   background-color: $color-red;
 }
