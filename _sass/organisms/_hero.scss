@@ -1,5 +1,7 @@
+$hero-color: $color-blue !default;
+
 .hero {
-  background-color: $color-blue;
+  background-color: $hero-color;
   background-position: center center;
   background-size: cover;
 }
