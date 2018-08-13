@@ -1,3 +1,5 @@
+$mobile-nav-background-color: $color-dark-blue !default;
+
 .mobile-navigation.global-header-navigation {
   @media screen and (max-width: $tablet-up) {
     @include transition(opacity .25s ease-in-out);
@@ -8,7 +10,7 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: $color-dark-blue;
+    background-color: $mobile-nav-background-color;
     display: block;
     z-index: -1;
     padding: 1rem;
