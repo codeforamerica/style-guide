@@ -1,4 +1,4 @@
-// Color
+// color
 $color-grey-50:     #fafafa;
 $color-grey-100:    #f5f5f5;
 $color-grey-200:    #eeeeee;
@@ -11,23 +11,23 @@ $color-grey-800:    #424242;
 $color-grey-900:    #212121;
 
 $color-primary:     #0071bc;
-$color-danger:      #D33838;
-$color-caution:     #F5A623;
+$color-danger:      #d33838;
+$color-caution:     #f5a623;
 $color-success:     #00a175;
 
-$color-black: #000;
-$color-gray: #9D9D9D;
-$color-light-gray: #D8D8D8;
-$color-dark-gray: #6B6B6B;
-$color-shade-gray: #F9F9F9;
-$color-red: #CD1F42;
-$color-light-red: #D5405E;
-$color-dark-red: #BD1B3C;
-$color-blue: #399ED2;
-$color-light-blue: #57ACD9;
-$color-dark-blue: #3591C0;
-$color-green: #008C5A;
-
+$color-white:       #ffffff;
+$color-black:       #000000;
+$color-gray:        #9d9d9d;
+$color-light-gray:  #d8d8d8;
+$color-dark-gray:   #6b6b6b;
+$color-shade-gray:  #f9f9f9;
+$color-red:         #cd1f42;
+$color-light-red:   #d5405e;
+$color-dark-red:    #bd1b3c;
+$color-blue:        #399ed2;
+$color-light-blue:  #57acd9;
+$color-dark-blue:   #3591c0;
+$color-green:       #008c5a;
 
 // Typography
 $em-base:           16px;
@@ -57,7 +57,7 @@ $widescreen-up:     1201px;
 // Magic Numbers
 $site-max-width:    1140px;
 $site-margins:      20px;
-$border-radius:     0px;
+$border-radius:     0;
 $base-spacing:      1rem; //16px
-$small-spacing:     .625rem; //10px
+$small-spacing:     0.625rem; //10px
 $large-spacing:     1.5rem; //24px
