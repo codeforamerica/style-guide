@@ -45,10 +45,10 @@ order: 3
 <div class="preview">
 	<div class="message message--danger">
 		<div class="message__icon">
-			 <i class="fa fa-warning"></i>
-		</div>
-		<div class="message__content">
-			<strong>Warning!</strong> This is a danger message. <a href="#">Learn more</a>
-		</div>
-	</div>
+      <i class="fa fa-warning"></i>
+    </div>
+    <div class="message__content">
+      <strong>Warning!</strong> This is a danger message. <a href="#">Learn more</a>
+   </div>
+ </div>
 </div>
