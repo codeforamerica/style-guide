@@ -1,0 +1,39 @@
+.message {
+  background-color: $color-shade-gray;
+  color: $color-red;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+
+  a {
+    color: $color-red;
+  }
+}
+
+.message__content {
+  flex: 1;
+}
+
+.message__icon {
+  flex: 0 0 auto;
+  padding-right: 0.5em;
+}
+
+.message--caution {
+  background-color: $color-caution;
+  color: $color-black;
+
+  a {
+    color: $color-black;
+  }
+}
+
+.message--danger {
+  background-color: $color-danger;
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
+}
