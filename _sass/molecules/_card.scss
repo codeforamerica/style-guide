@@ -132,3 +132,8 @@ a.supporter-card {
     margin-top: .25rem;
   }
 }
+
+.card--white {
+  background-color: $color-white;
+  border: 1px solid $color-light-gray;
+}
