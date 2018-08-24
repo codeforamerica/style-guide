@@ -1,10 +1,15 @@
 .card {
+  color: inherit;
   margin: {
     top: 1rem;
     bottom: 1rem;
   }
   padding: 0;
   text-align: left;
+}
+
+a.card {
+  color: inherit;
 }
 
 .logo-card {
