@@ -22,14 +22,14 @@ a.card {
 }
 
 // Shared styles for link/action cards
-.action-card, .link-card, .index-card {
+a.action-card, a.link-card, a.index-card {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
 // Link card
-.link-card {
+a.link-card {
   background-color: $color-shade-gray;
   overflow: hidden;
   .card-image {
@@ -42,12 +42,12 @@ a.card {
 }
 
 // Action card
-.action-card {
+a.action-card {
   text-align: center;
 }
 
 // Index card
-.index-card {
+a.index-card {
   border: 1px solid $color-light-gray;
   overflow: hidden;
   .card-image {
@@ -77,7 +77,7 @@ a.card {
 }
 
 // Index card
-.supporter-card {
+a.supporter-card {
   border: 1px solid $color-light-gray;
   overflow: hidden;
   text-align: center;
