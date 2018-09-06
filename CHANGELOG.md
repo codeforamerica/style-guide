@@ -6,11 +6,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 ## [4.0.6] - 2018-09-06
-- Add $global-header-logo-width and $global-haeder-logo-width-mobile variables
+### Added
+- Add $global-header-logo-width and $global-header-logo-width-mobile variables
 
 ## [4.0.5] - 2018-09-06
-### Changed
-- Added margin-bottom to "message" component
+### Added
+- Add margin-bottom to "message" component
 
 ## [4.0.4] - 2018-08-28
 ### Added
