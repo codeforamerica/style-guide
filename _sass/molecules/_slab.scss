@@ -57,6 +57,15 @@ main > .slab:last-child {
   // border-top: 1px solid $color-light-gray;
 }
 
+.border-bottom-slab {
+  @extend .border-top-slab;
+
+  &:before {
+    top: auto; 
+    bottom: 0;
+  }
+}
+
 .tight-slab {
   padding: 2rem $site-margins;
   @include media($tablet-up) {
