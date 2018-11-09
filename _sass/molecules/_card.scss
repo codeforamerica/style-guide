@@ -7,6 +7,10 @@
   text-align: left;
 }
 
+a.card {
+  color: inherit;
+}
+
 .logo-card {
   margin: {
     top: 1rem;
@@ -17,14 +21,14 @@
 }
 
 // Shared styles for link/action cards
-a.action-card, a.link-card, a.index-card {
+.action-card, .link-card, .index-card {
   display: block;
   text-decoration: none;
   color: inherit;
 }
 
 // Link card
-a.link-card {
+.link-card {
   background-color: $color-shade-gray;
   overflow: hidden;
   .card-image {
@@ -37,12 +41,12 @@ a.link-card {
 }
 
 // Action card
-a.action-card {
+.action-card {
   text-align: center;
 }
 
 // Index card
-a.index-card {
+.index-card {
   border: 1px solid $color-light-gray;
   overflow: hidden;
   .card-image {
@@ -72,7 +76,7 @@ a.index-card {
 }
 
 // Index card
-a.supporter-card {
+.supporter-card {
   border: 1px solid $color-light-gray;
   overflow: hidden;
   text-align: center;
@@ -131,4 +135,9 @@ a.supporter-card {
   .card-overhead + & {
     margin-top: .25rem;
   }
+}
+
+.card--white {
+  background-color: $color-white;
+  border: 1px solid $color-light-gray;
 }

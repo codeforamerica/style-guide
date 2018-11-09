@@ -1,3 +1,7 @@
+$alert-background-color: $color-shade-gray !default;
+$alert-text-color: $color-red !default;
+$alert-border: 1px solid $color-light-gray !default;
+
 .alert {
   color: white;
 
@@ -5,12 +9,11 @@
     display: block;
     width: 100%;
     padding: .5rem $site-margins;
-    background-color: $color-shade-gray;
-    border-bottom: 1px solid $color-light-gray;
-    color: $color-red;
+    background-color: $alert-background-color;
+    border-bottom: $alert-border;
+    color: $alert-text-color;
     font-weight: 600;
     text-decoration: none;
-    // text-align: center;
   }
 
   .alert-text {

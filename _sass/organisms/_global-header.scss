@@ -1,3 +1,6 @@
+$global-header-logo-width-mobile: 100px !default;
+$global-header-logo-width: 150px !default;
+
 .global-header {
   @include clearfix();
 
@@ -32,9 +35,10 @@
   // top: .2em;
 
   img {
-    max-width: 100px;
+    max-width: $global-header-logo-width-mobile;
+
     @include media($tablet-up) {
-      max-width: 150px;
+      max-width: $global-header-logo-width;
     }
   }
 }

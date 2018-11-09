@@ -35,87 +35,108 @@ Colored buttons should be used to hint at the purpose button.
 ## Input Validation
 {: .styleguide-heading }
 <div class="preview">
-  <label for="">Input Success</label>
+  <h4>Input Success</h4>
   <input type="text" name="input-validation-success" class="input-success">
-  <label for="">Input Error</label>
+  <h4>Input Error</h4>
   <input type="text" name="input-validation-error" class="input-error">
 </div>
 
 ## Text Input Fields
 {: .styleguide-heading }
 <div class="preview">
-  <label for="">Input Type Text</label>
+  <h4>Input Type Text</h4>
   <input type="text" name="input-type-text">
 
-  <label for="">Input Type Email</label>
+  <h4>Input Type Email</h4>
   <input type="email" name="input-type-email">
 
-  <label for="">Input Type Password</label>
+  <h4>Input Type Password</h4>
   <input type="password" name="input-type-password">
 
-  <label for="">Input Type URL</label>
+  <h4>Input Type URL</h4>
   <input type="url" name="input-type-url">
 
-  <label for="">Input Type Tel</label>
+  <h4>Input Type Tel</h4>
   <input type="tel" name="input-type-tel">
 
-  <label for="">Input Type Number</label>
+  <h4>Input Type Number</h4>
   <input type="number" name="input-type-number">
 
-  <label for="">Input Type Search</label>
-  <input type="search" name="input-type-search">
+  <h4>Input Type Search</h4>
+  <label for="input-type-search">Search:</label>
+  <input type="search" id="input-type-search">
 </div>
 
 ## Checkboxes and Radio Buttons
 {: .styleguide-heading }
 
 <div class="preview">
-  <label for="">Input Type Checkbox</label>
-  <input type="checkbox" name="input-type-checkbox"> Value 1<br>
-  <input type="checkbox" name="input-type-checkbox"> Value 2<br>
-  <input type="checkbox" name="input-type-checkbox"> Value 3<br>
+  <h4>Input Type Checkbox</h4>
 
-  <label for="">Input Type Radio</label>
-  <input type="radio" name="input-type-radio"> Value 1<br>
-  <input type="radio" name="input-type-radio"> Value 2<br>
-  <input type="radio" name="input-type-radio"> Value 3<br>
+  <label for="input-type-checkbox-1">
+    <input type="checkbox" id="input-type-checkbox-1">
+    Value 1
+  </label>
+  <label for="input-type-checkbox-2">
+    <input type="checkbox" id="input-type-checkbox-2">
+    Value 2
+  </label>
+  <label for="input-type-checkbox-3">
+    <input type="checkbox" id="input-type-checkbox-3">
+    Value 3
+  </label>
+
+  <h4>Input Type Radio</h4>
+
+  <label for="input-type-radio-1">
+    <input type="radio" id="input-type-radio-1" name="input-type-radio">
+    Value 1
+  </label>
+  <label for="input-type-radio-2">
+    <input type="radio" id="input-type-radio-2" name="input-type-radio">
+    Value 2
+  </label>
+  <label for="input-type-radio-3">
+    <input type="radio" id="input-type-radio-3" name="input-type-radio">
+    Value 3
+  </label>
 </div>
 
 ## Selection Input Types
 {: .styleguide-heading }
 
 <div class="preview">
-  <label for="">Selection Dropdown</label>
+  <h4>Selection Dropdown</h4>
   <select name="input-type-seelct">
     <option value="1">Option 1</option>
     <option value="2">Option 2</option>
     <option value="3">Option 3</option>
   </select>
 
-  <label for="">Input Type Range</label>
+  <h4>Input Type Range</h4>
   <input type="range" name="input-type-range">
 
 
-  <label for="">Input Type File</label>
+  <h4>Input Type File</h4>
   <input type="file" name="input-type-file">
   <input type="file" name="input-type-file">
 
-  <label for="">Input Type Color</label>
+  <h4>Input Type Color</h4>
   <input type="color" name="input-type-color">
 
 
-  <label for="">Input Type Date</label>
+  <h4>Input Type Date</h4>
   <input type="date" name="input-type-date">
 
-  <label for="">Input Type Datetime Local</label>
+  <h4>Input Type Datetime Local</h4>
   <input type="datetime-local" name="input-type-datetime-local">
 
-  <label for="">Input Type Month</label>
+  <h4>Input Type Month</h4>
   <input type="month" name="input-type-month">
 
-  <label for="">Input Type Time</label>
+  <h4>Input Type Time</h4>
   <input type="time" name="input-type-time">
 
-  <label for="">Input Type Week</label>
+  <h4>Input Type Week</h4>
   <input type="week" name="input-type-week">
 </div>
