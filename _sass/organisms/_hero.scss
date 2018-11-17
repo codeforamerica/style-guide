@@ -6,17 +6,38 @@ $hero-color: $color-blue !default;
   background-size: cover;
 }
 
-.hero-content {
+.hero__content, .hero-content {
   h1,h2,h3,h4,h5,h6,p,a {
     color: white;
     font-weight: 600;
   }
-  padding: {
-    left: $site-margins;
-    right: $site-margins;
-    bottom: 2rem;
-  }
+
+  padding-left: $site-margins;
+  padding-right: $site-margins;
+  padding-bottom: 2rem;
+
   @include media($tablet-up) {
     padding-bottom: 3rem;
   }
 }
+
+.hero--jumbo {
+  .hero__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 3em 1em;
+  }
+
+  .hero__title {
+    font-size: 2em;
+    line-height: 1;
+    margin-bottom: 1em;
+
+    @include media($tablet-up) {
+      font-size: 4em;
+    }
+  }
+}
+
