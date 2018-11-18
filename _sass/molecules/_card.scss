@@ -94,45 +94,45 @@ a.card {
 
 // Subcomponents for all cards
 
-.card-content {
+.card__content, .card-content {
   padding: 1rem;
 }
 
-.card-button {
+.card__button, .card-button {
   display: inline-block;
   margin: .5rem 0 0;
 }
 
-.card-link {
+.card__link, .card-link {
   @extend a;
   a.card:hover & {
     text-decoration: underline;
   }
 }
 
-.card-icon {
+.card__icon, .card-icon {
   margin-top: .5rem;
   margin-bottom: .5rem;
   max-width: 125px;
 }
 
-.card-image {
+.card__image, .card-image {
 
 }
 
-.card-overhead {
+.card__overhead, .card-overhead {
   @include h6;
   margin-top: $large-spacing;
   margin-bottom: 0;
 }
 
-.card-title {
+.card__title, .card-title {
   @include h4;
 
-  &.card-link {
+  &.card__link, &.card-link {
     @extend a;
   }
-  .card-overhead + & {
+  .card__overhead + &, .card-overhead + & {
     margin-top: .25rem;
   }
 }
