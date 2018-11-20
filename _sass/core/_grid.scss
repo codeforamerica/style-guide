@@ -176,6 +176,7 @@
   @for $i from 1 through 8 {
     .col-#{$i} {
       display: flex;
+      flex-direction: column;
     }
   }
 }
@@ -184,10 +185,6 @@
   @include media($tablet-up) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
-    & > * {
-      flex: 1;
-    }
+    justify-content: top;
   }
 }
