@@ -1,0 +1,65 @@
+$banner-bg-color: $color-white !default;
+$banner-headline-color: $color-dark-red !default;
+$banner-overhead-text-color: $color-dark-red !default;
+$banner-text-color: $color-black !default;
+
+.banner {
+  background-color: $banner-bg-color;
+  box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
+  color: $banner-text-color;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+.banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em;
+  text-align: center;
+
+  @include media($tablet-up) {
+    padding: 1em;
+    text-align: left;
+  }
+}
+
+.banner__image-container {
+  background-position: center center;
+  background-size: cover;
+  min-height: 200px;
+
+  @include media($tablet-up) {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+}
+
+.banner__headline {
+  @include h1;
+
+  color: $banner-headline-color;
+  font-weight: 600;
+}
+
+.banner__overhead {
+  color: $banner-overhead-text-color;
+  letter-spacing: 3px;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.banner__copy {
+  margin-top: 0.5em;
+}
+
+.banner__cta {
+  margin-top: 0.5em;
+}
+
+.banner__link {
+  min-width: 200px;
+}
