@@ -1,22 +1,6 @@
 blockquote {
   color: $color-darkest-blue;
   font-size: map-get($h4-styles, font-size);
-  margin: ($large-spacing * 1.5) 0;
-  padding-left: ($large-spacing * 2.5);
-  position: relative;
-
-  &:before {
-    background-image: url('https://v4.style.codeforamerica.org/media/images/open-quotes.png');
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    content: "";
-    height: 100%;
-    left: 0;
-    margin-top: 0.2em;
-    position: absolute;
-    top: 0;
-    width: ($large-spacing * 2);
-  }
 }
 
 blockquote cite {
