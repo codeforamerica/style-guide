@@ -92,21 +92,36 @@ main > .slab:last-child {
     color: white;
   }
 }
+
+.slab--white, 
+.white-bg-slab {
+  background-color: $color-white;
+}
+
+.slab--blue,
 .blue-bg-slab {
   @extend %reverse-slab;
   background-color: $color-blue;
 }
+
+.slab--dark-blue,
 .dark-blue-bg-slab {
   @extend %reverse-slab;
   background-color: $color-dark-blue;
 }
+
+.slab--green,
 .green-bg-slab {
   @extend %reverse-slab;
   background-color: $color-green;
 }
+
+.slab--gray,
 .gray-bg-slab {
   background-color: $color-shade-gray;
 }
+
+.slab--red,
 .red-bg-slab {
   @extend %reverse-slab;
   background-color: $color-red;
