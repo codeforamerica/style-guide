@@ -61,7 +61,7 @@ main > .slab:last-child {
   @extend .border-top-slab;
 
   &:before {
-    top: auto; 
+    top: auto;
     bottom: 0;
   }
 }
@@ -73,6 +73,18 @@ main > .slab:last-child {
   }
 }
 
+.slab--angled {
+  clip-path: polygon(
+    0 3vw,
+    100% 0,
+    100% calc(100% - 3vw),
+    0 100%
+  );
+  margin-bottom: -3vw;
+  margin-top: -3vw;
+  z-index: 2;
+}
+
 // Slabs with background colors
 %reverse-slab {
   color: white;
@@ -80,21 +92,36 @@ main > .slab:last-child {
     color: white;
   }
 }
+
+.slab--white, 
+.white-bg-slab {
+  background-color: $color-white;
+}
+
+.slab--blue,
 .blue-bg-slab {
   @extend %reverse-slab;
   background-color: $color-blue;
 }
+
+.slab--dark-blue,
 .dark-blue-bg-slab {
   @extend %reverse-slab;
   background-color: $color-dark-blue;
 }
+
+.slab--green,
 .green-bg-slab {
   @extend %reverse-slab;
   background-color: $color-green;
 }
+
+.slab--gray,
 .gray-bg-slab {
   background-color: $color-shade-gray;
 }
+
+.slab--red,
 .red-bg-slab {
   @extend %reverse-slab;
   background-color: $color-red;
