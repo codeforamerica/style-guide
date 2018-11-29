@@ -110,6 +110,12 @@ main > .slab:last-child {
   background-color: $color-dark-blue;
 }
 
+.slab--darkest-blue,
+.darkest-blue-bg-slab {
+  @extend %reverse-slab;
+  background-color: $color-darkest-blue;
+}
+
 .slab--green,
 .green-bg-slab {
   @extend %reverse-slab;
