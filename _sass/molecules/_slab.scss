@@ -61,7 +61,7 @@ main > .slab:last-child {
   @extend .border-top-slab;
 
   &:before {
-    top: auto; 
+    top: auto;
     bottom: 0;
   }
 }
@@ -71,6 +71,18 @@ main > .slab:last-child {
   @include media($tablet-up) {
     padding: 2rem $site-margins;
   }
+}
+
+.slab--angled {
+  clip-path: polygon(
+    0 3vw,
+    100% 0,
+    100% calc(100% - 3vw),
+    0 100%
+  );
+  margin-bottom: -3vw;
+  margin-top: -3vw;
+  z-index: 2;
 }
 
 // Slabs with background colors
