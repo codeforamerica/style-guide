@@ -1,6 +1,8 @@
 .slab {
   @include clearfix;
   display: block;
+  background-size: cover;
+  background-position: center center;
   margin: {
     left: -$site-margins;
     right: -$site-margins;
