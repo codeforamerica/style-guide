@@ -16,5 +16,6 @@ $stat-label-color: $color-darkest-blue !default;
 
 .stat__label {
   color: $stat-number-color;
+  font-size: 1.1rem;
   font-weight: 600;
 }
