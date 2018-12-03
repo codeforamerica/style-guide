@@ -9,12 +9,13 @@ $stat-label-color: $color-darkest-blue !default;
 
 .stat__number {
   color: $stat-number-color;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 600;
   line-height: 1.2em;
 }
 
 .stat__label {
   color: $stat-number-color;
+  font-size: 1.1rem;
   font-weight: 600;
 }
