@@ -1,33 +1,22 @@
-$banner-bg-color: $color-white !default;
-$banner-headline-color: $color-dark-red !default;
-$banner-overhead-text-color: $color-dark-red !default;
-$banner-text-color: $color-black !default;
-
 .banner {
-  background-color: $banner-bg-color;
-  box-shadow: 0 0 8px 2px rgba(0,0,0,0.2);
-  color: $banner-text-color;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
 .banner__content {
+  @include media($tablet-up) {
+    padding: 1em;
+    text-align: left;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 3em;
   text-align: center;
-
-  @include media($tablet-up) {
-    padding: 1em;
-    text-align: left;
-  }
 }
 
 .banner__image-container {
-  background-position: center center;
-  background-size: cover;
-  min-height: 200px;
-
   @include media($tablet-up) {
     height: 100%;
     left: 0;
@@ -35,30 +24,36 @@ $banner-text-color: $color-black !default;
     top: 0;
     width: 50%;
   }
+
+  background-position: center center;
+  background-size: cover;
+  min-height: 200px;
 }
 
-.banner__headline {
-  @include h1;
-
-  color: $banner-headline-color;
-  font-weight: 600;
+%banner--reverse {
+  color: $color-white;
 }
 
-.banner__overhead {
-  color: $banner-overhead-text-color;
-  letter-spacing: 3px;
-  margin-bottom: 0.5em;
-  text-transform: uppercase;
+.banner--white {
+  background-color: $color-white;
 }
 
-.banner__copy {
-  margin-top: 0.5em;
+.banner--blue {
+  @extend %banner--reverse;
+  background-color: $color-blue;
 }
 
-.banner__cta {
-  margin-top: 0.5em;
+.banner--dark-blue {
+  @extend %banner--reverse;
+  background-color: $color-dark-blue;
 }
 
-.banner__link {
-  min-width: 200px;
+.banner--darkest-blue {
+  @extend %banner--reverse;
+  background-color: $color-darkest-blue;
+}
+
+.banner--red {
+  @extend %banner--reverse;
+  background-color: $color-red;
 }
