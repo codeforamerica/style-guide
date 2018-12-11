@@ -27,6 +27,19 @@ order: 3
 	</div>
 </div>
 
+## Success message
+
+<div class="preview">
+	<div class="message message--success">
+		<div class="message__icon">
+			<i class="fa fa-check-circle"></i>
+		</div>
+		<div class="message__content">
+			<strong>Great!</strong> Everything went well with your action. <a href="#">Visit your new object.</a>
+		</div>
+	</div>
+</div>
+
 ## Caution message
 
 <div class="preview">

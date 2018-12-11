@@ -21,6 +21,16 @@
   padding-right: 0.5em;
 }
 
+.message--success {
+  background-color: $color-green;
+
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
+}
+
 .message--caution {
   background-color: $color-caution;
   color: $color-black;
