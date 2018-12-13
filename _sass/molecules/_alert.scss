@@ -1,53 +1,53 @@
-$alert-background-color: $color-shade-gray !default;
-$alert-text-color: $color-red !default;
-$alert-border: 1px solid $color-light-gray !default;
-
 .alert {
-  color: white;
+  background-color: $color-shade-gray;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+  color: $color-red;
+  font-weight: 600;
+  padding: 0.5rem 0;
 
   a {
-    display: block;
-    width: 100%;
-    padding: .5rem $site-margins;
-    background-color: $alert-background-color;
-    border-bottom: $alert-border;
-    color: $alert-text-color;
-    font-weight: 600;
-    text-decoration: none;
-  }
-
-  .alert-text {
-    display: block;
-    max-width: $site-max-width;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: .8rem;
-
-    @include media($tablet-up) {
-      font-size: inherit;
-    }
-  }
-
-  .alert-link {
-    text-decoration: underline;
-    display: block;
-    clear: left;
-    margin-top: -.3rem;
-
-    @include media($tablet-up) {
-      display: inline;
-      clear: none;
-      margin-top: 0;
-    }
+    color: $color-red;
   }
 }
 
-.info-alert {
-  @extend .alert;
+%alert--reverse {
+  color: $color-white;
 
   a {
-    border-bottom: 0;
+    color: $color-white;
   }
+}
+
+// Basic variants
+
+.alert--primary {
+  @extend %alert--reverse;
+  background-color: $color-primary;
+}
+
+.alert--success {
+  @extend %alert--reverse;
+  background-color: $color-success;
+}
+
+.alert--caution {
+  @extend %alert--reverse;
+  background-color: $color-caution;
+}
+
+.alert--danger {
+  @extend %alert--reverse;
+  background-color: $color-danger;
+}
+
+// Color variants
+
+.alert--black {
+  @extend %alert--reverse;
+  background-color: $color-black;
+}
+
+.alert--darkest-blue {
+  @extend %alert--reverse;
+  background-color: $color-darkest-blue;
 }
