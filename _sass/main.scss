@@ -39,12 +39,13 @@
 
 // Organisms (complex components)
 @import 'organisms/billboard';
-@import 'organisms/hero';
-@import 'organisms/page-header';
-@import 'organisms/global-header';
+@import 'organisms/card-grid';
 @import 'organisms/global-footer';
-@import 'organisms/mobile-navigation';
+@import 'organisms/global-header';
+@import 'organisms/hero';
 @import 'organisms/index-card-list';
+@import 'organisms/mobile-navigation';
+@import 'organisms/page-header';
 @import 'organisms/supporter-card-list';
 
 // Page Templates
