@@ -1,0 +1,14 @@
+.card-grid {
+  @include media($tablet-up) {
+    display: flex;
+    flex-flow: row wrap;
+
+    .card-grid__item {
+      padding-bottom: 2rem;
+    }
+
+    .card {
+      height: 100%;
+    }
+  }
+}
