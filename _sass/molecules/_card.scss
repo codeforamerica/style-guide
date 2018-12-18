@@ -90,3 +90,35 @@ a.action-card {
     box-shadow: none;
   }
 }
+
+// Index card
+.index-card {
+  border: 1px solid $color-light-gray;
+  overflow: hidden;
+  margin-bottom: 1rem; 
+  
+  .card-image {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-bottom: -.5rem;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .card-logo {
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-bottom: -.5rem;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+  }  
+  .card-icon {
+    max-width: 75px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &:hover {
+    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
+  }
+}
