@@ -23,6 +23,18 @@ a.card {
 
 // Card subcomponents
 
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom : 1px solid $color-light-gray;
+  padding-top: 66.66%;
+}
+
+.card__image--contained {
+  background-size: auto 80%;
+}
+
 .card__content,
 .card-content {
   padding: 1rem;
