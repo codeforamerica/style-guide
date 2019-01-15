@@ -1,0 +1,21 @@
+$stat-number-color: $color-darkest-blue !default;
+$stat-label-color: $color-darkest-blue !default;
+
+.stat {
+  margin: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.stat__number {
+  color: $stat-number-color;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+
+.stat__label {
+  color: $stat-number-color;
+  font-size: 1.1rem;
+  font-weight: 600;
+}

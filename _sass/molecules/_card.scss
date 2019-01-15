@@ -1,69 +1,129 @@
-.card {
-  margin: {
-    top: 1rem;
-    bottom: 1rem;
-  }
+.card,
+a.card {
+  background-color: $color-white;
+  border: 1px solid $color-light-gray;
+  color: inherit;
+  display: block;
+  flex: 1;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding: 0;
   text-align: left;
-}
-
-a.card {
-  color: inherit;
-}
-
-.logo-card {
-  margin: {
-    top: 1rem;
-    bottom: 1rem;
-  }
-  padding: 1rem;
-  text-align: left;
-}
-
-// Shared styles for link/action cards
-.action-card, .link-card, .index-card {
-  display: block;
   text-decoration: none;
-  color: inherit;
-}
 
-// Link card
-.link-card {
-  background-color: $color-shade-gray;
-  overflow: hidden;
-  .card-image {
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-bottom: -.5rem;
-    width: calc(100% + 2rem);
-    max-width: calc(100% + 2rem);
+  &:hover {
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+
+    .card__link,
+    .card-link {
+      text-decoration: underline;
+    }
   }
 }
 
-// Action card
-.action-card {
+// Card subcomponents
+
+.card__image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom : 1px solid $color-light-gray;
+  padding-top: 66.66%;
+}
+
+.card__image--contained {
+  background-size: auto 80%;
+}
+
+.card__content,
+.card-content {
+  padding: 1rem;
+}
+
+.card__button,
+.card-button {
+  display: inline-block;
+  margin: 0.5rem 0 0;
+}
+
+.card__link,
+.card-link {
+  @extend a;
+}
+
+.card__icon,
+.card-icon {
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+  max-width: 125px;
+}
+
+.card__overhead,
+.card-overhead {
+  @include h6;
+  margin-bottom: 0;
+  margin-top: $large-spacing;
+}
+
+.card__title,
+.card-title {
+  @include h4;
+
+  .card__overhead + &,
+  .card-overhead + & {
+    margin-top: 0.25rem;
+  }
+}
+
+// Card variants
+
+.card--supporter,
+a.card--supporter,
+.supporter-card,
+a.supporter-card {
   text-align: center;
+
+  .card-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    width: 80%;
+  }
+}
+
+.card--action,
+a.card--action,
+.action-card,
+a.action-card {
+  border: none;
+  text-align: center;
+
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 // Index card
 .index-card {
   border: 1px solid $color-light-gray;
   overflow: hidden;
+  margin-bottom: 1rem; 
+  
   .card-image {
     margin-top: -1rem;
     margin-left: -1rem;
     margin-bottom: -.5rem;
-		width: 100%;
-		display: block;
-		margin: 0 auto;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
   }
   .card-logo {
     margin-top: -1rem;
     margin-left: -1rem;
     margin-bottom: -.5rem;
-		width: 70%;
-		display: block;
-		margin: 0 auto;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
   }  
   .card-icon {
     max-width: 75px;
@@ -73,71 +133,4 @@ a.card {
   &:hover {
     box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
   }
-}
-
-// Index card
-.supporter-card {
-  border: 1px solid $color-light-gray;
-  overflow: hidden;
-  text-align: center;
-  text-decoration: none;
-  .card-image {
-    width: 80%;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &:hover {
-    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
-  }
-}
-
-// Subcomponents for all cards
-
-.card-content {
-  padding: 1rem;
-}
-
-.card-button {
-  display: inline-block;
-  margin: .5rem 0 0;
-}
-
-.card-link {
-  @extend a;
-  a.card:hover & {
-    text-decoration: underline;
-  }
-}
-
-.card-icon {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
-  max-width: 125px;
-}
-
-.card-image {
-
-}
-
-.card-overhead {
-  @include h6;
-  margin-top: $large-spacing;
-  margin-bottom: 0;
-}
-
-.card-title {
-  @include h4;
-
-  &.card-link {
-    @extend a;
-  }
-  .card-overhead + & {
-    margin-top: .25rem;
-  }
-}
-
-.card--white {
-  background-color: $color-white;
-  border: 1px solid $color-light-gray;
 }

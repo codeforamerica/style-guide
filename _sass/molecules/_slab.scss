@@ -1,6 +1,8 @@
 .slab {
   @include clearfix;
   display: block;
+  background-size: cover;
+  background-position: center center;
   margin: {
     left: -$site-margins;
     right: -$site-margins;
@@ -16,14 +18,6 @@
   @include media($tablet-up) {
     padding-top: 4rem;
     padding-bottom: 4rem;
-  }
-}
-
-// If a slab is the last item in main, pull the footer up to meet it
-main > .slab:last-child {
-  margin-bottom: -2rem;
-  @include media($tablet-up) {
-    margin-bottom: -4rem;
   }
 }
 
@@ -61,7 +55,7 @@ main > .slab:last-child {
   @extend .border-top-slab;
 
   &:before {
-    top: auto; 
+    top: auto;
     bottom: 0;
   }
 }
@@ -73,6 +67,18 @@ main > .slab:last-child {
   }
 }
 
+.slab--angled {
+  clip-path: polygon(
+    0 3vw,
+    100% 0,
+    100% calc(100% - 3vw),
+    0 100%
+  );
+  margin-bottom: -3vw;
+  margin-top: -3vw;
+  z-index: 2;
+}
+
 // Slabs with background colors
 %reverse-slab {
   color: white;
@@ -80,18 +86,43 @@ main > .slab:last-child {
     color: white;
   }
 }
+
+.slab--white, 
+.white-bg-slab {
+  background-color: $color-white;
+}
+
+.slab--blue,
 .blue-bg-slab {
   @extend %reverse-slab;
   background-color: $color-blue;
 }
+
+.slab--dark-blue,
 .dark-blue-bg-slab {
   @extend %reverse-slab;
   background-color: $color-dark-blue;
 }
+
+.slab--darkest-blue,
+.darkest-blue-bg-slab {
+  @extend %reverse-slab;
+  background-color: $color-darkest-blue;
+}
+
+.slab--green,
 .green-bg-slab {
   @extend %reverse-slab;
   background-color: $color-green;
 }
+
+.slab--gray,
 .gray-bg-slab {
   background-color: $color-shade-gray;
+}
+
+.slab--red,
+.red-bg-slab {
+  @extend %reverse-slab;
+  background-color: $color-red;
 }

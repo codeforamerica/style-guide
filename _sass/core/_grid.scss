@@ -42,40 +42,40 @@
     }
 
     // Different notation
-    .span-one {
+    .col-1, .span-one {
       @include span-columns(1);
     }
-    .span-two {
+    .col-2, .span-two {
       @include span-columns(2);
     }
-    .span-three {
+    .col-3, .span-three {
       @include span-columns(3);
     }
-    .span-four {
+    .col-4, .span-four {
       @include span-columns(4);
     }
-    .span-five {
+    .col-5, .span-five {
       @include span-columns(5);
     }
-    .span-six {
+    .col-6, .span-six {
       @include span-columns(6);
     }
-    .span-seven {
+    .col-7, .span-seven {
       @include span-columns(7);
     }
-    .span-eight {
+    .col-8, .span-eight {
       @include span-columns(8);
     }
-    .span-nine {
+    .col-9, .span-nine {
       @include span-columns(9);
     }
-    .span-ten {
+    .col-10, .span-ten {
       @include span-columns(10);
     }
-    .span-elevent {
+    .col-11, .span-eleven {
       @include span-columns(11);
     }
-    .span-twelve {
+    .col-12, .span-twelve {
       @include span-columns(12);
     }
 
@@ -163,5 +163,28 @@
     .end-row + .grid-item {
       clear: left;
     }
+  }
+}
+
+.grid-row {
+  @include media($tablet-up) {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  @for $i from 1 through 8 {
+    .col-#{$i} {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.grid-row__item {
+  @include media($tablet-up) {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
   }
 }
