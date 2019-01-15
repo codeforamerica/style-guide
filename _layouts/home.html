@@ -14,6 +14,15 @@
                 <li class="is-selected"><a href="/">Introduction</a></li>
                 <li class="is-selected"><a href="{% link usage.md %}">Usage Instructions</a></li>
                 <li class="is-selected">
+                  <a href="#">Core</a>
+                  <ul class="sidebar-menu-sublist unstyled-list">
+                    {% assign menu_items = site.core | sort: "order" %}
+                    {% for item in menu_items %}
+                    <li class="{% if page.url == item.url %}is-selected{% endif %}"><a href="{{ item.url }}">{{ item.title }}</a></li>
+                    {% endfor %}
+                  </ul>
+                </li>
+                <li class="is-selected">
                   <a href="#">Atoms</a>
                   <ul class="sidebar-menu-sublist unstyled-list">
                     {% assign ordered_atoms = site.atoms | sort: "order" %}

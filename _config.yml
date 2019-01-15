@@ -20,6 +20,9 @@ collections:
   components:
     output: true
     permalink: /components/:path/
+  core:
+    output: true
+    permalink: /core/:path/
   atoms:
     output: true
     permalink: /atoms/:path/
