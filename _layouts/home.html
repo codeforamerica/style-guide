@@ -46,14 +46,6 @@
                 {% endfor %}
               </div>
 
-              <p class="h4">Templates</p>
-              <div class="list-group">
-                {% assign menu_items = site.templates | sort: "title" %}
-                {% for item in menu_items %}
-                <a href="{{ item.url }}" class="list-group__item {% if page.url == item.url %}list-group__item--active{% endif %}">{{ item.title }}</a>
-                {% endfor %}
-              </div>
-
               <p class="h4">Developers</p>
               <div class="list-group">
                 {% assign menu_items = site.developers | sort: "title" %}

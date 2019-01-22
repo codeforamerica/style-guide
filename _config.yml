@@ -32,9 +32,6 @@ collections:
   organisms:
     output: true
     permalink: /organisms/:path/
-  templates:
-    output: true
-    permalink: /templates/:path/
   developers:
     output: true
     permalink: /developers/:path/
