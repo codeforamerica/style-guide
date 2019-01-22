@@ -144,22 +144,3 @@
   padding: 0.5em 1em;
 }
 
-.button--linkout,
-.button-linkout {
-  &::after {
-    @include icon;
-
-    content: '\f054';
-    margin-left: 1em;
-  }
-}
-
-.button--download,
-.button-download {
-  &::after {
-    @include icon;
-
-    content: '\f019';
-    margin-left: 1em;
-  }
-}

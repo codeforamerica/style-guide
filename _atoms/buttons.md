@@ -13,8 +13,6 @@ Colored buttons should be used to hint at the purpose button.
 <div class="preview">
   <button class="button">Regular Button</button>
   <button class="button button-primary">Primary Button</button>
-  <button class="button button-primary button-linkout">Linkout Button</button>
-  <button class="button button-primary button-download">Download Button</button>
   <button class="button button-danger">Danger Button</button>
   <button class="button button-outline">Outline Button</button>
 </div>
