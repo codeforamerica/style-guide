@@ -1,31 +1,31 @@
 @mixin bulleted-list {
   list-style-type: disc;
-  margin-bottom: $small-spacing;
+  margin-bottom: $space-sm;
   margin-left: 0;
   margin-right: 0;
-  margin-top: $small-spacing;
+  margin-top: $space-sm;
   padding-left: 1.5rem;
 
   li {
     line-height: $base-line-height;
-    margin-bottom: $small-spacing;
-    margin-top: $small-spacing;
+    margin-bottom: $space-sm;
+    margin-top: $space-sm;
     padding-left: 0;
   }
 }
 
 @mixin decimal-list {
   list-style-type: decimal;
-  margin-bottom: $small-spacing;
+  margin-bottom: $space-sm;
   margin-left: 0;
   margin-right: 0;
-  margin-top: $small-spacing;
+  margin-top: $space-sm;
   padding-left: 1.25rem;
 
   li {
     line-height: $base-line-height;
-    margin-bottom: $small-spacing;
-    margin-top: $small-spacing;
+    margin-bottom: $space-sm;
+    margin-top: $space-sm;
     padding-left: 0.5rem;
   }
 }

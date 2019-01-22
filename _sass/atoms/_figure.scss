@@ -1,8 +1,8 @@
 figure {
-  margin-bottom: $large-spacing;
+  margin-bottom: $space-lg;
   margin-left: 0;
   margin-right: 0;
-  margin-top: $large-spacing;
+  margin-top: $space-lg;
   width: 100%;
 
   img {
@@ -12,7 +12,7 @@ figure {
   figcaption {
     color: $color-dark-gray;
     font-size: $small-font-size;
-    margin-top: $small-spacing;
+    margin-top: $space-sm;
 
     > p {
       @include detail-text;

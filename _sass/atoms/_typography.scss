@@ -12,8 +12,8 @@ body {
 p {
   font-size: $base-font-size;
   line-height: $base-line-height;
-  margin-bottom: $small-spacing;
-  margin-top: $small-spacing;
+  margin-bottom: $space-sm;
+  margin-top: $space-sm;
 }
 
 a {
@@ -38,13 +38,13 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
   clear: both;
-  margin-bottom: $base-spacing;
-  margin-top: $large-spacing;
+  margin-bottom: $space-md;
+  margin-top: $space-lg;
 }
 
 h3, h4, h5, h6 {
-  margin-bottom: $small-spacing;
-  margin-top: $base-spacing;
+  margin-bottom: $space-sm;
+  margin-top: $space-md;
 }
 
 // Create heading mixins
@@ -138,7 +138,7 @@ h6, .h6 {
   color: $color-dark-gray;
   font-size: map-get($h4-styles, font-size);
   line-height: map-get($h4-styles, line-height);
-  margin-bottom: $large-spacing;
+  margin-bottom: $space-lg;
 }
 
 .detail-text {

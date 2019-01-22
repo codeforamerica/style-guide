@@ -68,7 +68,7 @@ $global-header-logo-width: 150px !default;
 .global-header-navigation {
   @include media($tablet-up) {
     display: block;
-    padding-top: $large-spacing;
+    padding-top: $space-lg;
   }
 
   display: none;

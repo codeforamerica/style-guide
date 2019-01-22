@@ -1,42 +1,3 @@
-// .template-article {
-//   margin: 0 auto 6em auto;
-//   .sidebar {
-//     display: none;
-//     @include media($tablet-up) {
-//       display: block;
-//     }
-//   }
-// }
-//
-// .content-header {
-//   border-bottom: 1px solid $color-grey-200;
-//   margin-bottom: 2em;
-//   h1 {
-//     font-size: map-get($title-styles, font-size);
-//     line-height: map-get($title-styles, line-height);
-//
-//   }
-// }
-//
-// .article-content {
-//   aside[class^="width"], figure[class^="width"] {
-//     & + p {
-//       @include media($tablet-up) {
-//         margin-top: 0;
-//       }
-//     }
-//   }
-// }
-
-.template-content {
-  // .page-header {
-  //   // margin-bottom: $base-spacing;
-  //   @include media($tablet-up) {
-  //     margin-bottom: 1rem;
-  //   }
-  // }
-}
-
 .content-body-text {
   p, li {
     font-family: $font-serif;
@@ -44,21 +5,21 @@
   h3 {
     color: $color-gray;
     margin: {
-      top: $large-spacing;
-      bottom: $base-spacing;
+      top: $space-lg;
+      bottom: $space-md;
     }
     &:first-child {
       margin-top: 0;
     }
     @include media($tablet-up) {
-      margin-top: $large-spacing * 2;
+      margin-top: $space-lg * 2;
       &:first-child { margin-top: 0; }
     }
   }
   figure {
     @include media($tablet-up) {
-      margin-top: $large-spacing * 2;
-      margin-bottom: $large-spacing * 2;
+      margin-top: $space-lg * 2;
+      margin-bottom: $space-lg * 2;
     }
     p {
       font-family: $font-sans;
@@ -68,8 +29,8 @@
     text-align: center;
     @include media($tablet-up) {
       padding: 2rem;
-      margin-top: $large-spacing * 2;
-      margin-bottom: $large-spacing * 2;
+      margin-top: $space-lg * 2;
+      margin-bottom: $space-lg * 2;
     }
     > p {
       font-family: $font-sans;
@@ -81,11 +42,11 @@
     }
   }
   .quote {
-    margin-top: $large-spacing;
-    margin-bottom: $large-spacing;
+    margin-top: $space-lg;
+    margin-bottom: $space-lg;
     @include media($tablet-up) {
-      margin-top: $large-spacing * 2;
-      margin-bottom: $large-spacing * 2;
+      margin-top: $space-lg * 2;
+      margin-bottom: $space-lg * 2;
     }
   }
   .quote .quote-text {

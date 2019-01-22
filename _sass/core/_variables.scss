@@ -59,6 +59,13 @@ $widescreen-up:     1201px;
 $site-max-width:    1140px;
 $site-margins:      20px;
 $border-radius:     0;
-$base-spacing:      1rem; //16px
-$small-spacing:     0.625rem; //10px
-$large-spacing:     1.5rem; //24px
+
+// Spacing
+$space-base: 1em;
+$space-xxs:  $space-base * 0.25;
+$space-xs:   $space-base * 0.5;
+$space-sm:   $space-base * 0.75;
+$space-md:   $space-base * 1.25;
+$space-lg:   $space-base * 2;
+$space-xl:   $space-base * 3.25;
+$space-xxl:  $space-base * 5.25;
