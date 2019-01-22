@@ -1,8 +1,7 @@
 ---
-title: Media
+title: Figures
+description: Figures are good for displaying related images and text. (e.g. an image with a caption)
 ---
-
-## Figures
 
 <div class="preview">
   <figure>
