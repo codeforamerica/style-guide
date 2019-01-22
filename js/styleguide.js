@@ -6,10 +6,6 @@ $(function() {
 function Styleguide(content) {
   this.content = content;
   this.generateCodeSnippets();
-  $('.button-toggle-sidebar').click(function(e) {
-    e.preventDefault();
-    $('body').toggleClass('sidebar-open');
-  })
 }
 
 Styleguide.prototype.generateCodeSnippets = function() {
