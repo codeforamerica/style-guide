@@ -4,22 +4,26 @@ $hero-color: $color-blue !default;
   background-color: $hero-color;
   background-position: center center;
   background-size: cover;
+  color: $color-white;
 }
 
-.hero__content, .hero-content {
-  h1,h2,h3,h4,h5,h6,p,a {
-    color: white;
-    font-weight: 600;
-  }
-
-  padding-left: $site-margins;
-  padding-right: $site-margins;
-  padding-bottom: 2rem;
-
+.hero__content {
   @include media($tablet-up) {
     padding-bottom: 3rem;
   }
+
+  padding-bottom: 2rem;
+  padding-left: $site-margins;
+  padding-right: $site-margins;
+
+  h1, h2, h3, h4, h5, h6, p, a {
+    color: inherit;
+    font-weight: 600;
+  }
 }
+
+
+// Variants
 
 .hero--jumbo {
   .hero__content {
@@ -31,13 +35,12 @@ $hero-color: $color-blue !default;
   }
 
   .hero__title {
-    font-size: 2em;
-    line-height: 1;
-    margin-bottom: 1em;
-
     @include media($tablet-up) {
       font-size: 4em;
     }
+
+    font-size: 2em;
+    line-height: 1;
+    margin-bottom: 1em;
   }
 }
-

@@ -1,24 +1,24 @@
 .slab {
   @include clearfix;
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  margin: {
-    left: -$site-margins;
-    right: -$site-margins;
-  }
-  h1, h2, h3, h4, h5, h6, .grid-box {
-    max-width: $site-max-width;
-    margin: {
-      left: auto;
-      right: auto;
-    }
-  }
-  padding: 2rem $site-margins;
+
   @include media($tablet-up) {
-    padding-top: 4rem;
     padding-bottom: 4rem;
+    padding-top: 4rem;
   }
+
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  margin-left: -$site-margins;
+  margin-right: -$site-margins;
+  padding: 2rem $site-margins;
+
+  h1, h2, h3, h4, h5, h6, .grid-box {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $site-max-width;
+  }
+
 }
 
 .slab-title {
@@ -27,44 +27,46 @@
   font-weight: 600;
 }
 
-// Styled slabs
+
+// Variants
 .center-align-slab {
   text-align: center;
 }
 
 .border-top-slab {
   position: relative;
-  &:before {
+
+  &::before {
+    background-color: $color-light-gray;
     content: "";
     display: block;
-    position: absolute;
     height: 1px;
-    top: 0;
     left: 0;
-    right: 0;
-    width: 100%;
-    max-width: $site-max-width;
     margin-left: auto;
     margin-right: auto;
-    background-color: $color-light-gray;
+    max-width: $site-max-width;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
   }
-  // border-top: 1px solid $color-light-gray;
 }
 
 .border-bottom-slab {
   @extend .border-top-slab;
 
-  &:before {
-    top: auto;
+  &::before {
     bottom: 0;
+    top: auto;
   }
 }
 
 .tight-slab {
-  padding: 2rem $site-margins;
   @include media($tablet-up) {
     padding: 2rem $site-margins;
   }
+
+  padding: 2rem $site-margins;
 }
 
 .slab--angled {
@@ -81,13 +83,14 @@
 
 // Slabs with background colors
 %reverse-slab {
-  color: white;
-  h1,h2,h3,h4,h5,h6,p {
-    color: white;
+  color: $color-white;
+
+  h1, h2, h3, h4, h5, h6, p {
+    color: $color-white;
   }
 }
 
-.slab--white, 
+.slab--white,
 .white-bg-slab {
   background-color: $color-white;
 }

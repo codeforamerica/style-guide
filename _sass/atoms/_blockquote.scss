@@ -1,14 +1,14 @@
 blockquote {
   color: $color-darkest-blue;
   font-size: map-get($h4-styles, font-size);
-}
 
-blockquote cite {
-  font-size: $em-base;
-  font-style: normal;
-  color: $color-black;
+  cite {
+    color: $color-black;
+    font-size: $em-base;
+    font-style: normal;
+  }
 
-  &:before {
+  &::before {
     content: "— ";
   }
 }

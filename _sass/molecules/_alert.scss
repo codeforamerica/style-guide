@@ -9,6 +9,9 @@
   }
 }
 
+
+// Mixins
+
 %alert--reverse {
   color: $color-white;
 
@@ -17,8 +20,10 @@
   }
 }
 
-// Basic variants
 
+// Variants
+
+.alert-primary,
 .alert--primary {
   @extend %alert--reverse;
   background-color: $color-primary;
@@ -38,8 +43,6 @@
   @extend %alert--reverse;
   background-color: $color-danger;
 }
-
-// Color variants
 
 .alert--black {
   @extend %alert--reverse;

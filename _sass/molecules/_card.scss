@@ -1,5 +1,4 @@
-.card,
-a.card {
+.card, a.card {
   background-color: $color-white;
   border: 1px solid $color-light-gray;
   color: inherit;
@@ -8,11 +7,10 @@ a.card {
   margin-bottom: 1rem;
   margin-top: 1rem;
   padding: 0;
-  text-align: left;
   text-decoration: none;
 
   &:hover {
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
 
     .card__link,
     .card-link {
@@ -23,11 +21,12 @@ a.card {
 
 // Card subcomponents
 
-.card__image {
+.card__image,
+.card-image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-bottom : 1px solid $color-light-gray;
+  border-bottom: 1px solid $color-light-gray;
   padding-top: 66.66%;
 }
 
@@ -53,8 +52,8 @@ a.card {
 
 .card__icon,
 .card-icon {
-  margin-bottom: .5rem;
-  margin-top: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   max-width: 125px;
 }
 
@@ -75,14 +74,14 @@ a.card {
   }
 }
 
-// Card variants
 
-.card--supporter,
-a.card--supporter,
-.supporter-card,
-a.supporter-card {
+// Variants
+
+.card--supporter, a.card--supporter,
+.supporter-card, a.supporter-card {
   text-align: center;
 
+  .card__image,
   .card-image {
     margin-left: auto;
     margin-right: auto;
@@ -91,11 +90,8 @@ a.supporter-card {
   }
 }
 
-.card--action,
-a.card--action,
-.action-card,
-a.action-card {
-  border: none;
+.card--action-card, a.card--action-card {
+  border: 0;
   text-align: center;
 
   &:hover {
@@ -103,34 +99,38 @@ a.action-card {
   }
 }
 
-// Index card
-.index-card {
+.card--index-card, a.card--index-card,
+.index-card, a.index-card {
   border: 1px solid $color-light-gray;
+  margin-bottom: 1rem;
   overflow: hidden;
-  margin-bottom: 1rem; 
-  
+
+  .card__image,
   .card-image {
-    margin-top: -1rem;
+    display: block;
+    margin-bottom: -0.5rem;
     margin-left: -1rem;
-    margin-bottom: -.5rem;
+    margin-top: -1rem;
     width: 100%;
-    display: block;
-    margin: 0 auto;
   }
+
+  .card__logo,
   .card-logo {
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-bottom: -.5rem;
-    width: 70%;
     display: block;
-    margin: 0 auto;
-  }  
+    margin-bottom: -0.5rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    width: 70%;
+  }
+
+  .card__icon,
   .card-icon {
-    max-width: 75px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 75px;
   }
+
   &:hover {
-    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
   }
 }

@@ -30,9 +30,15 @@
   min-height: 200px;
 }
 
+
+// Mixins
+
 %banner--reverse {
   color: $color-white;
 }
+
+
+// Color variants
 
 .banner--white {
   background-color: $color-white;

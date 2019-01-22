@@ -1,22 +1,26 @@
 .face {
   @include clearfix;
+
   display: block;
-  margin-top: $large-spacing;
   margin-bottom: $large-spacing;
-  .face-name {
-    display: block;
-    margin: 0;
-    padding-top: 1rem;
-  }
-  .face-title {
-    margin-top: .1rem;
-    line-height: 1.3;
-  }
+  margin-top: $large-spacing;
 }
-.face-photo {
-  width: 6rem;
-  height: 6rem;
-  float: left;
+
+.face__name {
+  display: block;
+  margin: 0;
+  padding-top: 1rem;
+}
+
+.face__title {
+  line-height: 1.3;
+  margin-top: 0.1rem;
+}
+
+.face__photo {
   border-radius: 50%;
+  float: left;
+  height: 6rem;
   margin-right: 1rem;
+  width: 6rem;
 }
