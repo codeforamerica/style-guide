@@ -8,18 +8,26 @@ Colored buttons should be used to hint at the purpose button.
 - The danger button should be used to denote an important or potentially dangerous action. (e.g., Delete)
 - The outline button should be used to deemphasize less important actions.
 
-### Button Types
+### Button variants
 {: .styleguide-heading }
 <div class="preview">
-  <button class="button">Regular Button</button>
-  <button class="button button-primary">Primary Button</button>
-  <button class="button button-danger">Danger Button</button>
-  <button class="button button-outline">Outline Button</button>
+  <button class="button">Regular Button</button><br>
+  <button class="button button--primary">Primary Button</button><br>
+  <button class="button button--secondary">Secondary Button</button><br> 
+  <button class="button button--danger">Danger Button</button><br>  
+  <button class="button button--outline">Outline Button</button>
 </div>
 
-### Button Sizes
-{: .styleguide-heading }
 <div class="preview">
-  <button class="button">Regular Button</button>
+  <div class="slab slab--dark-blue">
+    <button class="button button--reverse">Reverse Button</button>
+  </div>
+</div>  
+
+### Button sizes  
+{: .styleguide-heading }
+
+<div class="preview">
+  <button class="button">Regular Button</button><br>  
   <button class="button button-large">Large Button</button>
 </div>
