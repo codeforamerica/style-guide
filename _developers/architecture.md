@@ -1,6 +1,5 @@
 ---
 title: CSS Architecture
-order: 0
 ---
 
 1. The CSS foundation of this site is built with the **Sass** preprocessor langauge.

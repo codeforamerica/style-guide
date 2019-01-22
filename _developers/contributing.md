@@ -1,6 +1,5 @@
 ---
 title: Contributing
-order: 2
 ---
 
 This styleguide is created as a Jekyll site.

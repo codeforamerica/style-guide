@@ -1,6 +1,5 @@
 ---
 title: Media
-order: 3
 ---
 
 ## Figures
