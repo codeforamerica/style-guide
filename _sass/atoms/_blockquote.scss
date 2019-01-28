@@ -6,9 +6,9 @@ blockquote {
     color: $color-black;
     font-size: $em-base;
     font-style: normal;
-  }
 
-  &::before {
-    content: "— ";
+    &::before {
+      content: "— ";
+    }
   }
 }
