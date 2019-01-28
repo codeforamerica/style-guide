@@ -60,13 +60,16 @@
 .card__overhead,
 .card-overhead {
   @include h6;
+
   margin-bottom: 0;
-  margin-top: $space-lg;
+  margin-top: 0;
 }
 
 .card__title,
 .card-title {
   @include h4;
+
+  margin-top: 0;
 
   .card__overhead + &,
   .card-overhead + & {
