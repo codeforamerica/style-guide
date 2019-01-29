@@ -28,6 +28,7 @@ Colored buttons should be used to hint at the purpose button.
 {: .styleguide-heading }
 
 <div class="preview">
+  <button class="button button--sm">Small button</button><br>
   <button class="button">Regular Button</button><br>  
-  <button class="button button-large">Large Button</button>
+  <button class="button button--lg">Large Button</button>
 </div>
