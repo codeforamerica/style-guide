@@ -61,6 +61,7 @@
   }
 }
 
+.slab--compact,
 .tight-slab {
   @include media($tablet-up) {
     padding: 2rem $site-margins;
@@ -113,15 +114,9 @@
   background-color: $color-darkest-blue;
 }
 
-.slab--green,
-.green-bg-slab {
-  @extend %reverse-slab;
-  background-color: $color-green;
-}
-
 .slab--gray,
 .gray-bg-slab {
-  background-color: $color-shade-gray;
+  background-color: $color-lightest-gray;
 }
 
 .slab--red,

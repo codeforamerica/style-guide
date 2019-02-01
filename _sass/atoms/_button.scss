@@ -1,7 +1,7 @@
 // Buttons
 .button {
-  background-color: $color-grey-300;
-  border: 1px solid $color-grey-300;
+  background-color: $color-light-gray;
+  border: 1px solid $color-light-gray;
   border-radius: 2px;
   display: inline-block;
   font-size: $base-font-size;
@@ -24,31 +24,31 @@
   }
 
   &:hover {
-    background-color: $color-grey-500;
-    border: 1px solid $color-grey-500;
+    background-color: $color-gray;
+    border: 1px solid $color-gray;
     text-decoration: none;
   }
 
   &:active {
-    background-color: $color-grey-600;
-    border: 1px solid $color-grey-600;
+    background-color: $color-gray;
+    border: 1px solid $color-gray;
     text-decoration: none;
   }
 
   &:focus {
-    border: 1px solid $color-primary;
-    box-shadow: 0 0 0 1px $color-primary;
+    border: 1px solid $color-blue;
+    box-shadow: 0 0 0 1px $color-blue;
     text-decoration: none;
   }
 
   &:disabled {
-    background-color: $color-grey-300;
-    color: $color-grey-500;
+    background-color: $color-gray;
+    color: $color-gray;
     cursor: not-allowed;
 
     &:hover {
-      background-color: $color-grey-300;
-      border: 1px solid $color-grey-300;
+      background-color: $color-gray;
+      border: 1px solid $color-gray;
     }
   }
 }
@@ -95,12 +95,12 @@
 .button--danger,
 .button-danger {
   background-color: transparent;
-  border-color: $color-grey-400;
+  border-color: $color-gray;
   color: $color-danger;
 
   &:hover {
     background-color: transparent;
-    border-color: $color-grey-600;
+    border-color: $color-danger;
   }
 }
 
@@ -121,7 +121,7 @@
 .button--outline,
 .button-outline {
   background-color: transparent;
-  border-color: $color-grey-500;
+  border-color: $color-gray;
   color: $color-black;
 
   &:hover {

@@ -60,6 +60,7 @@
 .card__overhead,
 .card-overhead {
   @include h6;
+  color: $color-dark-gray;
 
   margin-bottom: 0;
   margin-top: 0;

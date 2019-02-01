@@ -4,13 +4,13 @@ table {
 
   thead {
     th {
-      background-color: $color-grey-100;
+      background-color: $color-lightest-gray;
       text-align: left;
     }
   }
 
   th, td {
-    border: 1px solid $color-grey-700;
+    border: 1px solid $color-dark-gray;
     padding: 0.5em 0.7em;
   }
 }

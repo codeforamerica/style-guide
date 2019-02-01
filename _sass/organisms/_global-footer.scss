@@ -1,7 +1,7 @@
 .global-footer {
-  background-color: $color-grey-100;
-  border-top: 1px solid $color-grey-300;
-  color: $color-grey-600;
+  background-color: $color-lightest-gray;
+  border-top: 1px solid $color-gray;
+  color: $color-gray;
   font-size: $small-font-size;
   padding: 2em $site-margins;
 
@@ -20,7 +20,7 @@
   margin-bottom: 0.5em;
 
   a {
-    color: $color-grey-700;
+    color: $color-dark-gray;
     font-size: map-get($h2-styles, font-size);
     margin-right: 0.5em;
     text-decoration: none;

@@ -1,12 +1,12 @@
 .list-group {
-  border: 1px solid $color-grey-200;
+  border: 1px solid $color-light-gray;
   list-style: none;
   margin-bottom: $space-md;
   padding: 0;
 }
 
 .list-group__item {
-  border-bottom: 1px solid $color-grey-200;
+  border-bottom: 1px solid $color-light-gray;
   display: block;
   list-style: none;
   margin: 0;
@@ -26,11 +26,11 @@
   }
 
   &:hover {
-    background-color: $color-grey-100;
+    background-color: $color-lightest-gray;
   }
 }
 
 .list-group__item--active {
-  background-color: $color-grey-100;
+  background-color: $color-lightest-gray;
   font-weight: bold;
 }

@@ -1,5 +1,5 @@
 .message {
-  background-color: $color-shade-gray;
+  background-color: $color-lightest-gray;
   color: $color-red;
   display: flex;
   flex-direction: row;
@@ -22,7 +22,7 @@
 }
 
 .message--success {
-  background-color: $color-green;
+  background-color: $color-success;
   color: $color-white;
 
   a {
