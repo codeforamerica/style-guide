@@ -1,0 +1,109 @@
+.swatch {
+  background-color: $color-white;
+  border: solid $color-white 5px;
+  border-radius: 3px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  flex-direction: column;
+  height: 100px;
+  margin-bottom: $space-sm;
+  margin-right: $space-sm;
+  width: 200px;
+}
+
+
+
+// Subcomponents
+
+.swatch__label {
+  background-color: $color-white;
+  border-top: solid $color-light-gray 1px;
+  font-family: monospace;
+  font-size: 14px;
+  margin-top: auto;
+  padding: $space-sm $space-xs;
+}
+
+
+
+// Variants
+
+.swatch--white {
+  background-color: $color-white;
+}
+
+.swatch--black {
+  background-color: $color-black;
+}
+
+.swatch--lightest-gray {
+  background-color: $color-lightest-gray;
+}
+
+.swatch--light-gray {
+  background-color: $color-light-gray;
+}
+
+.swatch--gray {
+  background-color: $color-gray;
+}
+
+.swatch--dark-gray {
+  background-color: $color-dark-gray;
+}
+
+.swatch--darkest-gray {
+  background-color: $color-darkest-gray;
+}
+
+.swatch--lightest-blue {
+  background-color: $color-lightest-blue;
+}
+
+.swatch--light-blue {
+  background-color: $color-light-blue;
+}
+
+.swatch--blue
+{ background: $color-blue;
+}
+
+.swatch--dark-blue {
+  background-color: $color-dark-blue;
+}
+
+.swatch--darkest-blue {
+  background-color: $color-darkest-blue;
+}
+
+.swatch--lightest-red {
+  background-color: $color-lightest-red;
+}
+
+.swatch--light-red {
+  background-color: $color-light-red;
+}
+
+.swatch--red {
+  background-color: $color-red;
+}
+
+.swatch--dark-red {
+  background-color: $color-dark-red;
+}
+
+.swatch--darkest-red {
+  background-color: $color-darkest-red;
+}
+
+.swatch--danger {
+  background-color: $color-danger;
+}
+
+.swatch--caution {
+  background-color: $color-caution;
+}
+
+.swatch--success {
+  background-color: $color-success;
+}
