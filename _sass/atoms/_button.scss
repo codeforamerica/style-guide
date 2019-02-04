@@ -83,6 +83,7 @@
 .button--secondary,
 .button-secondary {
   @extend %button--dark;
+  
   background-color: $color-blue;
   border-color: $color-blue;
 
