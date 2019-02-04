@@ -132,6 +132,7 @@ h6, .h6 {
   @include h6;
 }
 
+.text--lead-in,
 .lead-in-text {
   color: $color-dark-gray;
   font-size: map-get($h4-styles, font-size);
@@ -139,10 +140,12 @@ h6, .h6 {
   margin-bottom: $space-lg;
 }
 
+.text--detail,
 .detail-text {
   @include detail-text;
 }
 
+.text--lg,
 .large-text {
   @include large-text;
 }
