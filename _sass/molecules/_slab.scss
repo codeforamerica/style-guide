@@ -82,8 +82,21 @@
   background-color: $color-lightest-gray;
 }
 
-.slab--red,
+.slab--darkest-gray,
+.gray-bg-slab {
+  @extend %reverse-slab;
+  background-color: $color-darkest-gray;
+}
+
+.slab--dark-red,
 .red-bg-slab {
   @extend %reverse-slab;
-  background-color: $color-red;
+  background-color: $color-dark-red;
 }
+
+.slab--darkest-red,
+.red-bg-slab {
+  @extend %reverse-slab;
+  background-color: $color-darkest-red;
+}
+

@@ -34,6 +34,20 @@ Common uses of slab sections would to be include a header and custom layout of e
 </section>
 
 <section class="preview">
+  <div class="slab slab--gray">
+    <p class="h2">No one is coming, it's up to us.</p>
+    <p>The two biggest levers for improving people’s lives at scale are technology and government.</p>
+  </div>
+</section>
+
+<section class="preview">
+  <div class="slab slab--darkest-gray">
+    <p class="h2">No one is coming, it's up to us.</p>
+    <p>The two biggest levers for improving people’s lives at scale are technology and government.</p>
+  </div>
+</section>
+
+<section class="preview">
   <div class="slab slab--dark-blue">
     <p class="h2">No one is coming, it's up to us.</p>
     <p>The two biggest levers for improving people’s lives at scale are technology and government.</p>
@@ -48,14 +62,14 @@ Common uses of slab sections would to be include a header and custom layout of e
 </section>
 
 <section class="preview">
-  <div class="slab slab--gray">
+  <div class="slab slab--dark-red">
     <p class="h2">No one is coming, it's up to us.</p>
     <p>The two biggest levers for improving people’s lives at scale are technology and government.</p>
   </div>
 </section>
 
 <section class="preview">
-  <div class="slab slab--red">
+  <div class="slab slab--darkest-red">
     <p class="h2">No one is coming, it's up to us.</p>
     <p>The two biggest levers for improving people’s lives at scale are technology and government.</p>
   </div>
