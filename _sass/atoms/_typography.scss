@@ -147,15 +147,6 @@ h6, .h6 {
   @include large-text;
 }
 
-.address {
-  margin-bottom: 1em;
-
-  p {
-    line-height: $tight-line-height;
-    margin: 0;
-  }
-}
-
 .text--left,
 .left-align-text {
   text-align: left;
@@ -169,4 +160,3 @@ h6, .h6 {
 .text--right {
   text-align: right;
 }
-
