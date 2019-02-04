@@ -65,12 +65,6 @@
   background-color: $color-white;
 }
 
-.slab--blue,
-.blue-bg-slab {
-  @extend %reverse-slab;
-  background-color: $color-blue;
-}
-
 .slab--dark-blue,
 .dark-blue-bg-slab {
   @extend %reverse-slab;
