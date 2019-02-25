@@ -30,13 +30,11 @@ Take a look at our [Github repository](https://github.com/codeforamerica/pattern
 ### Who makes this?
 {: .styleguide-heading }
 
-* The design system for the Code for America Style Guide is maintained by [Daniella DeVera](https://www.codeforamerica.org/people/daniella-devera)
-* The components and styles for the Code for America Style Guide are maintained by [David Leonard](https://www.codeforamerica.org/people/david-leonard)
-* The components and structure of the pattern library were originally made by [Norris Hung](https://www.codeforamerica.org/people/norris-hung) for the [Chime Toolkit](https://github.com/chimecms/chime-toolkits)
+* The Code for America Style Guide is maintained by [Fritz Jooste](https://www.codeforamerica.org/people/fritz-jooste)
 
 ## License and contact
 {: .styleguide-heading }
 
-The Code for America Style Guide is Copyright (c) 2009-2016 Code for America. The Style Guide is made available for use under the MIT license. [See our LICENSE for details.](https://github.com/codeforamerica/pattern-library)
+The Code for America Style Guide is Copyright (c) 2009-2019 Code for America. The Style Guide is made available for use under the MIT license. [See our LICENSE for details.](https://github.com/codeforamerica/pattern-library)
 
 Questions? Feedback? Just want to chat? Say hi to us [by email at marketing@codeforamerica.org](mailto:marketing@codeforamerica.org).
