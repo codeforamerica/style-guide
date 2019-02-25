@@ -1,6 +1,6 @@
 {
   "name": "@codeforamerica/style",
-  "version": "4.0.9",
+  "version": "5.0.0",
   "description": "Code for America's Styleguide. http://v4.style.codeforamerica.org",
   "main": "_site/js/site.js",
   "scripts": {

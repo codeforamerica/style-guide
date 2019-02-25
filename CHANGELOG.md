@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [5.0.0] - 2019-02-25
+- Too many changes to list. See the commit log for individual changes.
+
 ## [4.0.9] - 2018-12-10
 ### Added
 - Added `.message--success` for those times when things just... go well.
