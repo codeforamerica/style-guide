@@ -14,6 +14,7 @@ title: Cards
 </div>
 
 
+
 ## Card with a link
 
 <div class="preview">
@@ -27,6 +28,7 @@ title: Cards
 </div>
 
 
+
 ## Card with some overhead text
 
 <div class="preview">
@@ -38,6 +40,7 @@ title: Cards
     </div>
   </div>
 </div>
+
 
 
 ## Card with an image
@@ -56,10 +59,28 @@ title: Cards
 </div>
 
 
+
 ## Card with a button
 
 <div class="preview">
   <div class="card col-6">
+    <div class="card__image" style="background-image: url('https://s3-us-west-1.amazonaws.com/codeforamerica-cms1/images/getcalfresh-phone-promo_small.jpg');">
+      &nbsp;
+    </div>
+    <div class="card__content">
+      <p class="card__title">GetCalFresh</p>
+      <p>Improving how government delivers food assistance to families in need.</p>
+      <a href="#" class="card__button button button--primary">Learn about GetCalFresh</a>
+    </div>
+  </div>
+</div>
+
+
+
+## Horizontal card
+
+<div class="preview">
+  <div class="card card--horizontal">
     <div class="card__image" style="background-image: url('https://s3-us-west-1.amazonaws.com/codeforamerica-cms1/images/getcalfresh-phone-promo_small.jpg');">
       &nbsp;
     </div>

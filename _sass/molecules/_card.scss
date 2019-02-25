@@ -138,3 +138,13 @@
     box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
   }
 }
+
+.card--horizontal, a.card--horizontal {
+  display: flex;
+  flex-direction: row;
+
+  .card__image {
+    flex: 0 0 33%;
+    padding-top:0 ;
+  }
+}
