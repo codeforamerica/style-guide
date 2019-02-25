@@ -6,25 +6,27 @@
 }
 
 // Clearfix helper
-@mixin clearfix() {
-  &:after {
-    content: ".";  
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: ".";
     display: block;
     height: 0;
-    clear: both;
     visibility: hidden;
     }
 }
 
+.float--left,
 .align-left {
   float: left;
 }
 
+.float--right,
 .align-right {
   float: right;
 }
 
-@mixin icon() {
+@mixin icon {
   display: inline-block;
   font-family: $font-icon;
   font-size: 14px;

@@ -1,7 +1,6 @@
 ---
 title: Messages
 description: Messages are used to show short pieces of important information to the user — for example, warnings or announcements.
-order: 3
 ---
 
 ## Standard message

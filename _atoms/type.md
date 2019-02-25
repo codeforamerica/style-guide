@@ -1,7 +1,6 @@
 ---
 title: Typography
 description: Typographical styles that help you to structure your content.
-order: 1
 ---
 
 ## Headings
@@ -38,16 +37,6 @@ As a best practice, you should use emphasis and strong text over italic and bold
   <p>This is <a href="#">linked text</a></p>
 </div>
 
-## Blockquotes
-{: .styleguide-heading }
-
-<div class="preview">
-  <blockquote>The blockquote element represents a section that is quoted from another source. Blockquotes are also sometimes referred to in publishing as 'pullquotes'.</blockquote>  
-</div>
-
-
-
-
 ## Lists
 {: .styleguide-heading }
 
@@ -70,55 +59,4 @@ Outside of `<article>` elements, lists are unstyled by default. To use styled li
     <li>Unordered list item</li>
     <li>Unordered list item</li>
   </ul>
-</div>
-
-## Asides
-{: .styleguide-heading }
-
-<div class="preview">
-  <aside>
-    <p>Asides, or callouts, are used to block off a specific portion of text that is periperal to the main body text. They can contain headings as well.</p>
-  </aside>
-</div>
-
-<div class="preview">
-  <aside>
-    <h3>Aside Header</h3>
-    <p><a href="#">Example of a link within an aside</a></p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero perferendis placeat error nemo, atque accusantium?</p>
-  </aside>
-  <p class="is-peripheral">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsa voluptatem consequuntur, mollitia soluta, quasi ducimus voluptate vitae eum nulla ad aliquid, saepe reprehenderit. Dolorem, voluptates, corrupti? Labore, rem, incidunt? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque maiores quas, adipisci cum voluptate vero necessitatibus animi iure similique? Illo, impedit reiciendis cumque saepe ut quaerat odio dolorum sapiente. Delectus.</p>
-</div>
-
-
-## Tables
-{: .styleguide-heading }
-
-<div class="preview">
-  <table>
-    <thead>
-      <tr>
-        <th>Row 1</th>
-        <th>Row 2</th>
-        <th>Row 3</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>item 1</td>
-        <td>item 2</td>
-        <td>item 3</td>
-      </tr>
-      <tr>
-        <td>item 1</td>
-        <td>item 2</td>
-        <td>item 3</td>
-      </tr>
-      <tr>
-        <td>item 1</td>
-        <td>item 2</td>
-        <td>item 3</td>
-      </tr>
-    </tbody>
-  </table>
 </div>

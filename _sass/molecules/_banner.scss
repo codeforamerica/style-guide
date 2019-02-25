@@ -1,0 +1,62 @@
+.banner {
+  background-color: $color-white;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.banner__content {
+  @include media($tablet-up) {
+    padding: 1em;
+    text-align: left;
+  }
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3em;
+  text-align: center;
+}
+
+.banner__image-container {
+  @include media($tablet-up) {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+
+  background-position: center center;
+  background-size: cover;
+  min-height: 200px;
+}
+
+
+// Mixins
+
+%banner--reverse {
+  color: $color-white;
+}
+
+
+// Color variants
+
+.banner--blue {
+  @extend %banner--reverse;
+  background-color: $color-blue;
+}
+
+.banner--dark-blue {
+  @extend %banner--reverse;
+  background-color: $color-dark-blue;
+}
+
+.banner--darkest-blue {
+  @extend %banner--reverse;
+  background-color: $color-darkest-blue;
+}
+
+.banner--red {
+  @extend %banner--reverse;
+  background-color: $color-red;
+}

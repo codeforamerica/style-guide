@@ -1,9 +1,11 @@
-*, *:before, *:after {
+*, *::before, *::after {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: $color-white;
 }
 
 .page-content {
@@ -19,4 +21,9 @@ body {
 
 img {
   max-width: 100%;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid $color-light-gray;
 }

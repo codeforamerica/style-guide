@@ -1,30 +1,32 @@
 .breadcrumbs {
-  @include h6();
-  margin: {
-    top: $small-spacing;
-    bottom: $small-spacing;
-  }
+  @include h6;
+  margin-bottom: $space-sm;
+  margin-top: $space-sm;
 }
 
+.breadcrumbs__item,
 .breadcrumbs-item {
+  color: $color-darkest-gray;
   display: inline-block;
-  margin-right: .375rem; //6px
-  margin-bottom: .375rem; //6px
-  color: $color-gray;
+  margin-bottom: 0.375rem;
+  margin-right: 0.375rem;
+
   a {
+    color: $color-dark-gray;
     text-decoration: underline;
-    color: $color-gray;
+
     &:hover {
+      color: $color-dark-blue;
       text-decoration: underline;
-      color: $color-black;
     }
   }
+
   &:not(:last-of-type) {
-    &:after {
-      @include icon();
-      color: $color-light-gray;
-      margin-left: .5rem;
+    &::after {
+      @include icon;
+      color: $color-gray;
       content: '\f178';
+      margin-left: 0.5rem;
       position: relative;
       top: 1px;
     }

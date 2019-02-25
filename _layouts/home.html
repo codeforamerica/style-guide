@@ -9,58 +9,53 @@
       {% include header.html section="Style Guide" %}
       <div class="main-content">
         <div class="grid-box">
-            <div class="styleguide-sidebar sidebar grid-item width-one-fourth">
-              <ul class="sidebar-menu unstyled-list">
-                <li class="is-selected"><a href="/">Introduction</a></li>
-                <li class="is-selected"><a href="{% link usage.md %}">Usage Instructions</a></li>
-                <li class="is-selected">
-                  <a href="#">Atoms</a>
-                  <ul class="sidebar-menu-sublist unstyled-list">
-                    {% assign ordered_atoms = site.atoms | sort: "order" %}
-                    {% for atom in ordered_atoms %}
-                    <li class="{% if page.url == atom.url %}is-selected{% endif %}"><a href="{{ atom.url }}">{{ atom.title }}</a></li>
-                    {% endfor %}
-                  </ul>
-                </li>
-                <li class="is-selected">
-                  <a href="#">Molecules</a>
-                  <ul class="sidebar-menu-sublist unstyled-list">
-                    {% assign ordered_molecules = site.molecules | sort: "order" %}
-                    {% for molecule in ordered_molecules %}
-                    <li class="{% if page.url == molecule.url %}is-selected{% endif %}"><a href="{{ molecule.url }}">{{ molecule.title }}</a></li>
-                    {% endfor %}
-                  </ul>
-                </li>
-                <li class="is-selected">
-                  <a href="#">Organisms</a>
-                  <ul class="sidebar-menu-sublist unstyled-list">
-                    {% assign ordered_organisms = site.organisms | sort: "order" %}
-                    {% for organism in ordered_organisms %}
-                    <li class="{% if page.url == organism.url %}is-selected{% endif %}"><a href="{{ organism.url }}">{{ organism.title }}</a></li>
-                    {% endfor %}
-                  </ul>
-                </li>
-                <li class="is-selected">
-                  <a href="#">Templates</a>
-                  <ul class="sidebar-menu-sublist unstyled-list">
-                    {% assign ordered_templates = site.templates | sort: "order" %}
-                    {% for template in ordered_templates %}
-                    <li class="{% if page.url == template.url %}is-selected{% endif %}"><a href="{{ template.url }}">{{ template.title }}</a></li>
-                    {% endfor %}
-                  </ul>
-                </li>
-                <li class="is-selected">
-                  <a href="#">Developers</a>
-                  <ul class="sidebar-menu-sublist unstyled-list">
-                    {% assign ordered_developers = site.developers | sort: "order" %}
-                    {% for template in ordered_developers %}
-                    <li class="{% if page.url == template.url %}is-selected{% endif %}"><a href="{{ template.url }}">{{ template.title }}</a></li>
-                    {% endfor %}
-                  </ul>
-                </li>
-              </ul>
+            <div class="col-4">
+              <div class="list-group">
+                <a href="/" class="list-group__item {% if page.url == '/' %}list-group__item--active{% endif %}">Introduction</a> 
+                <a href="{% link usage.md %}" class="list-group__item {% if page.url == '/usage/' %}list-group__item--active{% endif %}">Usage Instructions</a>
+              </div>
+              <p class="h4">Core</p>
+              <div class="list-group">
+                {% assign menu_items = site.core | sort: "title" %}
+                {% for item in menu_items %}
+                <a href="{{ item.url }}" class="list-group__item {% if page.url == item.url %}list-group__item--active{% endif %}">{{ item.title }}</a>
+                {% endfor %}
+              </div>
+
+              <p class="h4">Atoms</p>
+              <div class="list-group">
+                {% assign menu_atoms = site.atoms | sort: "title" %}
+                {% for item in menu_atoms %}
+                <a href="{{ item.url }}" class="list-group__item {% if page.url == item.url %}list-group__item--active{% endif %}">{{ item.title }}</a>
+                {% endfor %}
+              </div>
+                
+              <p class="h4">Molecules</p>
+              <div class="list-group">
+                {% assign menu_items = site.molecules | sort: "title" %}
+                {% for item in menu_items %}
+                <a href="{{ item.url }}" class="list-group__item {% if page.url == item.url %}list-group__item--active{% endif %}">{{ item.title }}</a>
+                {% endfor %}
+              </div>
+
+              <p class="h4">Organisms</p>
+              <div class="list-group">
+                {% assign menu_items = site.organisms | sort: "title" %}
+                {% for item in menu_items %}
+                <a href="{{ item.url }}" class="list-group__item {% if page.url == item.url %}list-group__item--active{% endif %}">{{ item.title }}</a>
+                {% endfor %}
+              </div>
+
+              <p class="h4">Developers</p>
+              <div class="list-group">
+                {% assign menu_items = site.developers | sort: "title" %}
+                {% for item in menu_items %}
+                <a href="{{ item.url }}" class="list-group__item {% if page.url == item.url %}list-group__item--active{% endif %}">{{ item.title }}</a>
+                {% endfor %}
+              </div>
+
             </div>
-            <article class="styleguide-content grid-item width-two-thirds shift-one-twelfth">
+            <article class="col-8">
               <header class="page-header">
                 <h1 class="style-guide-heading">{{ page.title }}</h1>
                 {% if page.description %}<p class="lead-in-text">{{ page.description }}</p>{% endif %}

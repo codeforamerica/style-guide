@@ -1,143 +1,150 @@
-.card {
-  margin: {
-    top: 1rem;
-    bottom: 1rem;
-  }
-  padding: 0;
-  text-align: left;
-}
-
-a.card {
+.card, a.card {
+  background-color: $color-white;
+  border: 1px solid $color-light-gray;
   color: inherit;
-}
-
-.logo-card {
-  margin: {
-    top: 1rem;
-    bottom: 1rem;
-  }
-  padding: 1rem;
-  text-align: left;
-}
-
-// Shared styles for link/action cards
-.action-card, .link-card, .index-card {
   display: block;
+  flex: 1;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding: 0;
   text-decoration: none;
-  color: inherit;
-}
 
-// Link card
-.link-card {
-  background-color: $color-shade-gray;
-  overflow: hidden;
-  .card-image {
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-bottom: -.5rem;
-    width: calc(100% + 2rem);
-    max-width: calc(100% + 2rem);
-  }
-}
-
-// Action card
-.action-card {
-  text-align: center;
-}
-
-// Index card
-.index-card {
-  border: 1px solid $color-light-gray;
-  overflow: hidden;
-  .card-image {
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-bottom: -.5rem;
-		width: 100%;
-		display: block;
-		margin: 0 auto;
-  }
-  .card-logo {
-    margin-top: -1rem;
-    margin-left: -1rem;
-    margin-bottom: -.5rem;
-		width: 70%;
-		display: block;
-		margin: 0 auto;
-  }  
-  .card-icon {
-    max-width: 75px;
-    margin-left: auto;
-    margin-right: auto;
-  }
   &:hover {
-    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+
+    .card__link,
+    .card-link {
+      text-decoration: underline;
+    }
   }
 }
 
-// Index card
-.supporter-card {
-  border: 1px solid $color-light-gray;
-  overflow: hidden;
-  text-align: center;
-  text-decoration: none;
-  .card-image {
-    width: 80%;
-    max-width: 200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  &:hover {
-    box-shadow: 0 0 8px 2px rgba(0,0,0,0.1);
-  }
+// Card subcomponents
+
+.card__image,
+.card-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid $color-light-gray;
+  padding-top: 66.66%;
 }
 
-// Subcomponents for all cards
+.card__image--contained {
+  background-size: auto 80%;
+}
 
+.card__content,
 .card-content {
   padding: 1rem;
 }
 
+.card__button,
 .card-button {
   display: inline-block;
-  margin: .5rem 0 0;
+  margin: 0.5rem 0 0;
 }
 
+.card__link,
 .card-link {
   @extend a;
-  a.card:hover & {
-    text-decoration: underline;
-  }
 }
 
+.card__icon,
 .card-icon {
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   max-width: 125px;
 }
 
-.card-image {
-
-}
-
+.card__overhead,
 .card-overhead {
   @include h6;
-  margin-top: $large-spacing;
+  color: $color-dark-gray;
+
   margin-bottom: 0;
+  margin-top: 0;
 }
 
+.card__title,
 .card-title {
   @include h4;
 
-  &.card-link {
-    @extend a;
-  }
+  margin-top: 0;
+
+  .card__overhead + &,
   .card-overhead + & {
-    margin-top: .25rem;
+    margin-top: 0.25rem;
   }
 }
 
-.card--white {
-  background-color: $color-white;
+
+// Variants
+
+.card--supporter, a.card--supporter,
+.supporter-card, a.supporter-card {
+  text-align: center;
+
+  .card__image,
+  .card-image {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+    width: 80%;
+  }
+}
+
+.card--action-card, a.card--action-card {
+  border: 0;
+  text-align: center;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
+
+.card--index-card, a.card--index-card,
+.index-card, a.index-card {
   border: 1px solid $color-light-gray;
+  margin-bottom: 1rem;
+  overflow: hidden;
+
+  .card__image,
+  .card-image {
+    display: block;
+    margin-bottom: -0.5rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    width: 100%;
+  }
+
+  .card__logo,
+  .card-logo {
+    display: block;
+    margin-bottom: -0.5rem;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    width: 70%;
+  }
+
+  .card__icon,
+  .card-icon {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card--horizontal, a.card--horizontal {
+  display: flex;
+  flex-direction: row;
+
+  .card__image {
+    flex: 0 0 33%;
+    padding-top:0 ;
+  }
 }

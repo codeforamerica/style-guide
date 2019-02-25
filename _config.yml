@@ -20,6 +20,9 @@ collections:
   components:
     output: true
     permalink: /components/:path/
+  core:
+    output: true
+    permalink: /core/:path/
   atoms:
     output: true
     permalink: /atoms/:path/
@@ -29,9 +32,6 @@ collections:
   organisms:
     output: true
     permalink: /organisms/:path/
-  templates:
-    output: true
-    permalink: /templates/:path/
   developers:
     output: true
     permalink: /developers/:path/

@@ -2,140 +2,110 @@ $global-header-logo-width-mobile: 100px !default;
 $global-header-logo-width: 150px !default;
 
 .global-header {
-  @include clearfix();
+  @include clearfix;
+
+  @include media($tablet-up) {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+  }
 
   padding: 1em $site-margins;
-  @include media($tablet-up) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-  // .menu-item:not(.js-menu-button) {
-  //   display: none;
-  //   @include media($tablet-up) {
-  //     display: block;
-  //   }
-  // }
-  // .js-menu-button {
-  //   @include media($tablet-up) {
-  //     display: none;
-  //   }
-  // }
-}
-
-.logo img {
-
 }
 
 .global-header-logo {
-  // display: inline-block;
-  // margin-right: .5em;
-  // height: 1.2em;
-  // width: auto;
-  // position: relative;
-  // top: .2em;
-
   img {
-    max-width: $global-header-logo-width-mobile;
-
     @include media($tablet-up) {
       max-width: $global-header-logo-width;
     }
+
+    max-width: $global-header-logo-width-mobile;
   }
 }
 
 .global-header-title {
-  margin: {
-    top: 0;
-    right: 0;
-    left: 2rem;
-    bottom: 0;
-
-  }
+  display: block;
   font-size: $small-font-size;
   line-height: $small-font-size * 1.5;
-  display: block;
+  margin-bottom: 0;
+  margin-left: 2rem;
+  margin-right: 0;
+  margin-top: 0;
+
   .subtitle {
-    display: block;
     clear: left;
     color: $color-gray;
+    display: block;
   }
+
   @include media($tablet-up) {
     font-size: $base-font-size;
-    margin-top: .5rem;
-    .subtitle { font-size: $small-font-size }
+    margin-top: 0.5rem;
+
+    .subtitle {
+      font-size: $small-font-size;
+    }
   }
 }
 
 .global-header-buttons {
-  position: relative;
-  top: -.3rem;
   @include media($tablet-up) {
-    top: .3rem;
+    top: 0.3rem;
+
     .js-menu-button {
       display: none;
     }
   }
+
+  position: relative;
+  top: -0.3rem;
 }
+
 .global-header-buttons a.button {
+  margin-left: 0.5rem;
   margin-right: 0;
-  margin-left: .5rem;
 }
 
 .global-header-navigation {
-  display: none;
   @include media($tablet-up) {
     display: block;
-    padding-top: $large-spacing;
+    padding-top: $space-lg;
   }
+
+  display: none;
 }
 
 .global-header-menu {
   position: relative;
-  top: .3em;
+  top: 0.3em;
 }
 
-// .global-header-search {
-//   padding: 1em $site-margins;
-//   background-color: $color-grey-50;
-//   border-bottom: 1px solid $color-grey-300;
-//   display: none;
+.global-header-search {
+  @include media($tablet-up) {
+    display: block;
+  }
 
-//   .searchbar {
-//     border: 0;
-//     max-width: $site-max-width;
-//     margin: 0 auto;
-//   }
-//   .searchbar-input, .searchbar-button {
-//     font-size: map-get($h2-styles, font-size);
-//     background-color: transparent;
-//     padding: 0;
-//   }
-
-// }
-
-.global-header-buttons .global-header-search {
-  margin-top: 0.45em;
-  // Hide header-search on narrow screens
   display: none;
-  @include media($tablet-up) { display: block; }
+  margin-top: 0.45em;
 }
 
 // For use on reverse backgrounds
 .reverse-global-header {
-  color: white;
+  color: $color-white;
 
-  .alert a {
-    background-color: rgba(0, 0, 0, 0.15);
-    border-bottom: 0;
-    color: white;
+  .alert {
+    a {
+      background-color: rgba(0, 0, 0, 0.15);
+      border-bottom: 0;
+      color: $color-white;
+    }
   }
 
   .global-header-menu .menu-item {
-    color: white;
+    color: $color-white;
   }
 
   .global-header-menu .active-menu-item {
-    color: white;
+    color: $color-white;
     font-weight: 600;
   }
 }
