@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Remove aggressive color declarations
 - Make card text black
+- Let slab headings be the same color as other text in the slab
 
 ## [5.0.1] - 2019-02-27
 ### Fixed
