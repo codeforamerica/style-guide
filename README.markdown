@@ -1,5 +1,12 @@
+:no_entry_sign: **This repository has been archived.**
+
+The style guide is now DEPRECATED. It originally served as a pattern library for Code for America's marketing and communication websites, particularly the main website, codeforamerica.org. The organization is transitioning to new branding and an updated set of design patterns and components. 
+
+Please see below for more background on the project, and please reach out to marketing@codeforamerica.org for any questions.
+
+*****
+
 # Code for America's Style Guide
-======
 
 * **Current stable version:** 4 ([release-2](https://github.com/codeforamerica/style-guide/tree/master) tag / linkable [url](https://v4.style.codeforamerica.org/))
 * **Previous release (unsupported):** 3 ([master](https://github.com/codeforamerica/pattern-library/tree/master) branch / linkable [url](https://style.codeforamerica.org/3/))
